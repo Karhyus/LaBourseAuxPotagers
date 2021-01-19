@@ -107,7 +107,7 @@ session_start();?>
                 	</li>
                	<?php } else { ?>
                		<li class="nav-item">
-                		<a class="nav-link page-scroll" href="connexion.php">MON COMPTE</a>
+                		<a class="nav-link page-scroll" href="mon_compte.php">MON COMPTE</a>
                 	</li>
                 	<li class="nav-item">
                 		<a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
