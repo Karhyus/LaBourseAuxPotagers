@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('bdd_connexion.php'); ?>
+<?php include('bdd_connexion.php'); 
+session_start();?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -100,9 +101,18 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="connexion.php">MON COMPTE</a>
-                </li>
+                <?php if(!isset($_SESSION['user_account'])){ ?>
+					<li class="nav-item">
+                		<a class="nav-link page-scroll" href="connexion.php">CONNEXION</a>
+                	</li>
+               	<?php } else { ?>
+               		<li class="nav-item">
+                		<a class="nav-link page-scroll" href="connexion.php">MON COMPTE</a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
+                	</li>
+               	<?php } ?>
             </ul>
         </div>
     </nav> <!-- end of navbar -->
