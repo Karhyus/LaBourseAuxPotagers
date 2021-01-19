@@ -722,7 +722,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #13447;
+	background-color: #134470;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -803,7 +803,6 @@ input[type='checkbox'] {
 	margin-right: 0.5rem;
 	margin-bottom: 1.25rem;
 }
-
 
 
 /*********************/
@@ -889,17 +888,19 @@ input[type='checkbox'] {
 /*     05. Intro     */
 /*********************/
 .basic-3 {
-	padding-top: 6.5rem;
-	padding-bottom: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
     background-color: #113448;
 }
 
 .basic-3 .text-container {
-	margin-bottom: 3rem;
+	color : white;
+	text-align: justify;
+
 }
 
 .basic-3 .section-title {
-    margin-top: 2rem;
+    margin-top: 7rem;
 	margin-bottom: 2rem;
     text-align: center;
 }
@@ -911,9 +912,8 @@ input[type='checkbox'] {
 .basic-3 .white {
 	margin-bottom: 1.375rem;
 }
-
-.basic-3 .testimonial-author {
-	color: #484a46;
+.basic-3 .whiteC {
+	text-align: center;
 }
 
 /* Hover Animation */
@@ -1111,6 +1111,12 @@ input[type='checkbox'] {
 .cards-2 h3 {
 	margin-bottom: 0.75rem;
 	text-align: center;
+}
+
+.cards-2 h4 {
+	margin-left: 2rem;
+	text-align: center;
+	margin-top: 0.7rem;
 }
 
 .cards-2 .list-unstyled {
@@ -1441,7 +1447,6 @@ input[type='checkbox'] {
 	color: #484a46;
 }
 
-
 /**********************/
 /*     11. Call Me    */
 /**********************/
@@ -1745,9 +1750,8 @@ input[type='checkbox'] {
 /*     15. About     */
 /*********************/
 .counter {
-	padding-top: 6.875rem;
-	padding-bottom: 5.25rem;
-    background-color: #fbfbfb;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .counter .image-container {
@@ -1786,7 +1790,7 @@ input[type='checkbox'] {
 
 .counter #counter .cell {
 	display: inline-block;
-	width: 11rem;
+	width: 8rem;
 	margin-bottom: 0.75rem;
     margin-left: 10rem;
 
@@ -1982,7 +1986,6 @@ a:hover.back-to-top {
 	padding-top: 4.75rem;
 	padding-bottom: 4rem;
 }
-
 .ex-basic-2 h3 {
 	margin-bottom: 1rem;
 }
@@ -2003,6 +2006,7 @@ a:hover.back-to-top {
 
 .ex-basic-2 .list-unstyled .media-body {
 	margin-left: 0.625rem;
+	color : #787976; 
 }
 
 .ex-basic-2 .form-container {
@@ -2040,6 +2044,7 @@ a:hover.back-to-top {
 		color: #fff;
 	}
 
+	
 	.navbar-custom .navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -2101,7 +2106,7 @@ a:hover.back-to-top {
 		padding-top: 13rem;
 		padding-bottom: 7.5rem;
 	}
-
+	
 	.header h1 {
 		font: 700 3.5rem/4rem "Montserrat", sans-serif;
 	}
@@ -2464,6 +2469,7 @@ a:hover.back-to-top {
 		padding-bottom: 17.5rem;
 	}
 	/* end of header */
+
 
 
 	/* Intro */
