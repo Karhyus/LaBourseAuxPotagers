@@ -67,12 +67,8 @@
                     <a class="nav-link page-scroll" href="#profil">PROFIL<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projets">SES PROJET</a>
+                    <a class="nav-link page-scroll" href="#projets">MES PROJET</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#avis">AVIS</a>
-                </li>
-
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -94,40 +90,76 @@
         <div class="container">
             <div class="section-title"> PROFIL</div>
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="text-container">
-                        <h2 class="white"> Jean-Pierre</h2>
-                        <p class="white ">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p> 
-                        <p class="testimonial-text white ">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                     
-                    </div> <!-- end of text-container --> 
-                </div> <!-- end of col -->
-                <div class="col-lg-1">
-                    </div> 
-                <div class="col-lg-3">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/testimonial-6.jpg" alt="alternative">
-                        </div> <!-- end of image-container -->
+                <div class="col-lg-12">
+                    <h2 class="whiteC white"> @username</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="col-lg-9">
-                    <div class="text-container ">
-                        <ul class="list-unstyled li-space-lg white">
-                            <li class="address "><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
-                            <li><i class="fas fa-phone"></i><a class="white"  href="tel:0644444444">0644444444</a></li>
-                            <li><i class="fas fa-envelope"></i><a class="white" href="mailto:jp@gmail.com">jp@gmail.com</a></li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-1 -->
     <!-- end of Partenaire -->
-      
+
+
+    <!-- Changement  -->
+    <div class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">Modification de votre profil</div>
+                    <div class="button-container">
+                        <div class="row"> 
+                                <span class="fa-stack">
+                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                </span>
+                                <h4>Nom</h4>
+                        </div> <!-- end of rol -->
+                        <br>
+                        <div class="row">
+                            <span class="fa-stack">
+                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                            </span>
+                            <h4>Prenom</h4>
+                        </div> <!-- end of rol -->
+                        <br>
+                        <div class="row">
+                            <span class="fa-stack">
+                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                            </span>
+                            <h4>Email</h4>
+                        </div> <!-- end of rol -->
+                        <br>
+                        <div class="row">
+                            <span class="fa-stack">
+                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                            </span>
+                            <h4>Mot de Passe</h4>
+                        </div> <!-- end of rol -->
+                        <br>
+                        <div class="row">
+                            <span class="fa-stack">
+                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                            </span>
+                            <h4>Date anniversaire</h4>
+                        </div> <!-- end of rol -->
+                        <br>
+                        <div class="row">
+                            <span class="fa-stack">
+                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                            </span>
+                            <h4>Phrase d'intro</h4>
+                        </div> <!-- end of rol -->
+                    </div> <!-- end of button-container --> 
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+
+
    <!-- Les Projets -->
     <div id="projets" class="cards-2 slider ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">SES PROJETS </div>
+                    <div class="section-title">MES PROJETS </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -173,8 +205,11 @@
                                         
                                         <div class="button-container">
                                             <div class="row">  
-                                               <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                <span class="fa-stack">
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -220,7 +255,10 @@
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -265,8 +303,11 @@
                                         
                                         <div class="button-container">
                                             <div class="row">  
-                                               <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                <span class="fa-stack">
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -294,109 +335,7 @@
     </div> <!-- end of cards-2 -->
     <!-- end of services -->
     
-    <!-- avis -->
-    <div id="avis" class="slider cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title"> LES AVIS SUR JEAN-PIERRE</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
-                                            <div class="testimonial-author">Jude Thorn - Founder</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
-                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
-                                            <div class="testimonial-author">Roy Smith - Developer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
-                                            <div class="testimonial-author">Ronald Spice - Owner</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
-                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
-                                            <div class="testimonial-author">Ann Black - Consultant</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
-    <!-- end of testimonials -->
+    
 
  <!-- Aide -->
     <div id="aide" class="form-2">

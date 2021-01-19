@@ -70,9 +70,6 @@
                     <a class="nav-link page-scroll" href="#projets"> VOS PROJETS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#compte">MON COMPTE</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#Reussite">VOS REUSSITES</a>
                 </li>
 
@@ -83,7 +80,7 @@
                         <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                         <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
+                    </div>  
                 </li>
                 <!-- end of dropdown menu -->
 
@@ -91,7 +88,15 @@
                     <a class="nav-link page-scroll" href="#aide">AIDE</a>
                 </li>
             </ul>
+
             <ul class="navbar-nav ml-auto">
+            <a class="btn-solid-reg page-scroll" href="connexion.php">Investir dans des nouveaux projets</a>
+            </ul>  
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="mon_compte.php">MON COMPTE</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php">DECONNEXION</a>
                 </li>
@@ -99,47 +104,39 @@
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
-    
-       
-    
-    <!-- Header -->
-    <header id="header" class="header counter">
-        <div class="header-content">
+
+     <!-- Header -->
+    <header id="header" class="basic-3 counter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-container">
-                            <h1><span id="js-rotating"> Carotte, Aubergine XXL</span></h1> <!--divers nom de projets-->
-                            <p class="p-heading p-large">Salut Samuel, ton potager se porte bien malgré ton absence 
-                            </p>
-                            <!-- Counter -->
-                        <div id="counter">
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="5">1</div>
-                                <div class="counter-info">Nombre<br>Projet</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="121">1</div>
-                                <div class="counter-info">Argent<br>Donné</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="10">1</div>
-                                <div class="counter-info">Retour<br>Recu</div>
-                            </div>
-                        </div>
-                        <!-- end of counter -->
-                        </div>
+                    <br>
+                    <br>
+                    <br>
+                            <div id="counter">
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="5">1</div>
+                                    <div class="counter-info">Nombre<br>Projet</div>
+                                </div>
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="121">1</div>
+                                    <div class="counter-info">Argent<br>Récolté</div>
+                                </div>
+                                <div class="cell">
+                                    <div class="counter-value number-count" data-count="10">1</div>
+                                    <div class="counter-info">Personnes<br>Engagés</div>
+                                </div>
+                             </div>
+
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
     </header> <!-- end of header -->
     <!-- end of header -->
 
-    
    
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 slider ">
+    <div id="projetsE" class="cards-2 silder filter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -148,7 +145,6 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    
                     <!-- Card Slider -->
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
@@ -328,9 +324,9 @@
                         </div> <!-- end of swiper-container -->
                     </div> <!-- end of sliedr-container -->
                     <!-- end of card slider -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
+
         </div> <!-- end of container -->
     </div> <!-- end of cards-2 -->
     <!-- end of services -->
@@ -384,13 +380,6 @@
                     </div> <!-- end of grid -->
                     <!-- end of filter -->
                  
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="button-group filters-button-group">
-                    <a class="btn-solid-reg" href="#your-link">Voir les autres projets</a>
-                    </div> <!-- end of col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
 		</div> <!-- end of container -->
@@ -456,7 +445,9 @@
     <!-- end of contact -->
 
 
-  <!-- Footer -->
+ 
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -506,13 +497,14 @@
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                                <img class="img-fluid" src="images/eco.png" alt="alternative">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
     <!-- end of footer -->
+
 
     <!-- Copyright -->
     <div class="copyright">

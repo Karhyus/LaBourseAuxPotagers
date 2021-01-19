@@ -72,9 +72,6 @@
                     <a class="nav-link page-scroll" href="#projetsS">PROJETS SOUMIS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#compte">MON COMPTE</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#reussite">VOS REUSSITES</a>
                 </li>
 
@@ -95,6 +92,9 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link page-scroll" href="mon_compte.php">MON COMPTE</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php">DECONNEXION</a>
                 </li>
             </ul>
@@ -102,17 +102,14 @@
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
   
-    <!-- Header -->
-    <header id="header" class="header counter">
-        <div class="header-content">
+     <!-- Header -->
+     <header id="header" class="basic-3 counter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-container">
-                            <h1><span id="js-rotating"> Carotte, Aubergine XXL</span></h1> <!--divers nom de projets-->
-                            <p class="p-heading p-large">Salut Brigitte, ton potager se porte bien malgré ton absence 
-                            </p>
-                            <!-- Counter -->
+                    <br>
+                    <br>
+                    <br>
                         <div id="counter">
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="5">1</div>
@@ -127,27 +124,25 @@
                                 <div class="counter-info">Personnes<br>Engagés</div>
                             </div>
                         </div>
-                        <!-- end of counter -->
-                        </div>
+
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
     </header> <!-- end of header -->
     <!-- end of header -->
-
       
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 slider ">
+    <div id="projetsE" class="cards-2 slider filter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">PROJETS EN COURS </div>
+                    <div class="section-title">PROJETS EN COURS <div class="button-group filters-button-group">
+                    <a class="btn-solid-reg" href="ajouter.php"> + Ajouter un nouveau projet</a>
+                    </div> </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    
                     <!-- Card Slider -->
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
@@ -319,16 +314,17 @@
     <!-- end of services -->
     
     <!-- Projets SOUMIS-->
-    <div id="projetsS" class="cards-2 slider">
+    <div id="projetsS" class="cards-2 slider filter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">PROJETS SOUMIS POUR VALIDATION </div>
+                    <div class="section-title">PROJETS SOUMIS POUR VALIDATION <div class="button-group filters-button-group">
+                    <a class="btn-solid-reg" href="ajouter.php"> + Ajouter un nouveau projet</a>
+                    </div></div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
-                    
+                <div class="col-lg-12"> 
                     <!-- Card Slider -->
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
@@ -664,8 +660,9 @@
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
 
-    
-  <!-- Footer -->
+ 
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -715,13 +712,14 @@
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                                <img class="img-fluid" src="images/eco.png" alt="alternative">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
     <!-- end of footer -->
+
 
 
     <!-- Copyright -->

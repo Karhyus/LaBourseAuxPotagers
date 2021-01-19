@@ -67,10 +67,10 @@
                         <a class="nav-link page-scroll" href="#resume">RESUME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projet">PROJET</a>
+                        <a class="nav-link page-scroll" href="#photo">PHOTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#photo">PHOTOS</a>
+                        <a class="nav-link page-scroll" href="#projet">PROJET</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#autre">AUTRES PROJETS</a>
@@ -105,11 +105,11 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2> CITRON</h2>
-                        <p>Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
-                        <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                    
-                        <span class="fa-stack">
-                                <a href="user.php">Jean-Pierre<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                        <h2 class = "white"> CITRON</h2>
+                        <p class = "white">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+                        <p class="testimonial-text white">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                    
+                        <span class="fa-stack ">
+                                <a class ="white" href="user.php">Jean-Pierre<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container --> 
                 </div> <!-- end of col -->
@@ -171,30 +171,30 @@
                     <div class="text-container">
                         <p>Aria also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
                         <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
-                        <ul class="list-unstyled li-space-lg indent">
+                        <ul class="list-unstyled">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">The geographic area where you use your computer and mobile devices</div>
+                                <div class="media-body"> <p>The geographic area where you use your computer and mobile devices</p></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Your full name, username, and email address and other contact details</div>
+                                <div class="media-body"><p>Your full name, username, and email address and other contact details</p></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">A unique Aria user ID (an alphanumeric string) which is assigned to you upon registration</div>
+                                <div class="media-body"><p>Your full name, username, and email address and other contact details</p></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Other optional information as part of your account profile</div>
+                                <div class="media-body"><p>Your full name, username, and email address and other contact details</p></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent</div>
+                                <div class="media-body"><p>Your full name, username, and email address and other contact details</p></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Other information submitted by you or your organizational representatives via various methods</div>
+                                <div class="media-body"><p>Your full name, username, and email address and other contact details</p></div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -569,7 +569,9 @@
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
     
-   <!-- Footer -->
+
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -619,7 +621,7 @@
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                                <img class="img-fluid" src="images/eco.png" alt="alternative">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->

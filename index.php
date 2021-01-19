@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('bdd_connexion.php');
-session_start();
- ?>
+<?php include('bdd_connexion.php'); ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -75,6 +73,15 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#comment">COMMENT ÇA MARCHE</a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">LES REUSSITES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#reussite"><span class="item-text">PROJETS ACCOMPLIS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="onu.php"><span class="item-text">OBJECTIF DEVELOPPEMENT DURABLE</span></a>
+                    </div>
+                </li>
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">A PROPOS DE NOUS</a>
@@ -87,38 +94,15 @@ session_start();
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#reussite">LES REUSSITES</a>
-                </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <?php if(!isset($_SESSION['user_account'])){ ?>
-					<li class="nav-item">
-                		<a class="nav-link page-scroll" href="connexion.php">CONNEXION</a>
-                	</li>
-               	<?php } else { ?>
-               		<li class="nav-item">
-                		<a class="nav-link page-scroll" href="connexion.php">MON COMPTE</a>
-                	</li>
-                	<li class="nav-item">
-                		<a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
-                	</li>
-               	<?php } ?>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="connexion.php">MON COMPTE</a>
+                </li>
             </ul>
         </div>
     </nav> <!-- end of navbar -->
@@ -147,7 +131,7 @@ session_start();
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count=<?php $bdd->query('SELECT COUNT(*) FROM project_investor') ?>></div>
-                                <div class="counter-info"> Utilisateurs<br>engagés</div>
+                                <div class="counter-info"> Utilisateurs<br>engagés </div>
                             </div>
                         </div>
                         </div>
@@ -379,10 +363,201 @@ session_start();
     </div> <!-- end of cards-1 -->
     <!-- end of comment ca marche -->
 
-    
+    <!-- Projects -->
+	<div id="reussite" class="filter">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">PROJETS ACCOMPLIS </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Filter -->
+                    <div class="button-group filters-button-group">
+                        <a class="button is-checked" data-filter="*"><span>TOUS</span></a>
+                        <a class="button" data-filter=".legumes"><span>Légumes</span></a>
+                        <a class="button" data-filter=".fruits"><span>Fruits</span></a>
+                        <a class="button" data-filter=".innovations"><span>Innovations</span></a>
+                    </div> <!-- end of button group -->
+                    <div class="grid">
+                        <div class="element-item legumes">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Les carottes de Picardie</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item innovations fruits">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Les fraises “Les Reines des Vallées” de Marseille</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item fruits">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Les clémentines de la Vallée de Chevreuse</span></div><img src="images/project-3.png" alt="alternative"></a>
+                        </div>
+                        <div class="element-item legumes">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Les courgettes bio d’Alsace </span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item legumes innovations">
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Les aubergines de plein champ XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design legumes innovations">
+                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Les laitues du Languedoc</span></div><img src="images/project-7.jpg" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Les oliviers d’Aix en Provence</span></div><img src="images/project-8.jpg" alt="alternative"></a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+                 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="button-group filters-button-group">
+                    <a class="btn-solid-reg" href="#your-link">Voir les autres projets</a>
+                    </div> <!-- end of col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+		</div> <!-- end of container -->
+    </div> <!-- end of filter -->
+    <!-- end of projects -->
+
+
+    <!-- Project Lightboxes -->
+    <!-- Lightbox -->
+    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les carottes de Picardie </h3>
+                <hr class="line-heading">
+                <h6>Gustave <span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Retraité et ancien ingénieur informaticien, je souhaite mettre à profit mes connaissances en matière de technologie pour la gestion des cultures de carottes biologiques. Ayant déjà un terrain en Picardie, je recherche un financement à hauteur de 3 000 euros pour acquérir les technologies nécessaires à l’optimisation des ressources naturelles utilisées. Mon but est de gérer convenablement le débit d’eau, être informé des fuites d’eau et pouvoir réguler la quantité d’engrais biologique automatiquement en fonction des besoins des denrées. Je souhaite partager avec mes investisseurs les avancées de mes productions et leur proposer des visites et dégustations sur site 2 fois dans l’année.</p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>  Les fraises “Les Reines des Vallées” de Marseille</h3>
+                <hr class="line-heading">
+                <h6>Michelle et Jean-Michel<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Anciennement expert comptable, j’ai décidé de profiter de ma cinquantième bougie pour tout lâcher et complètement changer de voie à l’aide de mon épouse Michelle. Depuis mon enfance, j’attache un attrait particulier à l’écologie, à la nature. Grand sportif, je me lance chaque année le défi de suivre les itinéraires des Grandes Randonnées (GR) à travers la France afin de découvrir la beauté que nous réserve le monde. Cette année, il s’agit d’un défi professionnel et pour cela j’ai besoin de l’aide de chacun. Le fraisier Reine des Vallées est une variété de type fraise des bois remontante que je souhaite cultiver et faire découvrir aux autres. Je souhaite partager mon goût pour les produits sains et bio. </p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-3.png" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les clémentines de la Vallée de Chevreuse</h3>
+                <hr class="line-heading">
+                <h6>Damien<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Cela fait maintenant 45 ans que je vis à Chevreuse. Cette magnifique commune française a su m’apporter tout le bonheur du monde au travers les années de par sa beauté. Agriculteur depuis mes 16 ans, je décide aujourd’hui de m’orienter vers des clémentines bio. En effet, je veux passer à un mode de culture 100 % biologique. Pour arriver à mes fins, j’ai besoin alors de changer toute ma méthode de travail, la gestion des sols et des engrais etc…  L’équipe de la plateforme “La Bourse aux Potagers” a su me toucher personnellement de par leur volonté de rapprocher les agriculteurs et les citadins. Ils prônent une vision écologique du monde. Ils veulent faire découvrir notre métier difficile et c’est la raison pour laquelle j’ai décidé de déposer une demande d’aide chez eux. J’espère qu’elle aboutira afin d’aider des petits agriculteurs comme nous à grandir et à proposer des produits sains. </p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les courgettes bio d’Alsace</h3>
+                <hr class="line-heading">
+                <h6>Charles et Annie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Habitants de l’Alsace depuis plus de 40 ans, nous avons auparavant investi dans des champs de tomates et de salades. Aujourd’hui nous souhaitons proposer à nos fidèles clients, voisins, amis, investisseurs des courgettes biologiques. Un légume cultivé en France qui va ravir petits et grands aussi bien pour les plats d’été que les ratatouilles d’hiver. La culture de ces légumes nécessite une quantité d’eau très importante ainsi qu’un entretien régulier. Nous souhaitons donc proposer à des investisseurs écolos de nous aider à financer notre projet de récupération d’eau de pluie et d’arrosage optimisé pour nos nouvelles plantations. Nous accueillerons à bras ouverts nos futurs investisseurs et leur proposeront de goûter les saveurs de nos courgettes alsaciennes bio.</p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les aubergines de plein champ XLL</h3>
+                <hr class="line-heading">
+                <h6>Bernadette<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Agriculteur et fils d’agriculteur j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari j’ai décidé de commencer par ma production d’aubergine, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergine, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergine d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergine en plein champ à un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les laitues du Languedoc</h3>
+                <hr class="line-heading">
+                <h6>Mélanie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Avec le Brevet de Technicien Supérieur Agricole en poche, je souhaite cultiver ma propre production de laitues biologiques. J’ai besoin d’un financement à hauteur de 100 000 euros afin d’acheter un terrain dans le Languedoc, pays de la laitue romaine. Passionnée par les pratiques d’agricultures respectueuses de l’environnement, je souhaite mettre à profit mon savoir pour produire des laitues françaises, fraîches et de saison. Je souhaite créer une réelle communauté éco-responsable avec mes investisseurs et les sensibiliser au monde agricole.</p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a>  
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h3>Les oliviers d’Aix en Provence</h3>
+                <hr class="line-heading">
+                <h6>Charlotte et Gérard<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Issus d’une famille d’oléiculteurs, nous souhaitons profiter de notre terroir ancestral afin de cultiver notre propre verger d’oliviers. Notre volonté est de produire des olives biologiques de qualité et d’utiliser des engrais de type organique. Nous avons de l’expérience en termes de production d’huile d’olive et souhaitons faire partager notre production avec les investisseurs de notre beau projet. Nous recherchons un financement à hauteur de 2 000 euros pour lancer le projet qui sera situé sur les hauteurs d’Aix en Provence (le terrain est déjà en notre possession). Ce que nous attendons le plus de ce projet, c’est qu’il rassemble nos investisseurs autour de notre passion et notre savoir-faire : l’huile d’olive provençale! </p>
+                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
+                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of project lightboxes -->
+
     <!-- Details 1 -->
 	<div id="propos" class="accordion">
-        <div class="section-title">A PROPOS DE NOUS</div>
+        <div class="section-title"> A PROPOS DE NOUS </div>
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
             
@@ -443,13 +618,13 @@ session_start();
                 <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Le mieux manger </a>
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Agriculture pédagogique</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> Circuit court </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> L'Economie circulaire </a>
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Economie circulaire </a>
                     </li>
                 </ul>
                 <!-- end of tabs links -->
@@ -459,26 +634,11 @@ session_start();
 
                     <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                        <h4>Business Services For Companies</h4>
-                        <p>Aria provides the most innovative and customized business services in the industry. Our <a class="green page-scroll" href="#services">Services</a> section shows how flexible we are for all types of budgets.</p>
-                        
-                        <!-- Progress Bars -->
-                        <div class="progress-container">
-                            <div class="title">Business Development 100%</div>
-                            <div class="progress">
-                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="title">Opportunity Spotting 76%</div>
-                            <div class="progress">
-                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="title">Online Marketing 90%</div>
-                            <div class="progress">
-                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div> <!-- end of progress-container -->
-                        <!-- end of progress bars -->
-                        
+                        <p>Un des objectifs majeurs de notre plateforme est de promouvoir de bonnes pratiques agricoles, alimentaires et environnementales. <br>
+                        Le lien social entre l’agriculteur et l’investisseur est primordial pour consolider … <br>
+                        Nous incitons les agriculteurs à proposer des visites, des ateliers ou simplement de donner des nouvelles des avancées de leurs projets en contrepartie du financement. <br>
+                        Les agriculteurs ont aussi la possibilité d’écrire leurs bonnes pratiques agricoles, leurs innovations responsables dans notre dossier <a class="green page-scroll" href="#services">Les articles des bonnes pratiques</a>. <br>
+                        Ceci dans le but de sensibiliser et faire connaître au plus grand nombre les contraintes du métier ainsi que les bonnes idées plus respectueuses de l’environnement. <br>
                     </div> <!-- end of tab-pane --> 
                     <!-- end of tab -->
 
@@ -756,201 +916,7 @@ session_start();
     </div> <!-- end of basic-2 -->
     <!-- end of team -->
     
-
-
-    <!-- Projects -->
-	<div id="reussite" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PROJETS ACCOMPLIS </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>TOUS</span></a>
-                        <a class="button" data-filter=".legumes"><span>Légumes</span></a>
-                        <a class="button" data-filter=".fruits"><span>Fruits</span></a>
-                        <a class="button" data-filter=".innovations"><span>Innovations</span></a>
-                    </div> <!-- end of button group -->
-                    <div class="grid">
-                        <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Les carottes de Picardie</span></div><img src="images/project-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item innovations fruits">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Les fraises “Les Reines des Vallées” de Marseille</span></div><img src="images/project-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item fruits">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Les clémentines de la Vallée de Chevreuse</span></div><img src="images/project-3.png" alt="alternative"></a>
-                        </div>
-                        <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Les courgettes bio d’Alsace </span></div><img src="images/project-4.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Les aubergines de plein champ XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Les laitues du Languedoc</span></div><img src="images/project-7.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Les oliviers d’Aix en Provence</span></div><img src="images/project-8.jpg" alt="alternative"></a>
-                        </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="button-group filters-button-group">
-                    <a class="btn-solid-reg" href="#your-link">Voir les autres projets</a>
-                    </div> <!-- end of col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
-
-
-    <!-- Project Lightboxes -->
-    <!-- Lightbox -->
-    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les carottes de Picardie </h3>
-                <hr class="line-heading">
-                <h6>Gustave <span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Retraité et ancien ingénieur informaticien, je souhaite mettre à profit mes connaissances en matière de technologie pour la gestion des cultures de carottes biologiques. Ayant déjà un terrain en Picardie, je recherche un financement à hauteur de 3 000 euros pour acquérir les technologies nécessaires à l’optimisation des ressources naturelles utilisées. Mon but est de gérer convenablement le débit d’eau, être informé des fuites d’eau et pouvoir réguler la quantité d’engrais biologique automatiquement en fonction des besoins des denrées. Je souhaite partager avec mes investisseurs les avancées de mes productions et leur proposer des visites et dégustations sur site 2 fois dans l’année.</p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>  Les fraises “Les Reines des Vallées” de Marseille</h3>
-                <hr class="line-heading">
-                <h6>Michelle et Jean-Michel<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Anciennement expert comptable, j’ai décidé de profiter de ma cinquantième bougie pour tout lâcher et complètement changer de voie à l’aide de mon épouse Michelle. Depuis mon enfance, j’attache un attrait particulier à l’écologie, à la nature. Grand sportif, je me lance chaque année le défi de suivre les itinéraires des Grandes Randonnées (GR) à travers la France afin de découvrir la beauté que nous réserve le monde. Cette année, il s’agit d’un défi professionnel et pour cela j’ai besoin de l’aide de chacun. Le fraisier Reine des Vallées est une variété de type fraise des bois remontante que je souhaite cultiver et faire découvrir aux autres. Je souhaite partager mon goût pour les produits sains et bio. </p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-3.png" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les clémentines de la Vallée de Chevreuse</h3>
-                <hr class="line-heading">
-                <h6>Damien<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Cela fait maintenant 45 ans que je vis à Chevreuse. Cette magnifique commune française a su m’apporter tout le bonheur du monde au travers les années de par sa beauté. Agriculteur depuis mes 16 ans, je décide aujourd’hui de m’orienter vers des clémentines bio. En effet, je veux passer à un mode de culture 100 % biologique. Pour arriver à mes fins, j’ai besoin alors de changer toute ma méthode de travail, la gestion des sols et des engrais etc…  L’équipe de la plateforme “La Bourse aux Potagers” a su me toucher personnellement de par leur volonté de rapprocher les agriculteurs et les citadins. Ils prônent une vision écologique du monde. Ils veulent faire découvrir notre métier difficile et c’est la raison pour laquelle j’ai décidé de déposer une demande d’aide chez eux. J’espère qu’elle aboutira afin d’aider des petits agriculteurs comme nous à grandir et à proposer des produits sains. </p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les courgettes bio d’Alsace</h3>
-                <hr class="line-heading">
-                <h6>Charles et Annie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Habitants de l’Alsace depuis plus de 40 ans, nous avons auparavant investi dans des champs de tomates et de salades. Aujourd’hui nous souhaitons proposer à nos fidèles clients, voisins, amis, investisseurs des courgettes biologiques. Un légume cultivé en France qui va ravir petits et grands aussi bien pour les plats d’été que les ratatouilles d’hiver. La culture de ces légumes nécessite une quantité d’eau très importante ainsi qu’un entretien régulier. Nous souhaitons donc proposer à des investisseurs écolos de nous aider à financer notre projet de récupération d’eau de pluie et d’arrosage optimisé pour nos nouvelles plantations. Nous accueillerons à bras ouverts nos futurs investisseurs et leur proposeront de goûter les saveurs de nos courgettes alsaciennes bio.</p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les aubergines de plein champ XLL</h3>
-                <hr class="line-heading">
-                <h6>Bernadette<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Agriculteur et fils d’agriculteur j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari j’ai décidé de commencer par ma production d’aubergine, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergine, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergine d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergine en plein champ à un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-
-    <!-- Lightbox -->
-    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les laitues du Languedoc</h3>
-                <hr class="line-heading">
-                <h6>Mélanie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Avec le Brevet de Technicien Supérieur Agricole en poche, je souhaite cultiver ma propre production de laitues biologiques. J’ai besoin d’un financement à hauteur de 100 000 euros afin d’acheter un terrain dans le Languedoc, pays de la laitue romaine. Passionnée par les pratiques d’agricultures respectueuses de l’environnement, je souhaite mettre à profit mon savoir pour produire des laitues françaises, fraîches et de saison. Je souhaite créer une réelle communauté éco-responsable avec mes investisseurs et les sensibiliser au monde agricole.</p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a>  
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Les oliviers d’Aix en Provence</h3>
-                <hr class="line-heading">
-                <h6>Charlotte et Gérard<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Issus d’une famille d’oléiculteurs, nous souhaitons profiter de notre terroir ancestral afin de cultiver notre propre verger d’oliviers. Notre volonté est de produire des olives biologiques de qualité et d’utiliser des engrais de type organique. Nous avons de l’expérience en termes de production d’huile d’olive et souhaitons faire partager notre production avec les investisseurs de notre beau projet. Nous recherchons un financement à hauteur de 2 000 euros pour lancer le projet qui sera situé sur les hauteurs d’Aix en Provence (le terrain est déjà en notre possession). Ce que nous attendons le plus de ce projet, c’est qu’il rassemble nos investisseurs autour de notre passion et notre savoir-faire : l’huile d’olive provençale! </p>
-                <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
-                <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of project lightboxes -->
-
-   
+<!-- VIDEO-->
     <!-- Contact -->
     <div id="contact" class="form-2">
         <div class="container">
@@ -1058,7 +1024,7 @@ session_start();
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                                <img class="img-fluid" src="images/eco.png" alt="alternative">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -1217,3 +1183,125 @@ session_start();
     </div> <!-- end of counter -->
     <!-- end of about -->
   
+<!-- Details 2 
+<div class="tabs">
+        <div class="area-1">
+            <div class="tabs-container">
+                
+                <!-- Tabs Links 
+                <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Agriculture pédagogique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> Circuit court </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Economie circulaire </a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+                
+                <!-- Tabs Content 
+                <div class="tab-content" id="ariaTabsContent">
+
+                    <!-- Tab --
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h4>Business Services For Companies</h4>
+                        <p>Aria provides the most innovative and customized business services in the industry. Our <a class="green page-scroll" href="#services">Services</a> section shows how flexible we are for all types of budgets.</p>
+                        
+                        <!-- Progress Bars --
+                        <div class="progress-container">
+                            <div class="title">Business Development 100%</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Opportunity Spotting 76%</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">Online Marketing 90%</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
+                        
+                    </div> <!-- end of tab-pane --> 
+                    <!-- end of tab -->
+
+                    <!-- Tab --
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">1</div>
+                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">2</div>
+                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">3</div>
+                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">4</div>
+                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">5</div>
+                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">6</div>
+                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab --
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p> Conscients que notre projet aura un impact sur l’environnement, nous avons souhaité l’inclure dans une dynamique <strong>d’économie circulaire.</strong> Voici nos engagements pour l'éco-conception de notre plateforme : </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Inclure seulement les fonctionnalités essentielles</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Design simple et minimaliste</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Site optimisé pour la sobriété numérique</div>
+                            </li>
+                        </ul>
+                        <p>En termes de consommation responsable, écologie industrielle et recyclage, nous avons un réel impact sensibilisant et engageant pour notre <strong>communauté éco-responsable :</strong></p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Financement participatif de projets respectueux de l’environnement</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Emergence de “petits” ou “grands” projets locaux</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Témoignages “open source” de bonnes pratiques écologiques</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
