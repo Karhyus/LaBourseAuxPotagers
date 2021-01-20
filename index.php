@@ -178,18 +178,16 @@ session_start();?>
                                         <div class="card-body">
                                             <h3 class="card-title">AUBERGINE XXL</h3>
                                             <p>Description courte du projet</p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
+                                                    <ul class="list-unstyled li-space-lg">
+                                                        <li class="media">
+                                                            <i class="fas fa-square"></i>
+                                                            <div class="media-body">Argent recolté</div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-square"></i>
+                                                            <div class="media-body">Nombre d'investisseurs</div>
+                                                        </li>                                         
+                                                    </ul> <!-- end of points -->
                                             <!-- Progress Bars -->
                                             <div class="progress-container">
                                                 <div class="price">Cagnotte current/total</div>
@@ -199,17 +197,18 @@ session_start();?>
                                             </div> <!-- end of progress-container -->
                                             <!-- end of progress bars -->
                                             
-                                        </div> <!-- end of card-body -->            
-                                         <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->  
+                                        </div> <!-- end of card-body -->     
+                                            <div class="row">   
+                                                <div class="button-container">
+                                                    <span class="fa-stack">
+                                                        <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                    </span>
+                                                    <span class="fa-stack">
+                                                        <a href="#your-link"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
+                                                    </span>
+                                                    
+                                                </div>
+                                            </div> <!-- end of button-container -->  
                                     </div>
                                     <!-- end of card -->
                                  </div> <!-- end of swiper-slide -->
@@ -733,10 +732,9 @@ session_start();?>
     <div class="cards-1">
         <div class="container">
             <div class="section-title"> NOS VALEURS </div>
+            <p class="p-heading">Dans la conception d’un avenir durable où symbiose et équilibre sont nos objectifs, nous axons notre plateforme sur la triple performance :</p>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-heading">Dans la conception d’un avenir durable où symbiose et équilibre sont nos objectifs, nous axons notre plateforme sur la triple performance :</p>
-                    <!-- Card -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"><img class="fa-stack" src="images/people.png" alt="alternative"></span>  

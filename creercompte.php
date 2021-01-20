@@ -29,6 +29,7 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+    
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/logosite.png">
@@ -44,6 +45,7 @@
         </div>
     </div>
     <!-- end of preloader -->
+    
     
 
     <!-- Navbar -->
@@ -120,7 +122,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="date" class="form-control-input" id="cbirthdate" name="date_of_birth" required>
-                                    <label class="label-control" for="cbirthdate"></label>
+                                    <label class="label-control" for="cbirthdate">Date Anniversaire</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
