@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include('bdd_connexion.php'); 
+session_start(); 
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -91,7 +95,7 @@
             <div class="section-title"> PROFIL</div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="whiteC white"> @username</h2>
+                    <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -131,14 +135,7 @@
                             <span class="fa-stack">
                                 <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
                             </span>
-                            <h4>Mot de Passe</h4>
-                        </div> <!-- end of rol -->
-                        <br>
-                        <div class="row">
-                            <span class="fa-stack">
-                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                            </span>
-                            <h4>Date anniversaire</h4>
+                            <h4>Date de naissance</h4>
                         </div> <!-- end of rol -->
                         <br>
                         <div class="row">

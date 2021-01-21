@@ -94,7 +94,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title"> CONNEXION </div>
+                        <div class="section-title">CONNEXION</div>
                         <div class="text-container">
                              <!-- Contact Form -->
                             <form id="connexionForm" data-toggle="validator" data-focus="false" method="post" action="forms/connexion.php">
