@@ -1,7 +1,4 @@
 <?php 
-$user = 'root';
-$password = '';
-
 include('../bdd_connexion.php'); 
 
 $req = $bdd->query('SELECT email FROM user_account');

@@ -122,7 +122,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="date" class="form-control-input" id="cbirthdate" name="date_of_birth" required>
-                                    <label class="label-control" for="cbirthdate">Date Anniversaire</label>
+                                    <label class="label-control" for="cbirthdate">Date de naissance</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">

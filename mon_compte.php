@@ -109,42 +109,53 @@ session_start();
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">Modification de votre profil</div>
-                    <div class="button-container">
-                        <div class="row"> 
-                                <span class="fa-stack">
-                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                                </span>
-                                <h4>Nom</h4>
-                        </div> <!-- end of rol -->
-                        <br>
-                        <div class="row">
-                            <span class="fa-stack">
-                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                            </span>
-                            <h4>Prenom</h4>
-                        </div> <!-- end of rol -->
-                        <br>
-                        <div class="row">
-                            <span class="fa-stack">
-                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                            </span>
-                            <h4>Email</h4>
-                        </div> <!-- end of rol -->
-                        <br>
-                        <div class="row">
-                            <span class="fa-stack">
-                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                            </span>
-                            <h4>Date de naissance</h4>
-                        </div> <!-- end of rol -->
-                        <br>
-                        <div class="row">
-                            <span class="fa-stack">
-                                <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                            </span>
-                            <h4>Phrase d'intro</h4>
-                        </div> <!-- end of rol -->
-                    </div> <!-- end of button-container --> 
+                        <div class="text-container">
+                            <?php
+                            //Préremplissage du formulaire avec ses infos
+                            $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
+                            $user_account = $req->fetch();
+                            ?>
+                             <!-- Contact Form -->
+                            <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
+                                <?php 
+                                if(isset($_GET['erreur'])){
+                                    if ($_GET['erreur'] == true){
+                                        ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
+                                    }else{
+                                        ?><p style="color:green">Vos informations ont été modifié avec succès</p> <?php
+                                    } 
+                                }
+                                ?>
+                                <div class="form-group">
+                                    <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-input" id="cmail" name="email" required>
+                                    <label class="label-control" for="cmail">Email</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-input" id="cusername" name="user_name" required>
+                                    <label class="label-control" for="cusername">Nom d'utilisateur</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" value="<?php echo $user_account['last_name'] ?>" class="form-control-input" id="cnom" name="last_name" required>
+                                    <label class="label-control" for="cnom">Nom</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" value="<?php echo $user_account['first_name'] ?>" class="form-control-input" id="cprenom" name="first_name" required>
+                                    <label class="label-control" for="cprenom">Prénom</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" value="<?php echo $user_account['date_of_birth'] ?>" class="form-control-input" id="cbirthdate" name="date_of_birth" required>
+                                    <label class="label-control" for="cbirthdate">Date de naissance</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <input type="hidden" name="redirection" value="<?php 
+                                if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
+                                <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
+                            </form>
+                        </div>
                 </div>  
             </div>  
         </div>  
