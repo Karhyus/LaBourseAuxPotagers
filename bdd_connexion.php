@@ -1,10 +1,10 @@
 <?php
 
 $user = 'root';
-$password = 'root';
+$password = '';
 
 try {
-    $bdd = new PDO('mysql:host=localhost:8889;dbname=la_bourse_aux_potagers', $user, $password);
+    $bdd = new PDO('mysql:host=localhost:3308;dbname=la_bourse_aux_potagers', $user, $password);
 } catch (PDOException $e) {
     print "Erreur !: " . $e->getMessage() . "<br/>";
     die();
