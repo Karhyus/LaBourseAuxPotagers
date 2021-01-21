@@ -8,13 +8,15 @@ $erreur = false;
 while($tmp = $req->fetch()){
 	//Si le mail ou le username existe déjà
 	if($tmp['email'] == $_POST['email']){
-		$erreur = true;
-		header('Location: ../mon_compte.php?erreur=mail&redirection=' . $_POST['redirection']);
+		if($_POST['email'] != $_SESSION['user_account']['email']){
+			$erreur = true;
+			header('Location: ../mon_compte.php?erreur=mail&redirection=' . $_POST['redirection']);
+		}
 	}
 }
 $req->closeCursor();
 
-if(!$erreur){
+if($erreur == false){
 	$bdd->prepare('UPDATE user_account SET email = ? WHERE id = ?')->execute(array($_POST['email'], $_SESSION['user_account']['id']));
 	$_SESSION['user_account']['email'] = $_POST['email'];
 	$bdd->prepare('UPDATE user_account SET user_name = ? WHERE id = ?')->execute(array($_POST['user_name'], $_SESSION['user_account']['id']));
