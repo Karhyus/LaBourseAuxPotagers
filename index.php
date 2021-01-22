@@ -882,7 +882,7 @@ session_start();?>
                                     <!-- Team Member -->
                                     <div class="team-member">
                                         <div class="image-wrapper">
-                                            <img class="img-fluid" src="images/E_Nizar.png" alt="alternative">
+                                            <img class="img-fluid" src="images/E_Niz.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Nizar Bezri</p>
                                         <p class="job-title">Responsable Juridique</p>
