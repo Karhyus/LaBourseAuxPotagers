@@ -24,13 +24,10 @@
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                        <h4>About</h4>
+                        <h4 class="white" href="terms-conditions.php">Conditions Generale</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li>
-                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                                <a class="white" href="terms-conditions.php">Conditions Generale</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
