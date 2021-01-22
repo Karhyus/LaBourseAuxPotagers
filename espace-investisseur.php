@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>La Bourse aux potagers</title>
+    <title>La Bourse aux Potagers</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -67,20 +67,10 @@
                     <a class="nav-link page-scroll" href="#header">ACCUEIL <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projets"> VOS PROJETS</a>
+                    <a class="nav-link page-scroll" href="#projets">MES PROJETS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#Reussite">VOS REUSSITES</a>
-                </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>  
+                    <a class="nav-link page-scroll" href="#Reussite">MES REUSSITES</a>
                 </li>
                 <!-- end of dropdown menu -->
 
@@ -90,7 +80,7 @@
             </ul>
 
             <ul class="navbar-nav ml-auto">
-            <a class="btn-solid-reg page-scroll" href="connexion.php">Investir dans des nouveaux projets</a>
+            <a class="btn-solid-reg page-scroll" href="index.php">Investir dans de nouveaux projets</a>
             </ul>  
     
             <ul class="navbar-nav ml-auto">
@@ -116,15 +106,15 @@
                             <div id="counter">
                                 <div class="cell">
                                     <div class="counter-value number-count" data-count="5">1</div>
-                                    <div class="counter-info">Nombre<br>Projet</div>
+                                    <div class="counter-info">Nombre<br>Projets</div>
                                 </div>
                                 <div class="cell">
                                     <div class="counter-value number-count" data-count="121">1</div>
                                     <div class="counter-info">Argent<br>Récolté</div>
                                 </div>
                                 <div class="cell">
-                                    <div class="counter-value number-count" data-count="10">1</div>
-                                    <div class="counter-info">Personnes<br>Engagés</div>
+                                    <div class="counter-value number-count" data-count="12">1</div>
+                                    <div class="counter-info">Personnes<br>Engagées</div>
                                 </div>
                              </div>
 
@@ -158,13 +148,13 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">AUBERGINE XXL</h3>
+                                            <h3 class="card-title">Aubergines XXL</h3>
                                             <p>Description courte du projet</p>
                                             
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -212,13 +202,13 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">Clementine de Marseille</h3>
+                                            <h3 class="card-title">Clémentines de Marseille</h3>
                                             <p>Description courte du projet </p>
                                             
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -266,13 +256,13 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title"> Citron </h3>
+                                            <h3 class="card-title"> Citrons </h3>
                                             <p>Description courte du projet</p>
                                             
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -354,28 +344,28 @@
                     </div> <!-- end of button group -->
                     <div class="grid">
                         <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span> Carotte de Patrick</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span> Carottes de Patrick</span></div><img src="images/project-1.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item innovations fruits">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span> Fraise hors sol de Brigitte</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span> Fraises hors sol de Brigitte</span></div><img src="images/project-2.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item fruits">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span> Clémentine Marseillaise</span></div><img src="images/project-3.png" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span> Clémentines Marseillaises</span></div><img src="images/project-3.png" alt="alternative"></a>
                         </div>
                         <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Courgette Bretonne </span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Courgettes Bretonnes </span></div><img src="images/project-4.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span> Aubergine XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span> Aubergines XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item fruit">
-                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span> Citron des montagnes</span></div><img src="images/project-6.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span> Citrons des montagnes</span></div><img src="images/project-6.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item design legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span> Mini salade</span></div><img src="images/project-7.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span> Mini salades</span></div><img src="images/project-7.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span> Olives provencale</span></div><img src="images/project-8.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span> Olives provencales</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                         </div>
                     </div> <!-- end of grid -->
                     <!-- end of filter -->
@@ -394,10 +384,10 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
-                        <h2>Un probleme ? </h2>
-                        <p>N'hesitez pas nous sommes la pour vous </p>
+                        <h2>Un problème ? </h2>
+                        <p>N'hésitez pas, nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
@@ -430,7 +420,7 @@
                         </div>
                     -->
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIC et on te repondra au plus vite</button>
+                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -445,7 +435,69 @@
     <!-- end of contact -->
 
 
+<<<<<<< Updated upstream
     <?php include('footer.php') ?>
+=======
+ 
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-container about">
+                        <h4>La Bourse aux Potagers</h4>
+                        <p class="white">Ce projet est un projet étudiant entrepris à l'ECE Paris dans le cadre de notre curcus d'ingénieur. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Compte</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                            </li>
+                            <li>
+                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>About</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaire</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la Croix Verte</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+>>>>>>> Stashed changes
 
 
     <!-- Copyright -->

@@ -20,7 +20,7 @@ session_start();?>
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>La Bourse aux potagers</title>
+    <title>La Bourse aux Potagers</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -80,7 +80,7 @@ session_start();?>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#reussite"><span class="item-text">PROJETS ACCOMPLIS</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="onu.php"><span class="item-text">OBJECTIF DEVELOPPEMENT DURABLE</span></a>
+                        <a class="dropdown-item" href="onu.php"><span class="item-text">OBJECTIFS DEVELOPPEMENT DURABLE</span></a>
                     </div>
                 </li>
                 <!-- Dropdown Menu -->          
@@ -128,20 +128,20 @@ session_start();?>
                         <div class="text-container">
                             <h1><span id="js-rotating">PEOPLE, PLANET, PROFIT</span></h1>
                             <p class="p-heading p-large">La Bourse aux Potagers, là où vos projets deviennent concrets :
-                                Plateforme de financement participatif spécialisé dans les projets agricoles
+                                Plateforme de financement participatif spécialisée dans les projets agricoles
                             </p>
                         <div id="counter">
                             <div class="cell">
                                 <div class="counter-value number-count" data-count=<?php $bdd->query('SELECT COUNT(*) FROM project') ?>></div>
-                                <div class="counter-info"> Projets<br>en cours</div>
+                                <div class="counter-info white"> Projets<br>en cours</div>
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count=<?php $bdd->query('SELECT COUNT(*) FROM participant') ?>></div>
-                                <div class="counter-info"> Agriculteurs<br>investies</div>
+                                <div class="counter-info white"> Agriculteurs<br>investis</div>
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count=<?php $bdd->query('SELECT COUNT(*) FROM project_investor') ?>></div>
-                                <div class="counter-info"> Utilisateurs<br>engagés </div>
+                                <div class="counter-info white"> Utilisateurs<br>engagés</div>
                             </div>
                         </div>
                         </div>
@@ -176,12 +176,12 @@ session_start();?>
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">AUBERGINE XXL</h3>
+                                            <h3 class="card-title">Aubergines XXL</h3>
                                             <p>Description courte du projet</p>
                                                     <ul class="list-unstyled li-space-lg">
                                                         <li class="media">
                                                             <i class="fas fa-square"></i>
-                                                            <div class="media-body">Argent recolté</div>
+                                                            <div class="media-body">Argent récolté</div>
                                                         </li>
                                                         <li class="media">
                                                             <i class="fas fa-square"></i>
@@ -223,12 +223,12 @@ session_start();?>
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">Clementine de Marseille</h3>
-                                            <p>Description courte du projet </p>
+                                            <h3 class="card-title">Clémentines de Marseille</h3>
+                                            <p>Description courte du projet</p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -271,12 +271,12 @@ session_start();?>
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title"> Citron </h3>
+                                            <h3 class="card-title">Citrons</h3>
                                             <p>Description courte du projet</p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -350,7 +350,7 @@ session_start();?>
                             <span class="hexagon"><img class="fa-stack" src="images/I_Plant.png" alt="alternative"></span>  
                         </span>
                         <div class="card-body">
-                            <h4 class="card-title">Suivre l'avancement du projet investi</h4>
+                            <h4 class="card-title">Suivre l'avancement du projet dans lequel vous aurez investi</h4>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -361,7 +361,7 @@ session_start();?>
                             <span class="hexagon"><img class="fa-stack" src="images/I_Recolter.png" alt="alternative"></span>  
                         </span>
                         <div class="card-body">
-                            <h4 class="card-title">Enrichissez votre côté agricole</h4>
+                            <h4 class="card-title">Enrichisser votre côté agricole</h4>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -377,7 +377,7 @@ session_start();?>
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">PROJETS ACCOMPLIS </div>
+                    <div class="section-title">PROJETS ACCOMPLIS</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -400,10 +400,10 @@ session_start();?>
                             <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Les clémentines de la Vallée de Chevreuse</span></div><img src="images/project-3.png" alt="alternative"></a>
                         </div>
                         <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Les courgettes bio d’Alsace </span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Les courgettes bio d’Alsace</span></div><img src="images/project-4.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Les aubergines de plein champ XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Les aubergines de plein champ XXL</span></div><img src="images/project-5.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item design legumes innovations">
                             <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Les laitues du Languedoc</span></div><img src="images/project-7.jpg" alt="alternative"></a>
@@ -437,9 +437,9 @@ session_start();?>
                 <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
             </div> <!-- end of col -->
             <div class="col-lg-6">
-                <h3>Les carottes de Picardie </h3>
+                <h3>Les carottes de Picardie</h3>
                 <hr class="line-heading">
-                <h6>Gustave <span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <h6>Gustave<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
                 <p>Retraité et ancien ingénieur informaticien, je souhaite mettre à profit mes connaissances en matière de technologie pour la gestion des cultures de carottes biologiques. Ayant déjà un terrain en Picardie, je recherche un financement à hauteur de 3 000 euros pour acquérir les technologies nécessaires à l’optimisation des ressources naturelles utilisées. Mon but est de gérer convenablement le débit d’eau, être informé des fuites d’eau et pouvoir réguler la quantité d’engrais biologique automatiquement en fonction des besoins des denrées. Je souhaite partager avec mes investisseurs les avancées de mes productions et leur proposer des visites et dégustations sur site 2 fois dans l’année.</p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
@@ -456,7 +456,7 @@ session_start();?>
                 <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
             </div> <!-- end of col -->
             <div class="col-lg-6">
-                <h3>  Les fraises “Les Reines des Vallées” de Marseille</h3>
+                <h3>Les fraises “Les Reines des Vallées” de Marseille</h3>
                 <hr class="line-heading">
                 <h6>Michelle et Jean-Michel<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
                 <p>Anciennement expert comptable, j’ai décidé de profiter de ma cinquantième bougie pour tout lâcher et complètement changer de voie à l’aide de mon épouse Michelle. Depuis mon enfance, j’attache un attrait particulier à l’écologie, à la nature. Grand sportif, je me lance chaque année le défi de suivre les itinéraires des Grandes Randonnées (GR) à travers la France afin de découvrir la beauté que nous réserve le monde. Cette année, il s’agit d’un défi professionnel et pour cela j’ai besoin de l’aide de chacun. Le fraisier Reine des Vallées est une variété de type fraise des bois remontante que je souhaite cultiver et faire découvrir aux autres. Je souhaite partager mon goût pour les produits sains et bio. </p>
@@ -516,7 +516,7 @@ session_start();?>
                 <h3>Les aubergines de plein champ XLL</h3>
                 <hr class="line-heading">
                 <h6>Bernadette<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Agriculteur et fils d’agriculteur j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari j’ai décidé de commencer par ma production d’aubergine, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergine, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergine d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergine en plein champ à un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
+                <p>Agriculteur et fils d’agriculteur, j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari j’ai décidé de commencer par ma production d’aubergine, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergine, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergine d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergine en plein champ à un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
             </div> <!-- end of col -->
@@ -566,13 +566,13 @@ session_start();?>
 
     <!-- Details 1 -->
 	<div id="propos" class="accordion">
-        <div class="section-title"> A PROPOS DE NOUS </div>
+        <div class="section-title">A PROPOS DE NOUS</div>
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
             
             <!-- Accordion -->
             <div class="accordion-container" id="accordionOne">
-                <h3>La Bourse aux potagers est une plateforme de financement collaboratif pour les petits et grands projets d’agricultures biologiques</h3>
+                <h3>La Bourse aux Potagers est une plateforme de financement collaboratif pour les petits et grands projets d’agricultures biologiques ou en transition écologique.</h3>
                 <div class="item">
                     <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
@@ -581,7 +581,7 @@ session_start();?>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
                         <div class="accordion-body">
-                            Le projet a pour but de soutenir financièrement les agriculteurs et leurs initiatives respectueuses de l’environnement
+                            Le projet a pour but de soutenir financièrement les agriculteurs et leurs initiatives respectueuses de l’environnement.
                         </div>
                     </div>
                 </div> <!-- end of item -->
@@ -607,7 +607,7 @@ session_start();?>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
                         <div class="accordion-body">
-                            L’équipe de "La Bourse aux potagers", a souhaité ajouter à sa plateforme la dimension sociale entre les agriculteurs et investisseurs
+                            L’équipe de "La Bourse aux Potagers", a souhaité ajouter à sa plateforme la dimension sociale entre les agriculteurs et investisseurs.
                         </div>
                     </div>
                 </div> <!-- end of item -->
@@ -627,13 +627,13 @@ session_start();?>
                 <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Agriculture pédagogique</a>
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>Agriculture pédagogique</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> Circuit court </a>
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>Circuit court</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Economie circulaire </a>
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i>Economie circulaire</a>
                     </li>
                 </ul>
                 <!-- end of tabs links -->
@@ -763,7 +763,7 @@ session_start();?>
                         </span>
                         
                         <div class="card-body">
-                            <h4 class="card-title">Profil</h4>
+                            <h4 class="card-title">Profit</h4>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -778,7 +778,7 @@ session_start();?>
     <!-- Partenaire -->
     <div id="Partenaire" class="basic-1">
         <div class="container">
-            <div class="section-title"> NOTRE PARTENAIRE </div>
+            <div class="section-title">NOTRE PARTENAIRE</div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
@@ -802,7 +802,7 @@ session_start();?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">L'EQUIPE</div>
-                    <p class="p-heading"> Étudiant en dernière année du cycle ingénieur à l’ECE Paris, nous sommes six élèves évoluant dans des domaines variés, essentiels pour mener à bien notre projet. Reliant des compétences dans les systèmes d’information, l’ingénierie financière, l’énergie et l’environnement : nous avons tous les secteurs liés à notre projet.</p>
+                    <p class="p-heading">Étudiants en dernière année du cycle ingénieur à l’ECE Paris, nous sommes six élèves évoluant dans des domaines variés, essentiels pour mener à bien notre projet. Reliant des compétences dans les systèmes d’information, l’ingénierie financière, l’énergie et l’environnement : nous avons tous les secteurs liés à notre projet.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -852,7 +852,7 @@ session_start();?>
                                         <div class="image-wrapper">
                                             <img class="img-fluid" src="images/E_Hadri.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
-                                        <p class="p-large">Hadrien Le dain</p>
+                                        <p class="p-large">Hadrien Le Dain</p>
                                         <p class="job-title">Poste</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:hadrien.le-dain@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
@@ -932,11 +932,11 @@ session_start();?>
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">CONTACT</div>
-                        <h2>Envie de nous rencontrer ou juste de nous poser une questions ? </h2>
-                        <p>N'hesitez pas nous sommes la pour vous </p>
+                        <h2>Envie de nous rencontrer ou juste de nous poser une question ?</h2>
+                        <p>N'hésitez pas, nous sommes là pour vous</p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:0601172202">0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -947,7 +947,7 @@ session_start();?>
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Nom et Prénom </label>
+                            <label class="label-control" for="cname">Nom et Prénom</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
@@ -957,7 +957,7 @@ session_start();?>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Ton message </label>
+                            <label class="label-control" for="cmessage">Ton message</label>
                             <div class="help-block with-errors"></div>
                         </div>
                  <!-- 
@@ -967,7 +967,7 @@ session_start();?>
                         </div>
                     -->
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIC et on te repondra au plus vite</button>
+                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -982,7 +982,67 @@ session_start();?>
     <!-- end of contact -->
 
 
+<<<<<<< Updated upstream
     <?php include('footer.php') ?>
+=======
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-container about">
+                        <h4>La Bourse aux Potagers</h4>
+                        <p class="white">Ce projet est un projet étudiant entrepris à l'ECE Paris dans le cadre de notre curcus d'ingénieur. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Compte</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                            </li>
+                            <li>
+                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>About</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaire</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la Croix Verte</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+>>>>>>> Stashed changes
 
 
     <!-- Copyright -->

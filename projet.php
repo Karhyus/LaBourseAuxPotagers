@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>La bourse aux potagers</title>
+    <title>La Bourse aux Potagers</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -81,7 +81,7 @@
             </span>  
             
             <ul class="navbar-nav ml-auto">
-            <a class="btn-solid-reg page-scroll" href="connexion.php">Investir</a>
+            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
             </ul>  
     
             <ul class="navbar-nav ml-auto">
@@ -101,11 +101,11 @@
      <!-- Resume -->
     <div id="resume" class="basic-3">
         <div class="container">
-            <div class="section-title"> NOTRE PROJET</div>
+            <div class="section-title">RESUME DU PROJET</div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2 class = "white"> CITRON</h2>
+                        <h2 class = "white"> CITRONS</h2>
                         <p class = "white">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
                         <p class="testimonial-text white">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                    
                         <span class="fa-stack ">
@@ -167,7 +167,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">LE PROJET EN DETAILS</div>
+                    <div class="section-title">LE PROJET EN DETAIL</div>
                     <div class="text-container">
                         <p>Aria also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
                         <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
@@ -360,13 +360,13 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">AUBERGINE XXL</h3>
+                                            <h3 class="card-title">Aubergines XXL</h3>
                                             <p>Description courte du projet</p>
                                             
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -408,12 +408,12 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">Clementine de Marseille</h3>
+                                            <h3 class="card-title">Clémentines de Marseille</h3>
                                             <p>Description courte du projet </p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -456,12 +456,12 @@
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title"> Citron </h3>
+                                            <h3 class="card-title"> Citrons </h3>
                                             <p>Description courte du projet</p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -520,10 +520,10 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
-                        <h2>Un probleme ? </h2>
-                        <p>N'hesitez pas nous sommes la pour vous </p>
+                        <h2>Un problème ? </h2>
+                        <p>N'hésitez pas, nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
@@ -555,7 +555,7 @@
                         </div>
                     -->
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIC et on te repondra au plus vite</button>
+                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -571,7 +571,67 @@
     
 
 
+<<<<<<< Updated upstream
     <?php include('footer.php') ?>
+=======
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-container about">
+                        <h4>La Bourse aux Potagers</h4>
+                        <p class="white">Ce projet est un projet étudiant entrepris à l'ECE Paris dans le cadre de notre curcus d'ingénieur. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Compte</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                            </li>
+                            <li>
+                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>About</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaire</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la Croix Verte</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+>>>>>>> Stashed changes
 
 
     <!-- Copyright -->

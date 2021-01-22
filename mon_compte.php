@@ -22,7 +22,7 @@ session_start();
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>La bourse aux potagers</title>
+    <title>La Bourse aux Potagers</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -68,10 +68,10 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#profil">PROFIL<span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#profil">MON PROFIL<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projets">MES PROJET</a>
+                    <a class="nav-link page-scroll" href="#projets">MES PROJETS</a>
                 </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -92,7 +92,7 @@ session_start();
      <!-- Profil -->
     <div id="profil" class="basic-3">
         <div class="container">
-            <div class="section-title"> PROFIL</div>
+            <div class="section-title"> MON PROFIL</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
@@ -108,7 +108,7 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">Modification de votre profil</div>
+                    <div class="section-title">Modification de mon profil</div>
                         <div class="text-container">
                             <?php
                             //Préremplissage du formulaire avec ses infos
@@ -122,7 +122,7 @@ session_start();
                                     if ($_GET['erreur'] == true){
                                         ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
                                     }else{
-                                        ?><p style="color:green">Vos informations ont été modifié avec succès</p> <?php
+                                        ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
                                     } 
                                 }
                                 ?>
@@ -186,13 +186,13 @@ session_start();
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">AUBERGINE XXL</h3>
+                                            <h3 class="card-title">Aubergines XXL</h3>
                                             <p>Description courte du projet</p>
                                             
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -236,12 +236,12 @@ session_start();
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">Clementine de Marseille</h3>
+                                            <h3 class="card-title">Clémentines de Marseille</h3>
                                             <p>Description courte du projet </p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -285,12 +285,12 @@ session_start();
                                             <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title"> Citron </h3>
+                                            <h3 class="card-title"> Citrons </h3>
                                             <p>Description courte du projet</p>
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent recolté</div>
+                                                    <div class="media-body">Argent récolté</div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
@@ -352,10 +352,10 @@ session_start();
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
-                        <h2>Un probleme ? </h2>
-                        <p>N'hesitez pas nous sommes la pour vous </p>
+                        <h2>Un problème ? </h2>
+                        <p>N'hésitez pas, nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
@@ -387,7 +387,7 @@ session_start();
                         </div>
                     -->
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIC et on te repondra au plus vite</button>
+                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -403,7 +403,67 @@ session_start();
  
  
 
+<<<<<<< Updated upstream
    <?php include('footer.php') ?>
+=======
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-container about">
+                        <h4>La Bourse aux Potagers</h4>
+                        <p class="white">Ce projet est un projet étudiant entrepris à l'ECE Paris dans le cadre de notre curcus d'ingénieur. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Compte</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                            </li>
+                            <li>
+                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>About</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaire</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la Croix Verte</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                               <a href=onu.php> <img class="img-fluid" src="images/eco.png" alt="alternative"> </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+>>>>>>> Stashed changes
 
 
 

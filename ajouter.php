@@ -22,7 +22,7 @@ session_start();
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>La bourse aux potagers</title>
+    <title>La Bourse aux Potagers</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -55,7 +55,7 @@ session_start();
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href=""><img src="images/logo3.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.php"><img src="images/logo3.png" alt="alternative"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,9 +66,9 @@ session_start();
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.php">RETOUR A L'ACCUEIL<span class="sr-only">(current)</span></a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="javascript:history.back()"> RETOUR <span class="sr-only">(current)</span></a>
+            </li>
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
@@ -94,10 +94,17 @@ session_start();
      <!-- Profil -->
      <div id="profil" class="basic-3">
         <div class="container">
+<<<<<<< Updated upstream
             <div class="section-title">VOTRE COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
+=======
+            <div class="section-title">MON COMPTE</div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="whiteC white">@username</h2>
+>>>>>>> Stashed changes
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -120,7 +127,7 @@ session_start();
                                 ?>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="project_name" name="project_name" required>
-                                    <label class="label-control" for="cusername">Nom projet</label>
+                                    <label class="label-control" for="cusername">Nom du projet</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
@@ -147,8 +154,8 @@ session_start();
                                 <label for="group-select"></label>
                                 <select id="cgroup">
                                     <option value="">Quel type de produit c'est </option>
-                                    <option value="legume">Légume</option>
-                                    <option value="fruit">Fruit</option>
+                                    <option value="legume">Légumes</option>
+                                    <option value="fruit">Fruits</option>
                                 </select>
                                 <div class="form-group checkbox">
                                     <input type="checkbox" id="innovation" value="innovation" required>Est-ce que c'est un projet innovant
@@ -168,7 +175,7 @@ session_start();
                                 </div>
                                 <div class="form-group">    
                                     <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En echange du don</label>
+                                    <label class="label-control" for="cmdp">En échange du don</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -185,7 +192,7 @@ session_start();
                                 </div>
                                 <div class="form-group">    
                                     <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En echange du don</label>
+                                    <label class="label-control" for="cmdp">En échange du don</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -202,7 +209,7 @@ session_start();
                                 </div>
                                 <div class="form-group">    
                                     <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En echange du don</label>
+                                    <label class="label-control" for="cmdp">En échange du don</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -226,10 +233,17 @@ session_start();
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
+<<<<<<< Updated upstream
                         <h2>Un probleme ? </h2>
                         <p>N'hesitez pas nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
+=======
+                        <h2>Un problème ?</h2>
+                        <p>N'hésitez pas, nous sommes là pour vous</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
+>>>>>>> Stashed changes
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202">0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
@@ -261,7 +275,7 @@ session_start();
                         </div>
                     -->
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIC et on te repondra au plus vite</button>
+                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -275,7 +289,67 @@ session_start();
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
     
+<<<<<<< Updated upstream
     <?php include('footer.php') ?>
+=======
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-container about">
+                        <h4>La Bourse aux Potagers</h4>
+                        <p class="white">Ce projet est un projet étudiant entrepris à l'ECE Paris dans le cadre de notre curcus d'ingénieur. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Mon compte</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                            </li>
+                            <li>
+                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>About</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="terms-conditions.php">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.php">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partenaire</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la Croix Verte</a>
+                            </li>
+
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                                <img class="img-fluid" src="images/eco.png" alt="alternative">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+>>>>>>> Stashed changes
 
 
     <!-- Copyright -->
