@@ -821,7 +821,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_Leonie.png" alt="alternative">
                                         </div> <!-- end of image-wrapper -->
                                         <p class="p-large">Leonie Sorcelle</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Responsable Web</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:leonie.sorcelle@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
                                         </ul>
@@ -837,7 +837,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_PM.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Pierre-Mathieu Barras</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Responsable Technique</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:pierre-mathieu.barras@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
                                         </ul>
@@ -853,7 +853,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_Hadri.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Hadrien Le Dain</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Chef de Projet</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:hadrien.le-dain@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
                                         </ul>
@@ -869,7 +869,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_Alpa.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Alpaïde Thirouin</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Responsable Communication</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:alpaide.thirouin@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
                                         </ul>
@@ -885,7 +885,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_Nizar.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Nizar Bezri</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Responsable Juridique</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><i class="fas fa-envelope"><a href="mailto:nizar.bezri@edu.ece.fr"></a></i></li>
                                         </ul>
@@ -901,7 +901,7 @@ session_start();?>
                                             <img class="img-fluid" src="images/E_Claire.png" alt="alternative">
                                         </div> <!-- end of image wrapper -->
                                         <p class="p-large">Claire Grouhel</p>
-                                        <p class="job-title">Poste</p>
+                                        <p class="job-title">Responsable Développement Durable</p>
                                         <ul class="list-unstyled li-space-lg">
                                             <li><a href="mailto:claire.grouhel@edu.ece.fr"><i class="fas fa-envelope"></i></a></li>
                                         </ul>
