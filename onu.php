@@ -94,8 +94,8 @@
                     <div class="text-container">
                         <p class="white"> <strong class="white">“Tirer parti des progrès technologiques rapides pour favoriser le développement inclusif et durable”</stong>, United Nations Conference on Trade and Development, 2020. Cette phrase illustre parfaitement l’innovation de notre projet. <br>
                         Les financements peuvent être aussi bien pour des initiatives de <strong class="white">grandes exploitations agricoles</strong> que de <strong class="white">petites surfaces</strong> (type bacs, agriculture urbaine,...). <br>
-                        Notre innovation inclut également des témoignages de <strong class="white">techniques agricoles responsables très variées</strong>. Nous souhaitons que les informations liées à la production responsable soient <strong class="white">appropriables</strong> par tous. <br>
-                        La <strong class="white">dimension inclusive </strong> de notre projet est également présente à travers le lien social que nous mettons en place entre l’investisseur et l’agriculteur.<br>
+                        Notre innovation inclut également des témoignages de <strong class="white">techniques agricoles responsables très variées</strong>. Nous souhaitons que tout le monde puisse s’approprier les informations liées à la production responsable. <br>
+                        La <strong class="white">dimension inclusive </strong> de notre projet est également présente à travers le lien social que nous mettons en place entre l’investisseur et l’agriculteur. <br>
                         Ainsi, tout le monde peut <strong class="white">participer, collaborer, apprendre, entreprendre</strong> des projets pour une agriculture plus responsable.
                         </p>
                     </div> <!-- end of text-container --> 
@@ -113,10 +113,10 @@
                 <div class="col-lg-12">
                     <div class="section-title">Les objectifs de développement durable</div>
                     <div class="text-container">
-                        <p>17 objectifs de développement durable ont été définis par les Etats membres de l’ONU en 2015. Ils couvrent les enjeux de développement dans tous les pays et sont axés sur 3 éléments interdépendants du développement durable : la croissance économique, l’inclusion sociale et la protection de l’environnement.
-                        Inscrire notre projet dans ce référentiel universel nous permet à la fois d’avoir une vision globale de l’impact de notre innovation ainsi que d’avoir une réelle notoriété et être reconnus auprès de potentiels clients, partenaires, agriculteurs et acteurs de la transition écologique.
+                        <p>17 objectifs de développement durable ont été définis par les Etats membres de l’ONU en 2015. Ils couvrent les enjeux de développement dans tous les pays et sont axés sur 3 éléments interdépendants du développement durable : la croissance économique, l’inclusion sociale et la protection de l’environnement.<br>
+                        Inscrire notre projet dans ce référentiel universel nous permet à la fois d’avoir une vision globale de l’impact de notre innovation ainsi que d’avoir une réelle notoriété et être reconnus auprès de potentiels clients, partenaires, agriculteurs et acteurs de la transition écologique.<br>
                         </p>
-                        <p>Voici ci-apres les impacts de notre innovation à travers les objectifs de développement durable dictés par l’ONU.</p>
+                        <p>Voici ci-après les impacts de notre innovation à travers les objectifs de développement durable dictés par l’ONU.</p>
                         <ul class="list-unstyled">
                             <li class="media">
                                 <img src="images/ONU_9.jpg" alt="alternative" >
@@ -131,30 +131,29 @@
                             <li class="media">
                                 <img src="images/ONU_12.jpg" alt="alternative" >
                                 <div class="media-body"><p>ODD12 : Consommation et Production responsables <br>
-                                    Représente un support de sensibilisation et d’éducation à la consommation d’aliments de saisons, frais, locaux et à la gestion des déchets agricoles</p></div>
+                                    Représente un support de sensibilisation et d’éducation à la consommation d’aliments de saison, frais, locaux et à la gestion des déchets agricoles.</p></div>
                             </li>
                             <li class="media">
                                 <img src="images/ONU_13.jpg" alt="alternative" > 
                                 <div class="media-body"><p>ODD13 : Mesures relatives à la lutte contre les changements climatiques <br>
-                                Utilise des données pour entretenir des projets agricoles responsables et pour communiquer sur les engagements réels des agriculteurs et des porteurs de projets</p></div>
+                                    Utilise des données pour entretenir des projets agricoles responsables et pour communiquer sur les engagements réels des agriculteurs et des porteurs de projets</p></div>
                             </li>
                             <li class="media">
                                 <img src="images/ONU_14.jpg" alt="alternative" > 
                                 <div class="media-body"><p>ODD14 : Vie aquatique <br>
-                                Favorise le développement d’agricultures biologiques et contribue au respect des nappes phréatiques <pre></p></div>
+                                    Favorise le développement d’agricultures biologiques et contribue au respect des nappes phréatiques <pre></p></div>
                             </li>
                             <li class="media">
                                 <img src="images/ONU_15.jpg" alt="alternative" > 
                                 <div class="media-body"><p>YODD15 : Vie Terrestre <br>
-                                Favorise l’agriculture sans pesticides, participe au développement d’une agriculture responsable, plus soucieuse de la protection de la biodiversité</p></div>
+                                    Favorise l’agriculture sans pesticides, participe au développement d’une agriculture responsable, plus soucieuse de la protection de la biodiversité.</p></div>
                             </li>
                         </ul>
                         <p>Toutefois, nous avons conscience que la multiplication des usages numériques et l’obsolescence programmée dans les appareils utilisés (smartphones, tablettes, ordinateurs,...) génèrent une pollution numérique et des déchets d’équipements électroniques importants. </p>
-                        <p>Nous avons en ce sens appliqué à notre projet les principes de consommation responsable en réalisant une plateforme numérique pensée et codée de manière optimisée.</p>
+                        <p>Nous avons, en ce sens, appliqué à notre projet les principes de consommation responsable en réalisant une plateforme numérique pensée et codée de manière optimisée.</p>
                         <p>Pour aller plus loin : <br>
-les objectifs de développement durable (ONU) : <a href="https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/">https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/</a>
-<br>
-Conception numérique responsable (GreenIT) : <a href="https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf">https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf</a>
+                            Les objectifs de développement durable (ONU) : <a class="green page-scroll" href="https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/">https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/</a><br>
+                            Conception numérique responsable (GreenIT) : <a class="green page-scroll" href="https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf">https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf</a>
                     </div> <!-- end of text-container -->   
                 </div> 
             </div> 

@@ -516,7 +516,7 @@ session_start();?>
                 <h3>Les aubergines de plein champ XLL</h3>
                 <hr class="line-heading">
                 <h6>Bernadette<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Agriculteur et fils d’agriculteur, j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari j’ai décidé de commencer par ma production d’aubergine, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergine, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergine d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergine en plein champ à un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
+                <p>Agriculteur et fils d’agriculteur, j’aimerai réaliser un projet assez fou qui serait de passer l'entièreté de mon exploitation en agriculture biologique d’ici 2026. Il s’agit d’un projet de grande envergure et j’aimerai segmenter cette transition écologique pour être le plus efficace possible. Pour réaliser ce pari, j’ai décidé de commencer par ma production d’aubergines, un de mes produits phares. La France est dans le top 3 européen des producteurs d’aubergines, j’aimerai faire en sorte que nous soyons les premiers producteurs d’aubergines d’origine biologique de notre continent. Les mentalités évoluent vis à vis des enjeux écologiques, il est impératif que notre métier évolue également. Je sollicite donc votre aide afin de récolter 5 000 euros pour cultiver les aubergines en plein champ et non plus sous serre. En effet, la culture d’aubergines en plein champ a un coût de production presque 2 fois plus élevé que son homologue sous serre mais permet de réduire drastiquement son impact écologique.</p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
             </div> <!-- end of col -->
@@ -642,47 +642,28 @@ session_start();?>
                 <div class="tab-content" id="ariaTabsContent">
 
                     <!-- Tab -->
-                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                    <div class="tab-pane fade  show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <p>Un des objectifs majeurs de notre plateforme est de promouvoir de bonnes pratiques agricoles, alimentaires et environnementales. <br>
-                        Le lien social entre l’agriculteur et l’investisseur est primordial pour consolider … <br>
                         Nous incitons les agriculteurs à proposer des visites, des ateliers ou simplement de donner des nouvelles des avancées de leurs projets en contrepartie du financement. <br>
                         Les agriculteurs ont aussi la possibilité d’écrire leurs bonnes pratiques agricoles, leurs innovations responsables dans notre dossier <a class="green page-scroll" href="#services">Les articles des bonnes pratiques</a>. <br>
-                        Ceci dans le but de sensibiliser et faire connaître au plus grand nombre les contraintes du métier ainsi que les bonnes idées plus respectueuses de l’environnement. <br>
+                        Ceci dans le but de <strong>sensibiliser</strong> et <strong>faire connaître</strong> au plus grand nombre les contraintes du métier ainsi que les bonnes idées et astuces pour une agriculture durable. <br>
+                        </p>
+                        <p>Cette pédagogie active permettra de faire des rencontres avec des agriculteurs, et de se familiariser avec les bonnes pratiques qu’il propose sur son terrain : compost, gestion des déchets, goûter des produits, apprendre les mécanismes de l’eau et des écosystèmes...
+                        </p>
                     </div> <!-- end of tab-pane --> 
+
                     <!-- end of tab -->
 
                     <!-- Tab -->
                     <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                        <ul class="list-unstyled li-space-lg first">
-                            <li class="media">
-                                <div class="media-bullet">1</div>
-                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">2</div>
-                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">3</div>
-                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
-                            </li>
-                        </ul>
-                        <ul class="list-unstyled li-space-lg last">
-                            <li class="media">
-                                <div class="media-bullet">4</div>
-                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">5</div>
-                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">6</div>
-                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
+                        <p>La notion de circuit-court implique qu’un seul intermédiaire maximum fasse le lien entre le producteur et le consommateur.  <br>
+                        Le concept de faire communiquer directement l’investisseur et le producteur est une forme de circuit-court. Il n’y a pas d’intermédiaire, l’investisseur a une vision directe sur le travail de l’agriculteur, il a une réelle traçabilité des aliments produits. <br>
+                        Au moment où l’agriculteur depose son projet sur notre site, nous voulons le sensibiliser au <strong>transport en circuit-court</strong> de ses produits pour qu’au moins une partie de sa production soit vendue dans le cadre des  <a class="green page-scroll" href="https://www.economie.gouv.fr/ess/amap-cest-quoi">AMAP</a>.<br>
+                        </p>
+                        <p> Ce que nous souhaitons réellement dans cette démarche, c’est de réduire le transport des aliments. Nous avons pour objectif dans un futur plus lointain, de pousser les agriculteurs de notre plateforme à proposer leurs produits dans la restauration collective. 
+                        Inclure du bio dans les assiettes des cantines scolaires, d’entreprises, etc de proximité permettrait de réduire les inégalités sur l’accès à une alimentation de qualité.
+                        </p>
+                    </div> <!-- end of tab-pane --> 
 
                     <!-- Tab -->
                     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
@@ -732,7 +713,7 @@ session_start();?>
     <div class="cards-1">
         <div class="container">
             <div class="section-title"> NOS VALEURS </div>
-            <p class="p-heading">Dans la conception d’un avenir durable où symbiose et équilibre sont nos objectifs, nous axons notre plateforme sur la triple performance :</p>
+            <p class="p-heading">Dans la conception d’un avenir durable où symbiose et équilibre sont nos objectifs, nous axons notre plateforme sur la triple performance (triple bottom line) :</p>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
@@ -783,13 +764,11 @@ session_start();?>
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>La Cueillette de la Croix Verte</h2>
-                        <p>Inscrits dans une vision de collaboration et de partage, nous sommes heureux de vous présenter notre premier partenariat : <a class="green" href="http://www.cueillette-de-la-croix-verte.com">La Cueillette de la Croix Verte</a></p>Structure agricole de 54 hectares située à côté de Paris, la cueillette partage nos valeurs et perspectives futures dans la transition écologique.</p>
+                        <p>Inscrits dans une vision de collaboration et de partage, nous sommes heureux de vous présenter notre partenaire : <br><a class="green page-scroll" href="http://www.cueillette-de-la-croix-verte.com">la Cueillette de la Croix Verte</a>. <br>Structure agricole de 54 hectares située à côté de Paris, la cueillette partage nos valeurs et perspectives futures de transition écologique.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/partenaire.png" alt="alternative">
-                        </div> <!-- end of image-container -->
+                            <img class="img-fluid" src="images/Partenaire.png" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -802,7 +781,7 @@ session_start();?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">L'EQUIPE</div>
-                    <p class="p-heading">Étudiants en dernière année du cycle ingénieur à l’ECE Paris, nous sommes six élèves évoluant dans des domaines variés, essentiels pour mener à bien notre projet. Reliant des compétences dans les systèmes d’information, l’ingénierie financière, l’énergie et l’environnement : nous avons tous les secteurs liés à notre projet.</p>
+                    <p class="p-heading">Étudiants en dernière année du cycle ingénieur à l’ECE Paris, nous sommes six élèves évoluant dans des domaines variés et essentiels pour mener à bien notre projet. Apportant des compétences dans les systèmes d’information, l’ingénierie financière, l’énergie et l’environnement : nous regroupons tous les domaines nécessaires pour mener à bien notre projet. </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
