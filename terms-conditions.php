@@ -45,6 +45,7 @@
     </div>
     <!-- end of preloader -->
     
+    
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
@@ -91,51 +92,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">Les objectifs de développement durable</div>
+                    <div class="section-title">La réglementation du statut des plateformes de crowdfunding.</div>
                     <div class="text-container">
-                        <p>17 objectifs de développement durable ont été définis par les Etats membres de l’ONU en 2015. Ils couvrent les enjeux de développement dans tous les pays et sont axés sur 3 éléments interdépendants du développement durable : la croissance économique, l’inclusion sociale et la protection de l’environnement.
-                        Inscrire notre projet dans ce référentiel universel nous permet à la fois d’avoir une vision globale de l’impact de notre innovation ainsi que d’avoir une réelle notoriété et être reconnus auprès de potentiels clients, partenaires, agriculteurs et acteurs de la transition écologique.
-                        </p>
-                        <p>Voici ci-apres les impacts de notre innovation à travers les objectifs de développement durable dictés par l’ONU.</p>
-                        <ul class="list-unstyled">
-                            <li class="media">
-                                <img src="images/ONU_9.jpg" alt="alternative" >
-                                <div class="media-body"> <p>ODD9 : Industrie Innovation et Infrastructure <br>
-                                Développe des possibilités d’initiatives agricoles, d’innovations AgriTech à travers l’utilisation du numérique <pre></p></div>
-                            </li>
-                            <li class="media">
-                                <img src="images/ONU_11.jpg" alt="alternative" > 
-                                <div class="media-body"><p>ODD11 : Villes et communautés durables <br>
-                                    Contribue à développer une communauté résiliente en termes d’agriculture productive responsable, de traçabilité des denrées produites et de financement collaboratif</p></div>
-                            </li>
-                            <li class="media">
-                                <img src="images/ONU_12.jpg" alt="alternative" >
-                                <div class="media-body"><p>ODD12 : Consommation et Production responsables <br>
-                                    Représente un support de sensibilisation et d’éducation à la consommation d’aliments de saisons, frais, locaux et à la gestion des déchets agricoles</p></div>
-                            </li>
-                            <li class="media">
-                                <img src="images/ONU_13.jpg" alt="alternative" > 
-                                <div class="media-body"><p>ODD13 : Mesures relatives à la lutte contre les changements climatiques <br>
-                                Utilise des données pour entretenir des projets agricoles responsables et pour communiquer sur les engagements réels des agriculteurs et des porteurs de projets</p></div>
-                            </li>
-                            <li class="media">
-                                <img src="images/ONU_14.jpg" alt="alternative" > 
-                                <div class="media-body"><p>ODD14 : Vie aquatique <br>
-                                Favorise le développement d’agricultures biologiques et contribue au respect des nappes phréatiques <pre></p></div>
-                            </li>
-                            <li class="media">
-                                <img src="images/ONU_15.jpg" alt="alternative" > 
-                                <div class="media-body"><p>YODD15 : Vie Terrestre <br>
-                                Favorise l’agriculture sans pesticides, participe au développement d’une agriculture responsable, plus soucieuse de la protection de la biodiversité</p></div>
-                            </li>
-                        </ul>
-                        <p>Toutefois, nous avons conscience que la multiplication des usages numériques et l’obsolescence programmée dans les appareils utilisés (smartphones, tablettes, ordinateurs,...) génèrent une pollution numérique et des déchets d’équipements électroniques importants. </p>
-                        <p>Nous avons en ce sens appliqué à notre projet les principes de consommation responsable en réalisant une plateforme numérique pensée et codée de manière optimisée.</p>
-                        <p>Pour aller plus loin : <br>
-les objectifs de développement durable (ONU) : <a href="https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/">https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/</a>
-<br>
-Conception numérique responsable (GreenIT) : <a href="https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf">https://collectif.greenit.fr/ecoconception-web/2018-09-Ref-eco_web-checklist.v2.pdf</a>
+                        <p>La loi sécurité financière n° 2003-706 du 1er août 2003 et l’ordonnance du 30 mai 2014 (n°2014-559) ont institué deux statuts pour les plateformes de crowdfunding, l’un adapté au crowdlending et au crowdfunding en dons, et l’autre adapté au crowdinvesting.</p>
                     </div> <!-- end of text-container -->   
+                    <div class="text-container">
+                        <h5>Le statut d’Intermédiaire en Financement Participatif (IFP) :</h5><br>
+                        <p>Ce statut permet aux plateformes en bénéficiant, de déroger au monopole bancaire en matière de crédit.</p><br>
+                        <p>Non concernés par ce statut en 2014, les sites internet de dons en ligne sont obligés de détenir le statut d’IFP depuis le 1er mars 2017.</p><br>
+                        <p>“Intermédiaire en Financement Participatif” est un statut qui autorise les plateformes de prêts (avec ou sans intérêt) à mettre en relation des porteurs de projets et des prêteurs par l’intermédiaire d’un site internet. Pour bénéficier du statut d’IFP, il est nécessaire de déposer un dossier auprès du Registre des Intermédiaires en Assurance (ORIAS) sur lequel sont renseignées différentes rubriques permettant de justifier notamment l’honorabilité et les compétences professionnelles afin d’obtenir une immatriculation.</p><br>
+                        <p> Les plateformes de dons ne sont pas concernées par la justification des compétences professionnelles.<br>
+                        - les porteurs de projets ne peuvent pas emprunter plus de 1 million d’euros ; <br>
+                        - les prêteurs peuvent investir 2.000€ maximum par prêteur et par projet quand c’est un prêt rémunéré et 5.000€ maximum pour un prêt non rémunéré.</p><br>
+                        <p>Les IFP ne peuvent exercer que les activités mentionnées à l’art. L. 548-1 CMF ou, le cas échéant, celles qu’ils sont autorisées à exercer en leur qualité d’établissement de crédit, de société de financement, d’établissement de paiement, d’établissement de monnaie électronique, d’entreprise d’investissement, d’agent de prestataire de services de paiement ou de conseiller en investissements participatifs.</p><br>
+                        <p>Le cumul avec une activité d’intermédiaire en assurance est possible pour l’activité d’IFP exercée à titre accessoire par un établissement de crédit, un établissement de paiement ou de monnaie électronique ou une société de financement.</p><br>
+                        <p>Le cumul avec une activité de conseiller en investissements participatifs est possible, à condition de ne pas fournir de services de paiement.</p><br>
+                        <p>Si la plateforme encaisse des fonds pour le compte de tiers dans le cadre des opérations de financement participatif, elle doit être agréée a minima en qualité d’établissement de paiement par l’ACPR ou être enregistrée en tant qu’agent de prestataire de services de paiement.</p><br>
+                        <p>Pour les plateformes de dons, tout dépend de la façon dont elles interviennent dans la circulation des mouvements de fonds, d’autant plus que, contrairement aux IFP prêts, les plateformes de dons n’ont pas à intervenir après la période de collecte.</p><br>
+                        <p>Les IFP doivent souscrire une assurance responsabilité civile professionnelle depuis le 1er juillet 2016.</p><br>
+                        <p>Le fait, pour toute personne d’exercer l’activité d’IFP pour les opérations de prêt avec ou sans intérêt en violation des articles L. 548-1 à L. 548-4 CMF, est puni de cinq ans d’emprisonnement et 375 000 euros d’amende.</p><br>
+                    </div> <!-- end of text-container -->  
+                    <div class="text-container">
+                        <h5>Protection des données des utilisateurs </h5><br>
+                        <p>Il existe une collecte de données personnelles des internautes dans les domaines de E-commerce qui est soumise à une réglementation stricte issue de la loi dite « Informatique et Libertés » du 6 janvier 1978. Elle concerne les clients et prospects du site qui doivent faire l’objet d’une déclaration à la Commission Nationale Informatique et Liberté (CNIL) conformément à la norme simplifiée n°48 de la CNIL applicable aux fichiers clients – prospects et vente en ligne.</p><br>
+                        <p>Le site de E-commerce doit respecter des obligations concernant le traitement des données personnelles collectées auprès de ses utilisateurs. En particulier, il est tenu d’assurer la confidentialité des données et la sécurité des fichiers. Il doit également informer les personnes dont les données personnelles sont collectées en leur communiquant : son identité, la finalité du traitement des données, le caractère facultatif ou obligatoire des réponses, les destinataires des données, les transmissions envisagées et les droits dont dispose l’utilisateur sur les informations le concernant.</p><br>
+                    </div> <!-- end of text-container -->  
                 </div> 
             </div> 
         </div> 
