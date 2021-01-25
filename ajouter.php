@@ -94,17 +94,10 @@ session_start();
      <!-- Profil -->
      <div id="profil" class="basic-3">
         <div class="container">
-<<<<<<< Updated upstream
-            <div class="section-title">VOTRE COMPTE</div>
+            <div class="section-title"> MON COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
-=======
-            <div class="section-title">MON COMPTE</div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="whiteC white">@username</h2>
->>>>>>> Stashed changes
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -131,9 +124,15 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" name="project_description_short" required></textarea>
+                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" maxlength="140" name="project_description_short" required></textarea>
                                     <label class="label-control" for="cnom">Description courte</label>
                                     <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                <label for="photo">Mettre vos photos du projets</label> <br>
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="project_localisation" name="project_localisation" required>
@@ -142,25 +141,31 @@ session_start();
                                 </div>
                                 <div class="form-group">
                                     <!-- PENSER à convertir le text en float -->
-                                    <input type="text" class="form-control-input" id="goal" name="goal" required>
+                                    <input type="number" min = "0" class="form-control-input" id="goal" name="goal" required>
                                     <label class="label-control" for="cbirthdate">Objectif financier</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_long" name="project_description_long" required></textarea>
+                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
                                     <label class="label-control" for="cnom">Description longue</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <label for="group-select"></label>
-                                <select id="cgroup">
-                                    <option value="">Quel type de produit c'est </option>
-                                    <option value="legume">Légumes</option>
-                                    <option value="fruit">Fruits</option>
-                                </select>
+
+                                <div class="form-group">
+                                    <label for="group-select"></label>
+                                    <select id="cgroup" class = "label-control">
+                                        <option value="">Type de produit ...</option>
+                                        <option value="legume">Légumes</option>
+                                        <option value="fruit">Fruits</option>
+                                    </select>
+                                </div>
+
                                 <div class="form-group checkbox">
-                                    <input type="checkbox" id="innovation" value="innovation" required>Est-ce que c'est un projet innovant
+                                    <input type="checkbox" id="innovation" value="innovation" required> Est-ce que c'est un projet innovant
                                     <div class="help-block with-errors"></div>
                                 </div>
+
+
 
                                 <div class="section-title" name ="counterpart_name" >CRITERE DE DONS N°1</div>
                                 <div class="form-group">    
@@ -233,17 +238,10 @@ session_start();
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
-<<<<<<< Updated upstream
-                        <h2>Un probleme ? </h2>
-                        <p>N'hesitez pas nous sommes là pour vous </p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
-=======
                         <h2>Un problème ?</h2>
                         <p>N'hésitez pas, nous sommes là pour vous</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
->>>>>>> Stashed changes
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202">0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>

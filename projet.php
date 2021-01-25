@@ -229,86 +229,26 @@
 
                                         <!-- Tab -->
                                         <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
-                                            <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">We'll get back to you with an initial estimate soon</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Get ready to see results even after only 30 days</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Ask for a quote and start improving your business</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Just fill out the form and we'll call you right away</div>
-                                                </li>
-                                            </ul>
+                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
+                                            your company achieve its full potential and establish long term stability for</p>
+                                        
+                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
                                         </div> <!-- end of tab-pane -->
 
                                       <!-- Tab -->
-                                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
-                                            <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">We'll get back to you with an initial estimate soon</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Get ready to see results even after only 30 days</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Ask for a quote and start improving your business</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Just fill out the form and we'll call you right away</div>
-                                                </li>
-                                            </ul>
+                                      <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
+                                            your company achieve its full potential and establish long term stability for</p>
+                                        
+                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
                                         </div> <!-- end of tab-pane -->
                                         
                                         <!-- Tab -->
                                         <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                                            <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
-                                            <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">We'll get back to you with an initial estimate soon</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Get ready to see results even after only 30 days</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Ask for a quote and start improving your business</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Just fill out the form and we'll call you right away</div>
-                                                </li>
-                                            </ul>
+                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
+                                            your company achieve its full potential and establish long term stability for</p>
+                                        
+                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
                                         </div> <!-- end of tab-pane -->
                                         <!-- end of tab -->
 
