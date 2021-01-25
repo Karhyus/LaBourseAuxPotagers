@@ -105,7 +105,7 @@ session_start();
      <!-- Profil -->
      <div id="profil" class="basic-3">
         <div class="container">
-            <div class="section-title"> MON COMPTE</div>
+            <div class="section-title">VOTRE COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
@@ -135,15 +135,9 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" maxlength="140" name="project_description_short" required></textarea>
-                                    <label class="label-control" for="cnom">Description courte</label>
+                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" name="project_description_short" required></textarea>
+                                    <label class="label-control" for="project_description_short">Description courte</label>
                                     <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                <label for="photo">Mettre vos photos du projets</label> <br>
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="project_localisation" name="project_localisation" required>
@@ -157,20 +151,15 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
-                                    <label class="label-control" for="cnom">Description longue</label>
+                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_long" name="project_description_long" required></textarea>
+                                    <label class="label-control" for="project_description_long">Description longue</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="group-select"></label>
-                                    <select id="cgroup" class = "label-control">
-                                        <option value="">Type de produit ...</option>
-                                        <option value="legume">Légumes</option>
-                                        <option value="fruit">Fruits</option>
-                                    </select>
-                                </div>
-
+                                <label for="product_type">Quel type de culture?</label>
+                                <select class="form-control-input" id="product_type" name="product_type">
+                                    <option value="legume">Légumes</option>
+                                    <option value="fruit">Fruits</option>
+                                </select>
                                 <div class="form-group checkbox">
                                     <input type="checkbox" id="innovative" name="innovative" required>
                                     <label class="label-control" for="innovative">Est-ce que c'est un projet innovant?</label>

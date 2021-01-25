@@ -174,10 +174,10 @@
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -223,10 +223,10 @@
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#your-link"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#your-link"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -272,10 +272,10 @@
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#your-link"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#your-link"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
+                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -303,34 +303,6 @@
     </div> <!-- end of cards-2 -->
     <!-- end of services -->
     
-<!-- Project Lightboxes -->
-    <!-- Lightbox -->
-    <div id="video-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-12">
-                <h3>Mettre une video pour ma communauté</h3>
-                <input type="file" id="video" name="video1" accept="video/*"> 
-             </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-<!-- Project Lightboxes -->
-    <!-- Lightbox -->
-    <div id="news-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-12">
-                <h3>Mettre des news pour ma communauté</h3>
-                <input type="file" id="news" name="news1" accept=".doc,.pdf"> 
-             </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-
-
     <!-- Projets SOUMIS-->
     <div id="projetsS" class="cards-2 slider filter">
         <div class="container">
