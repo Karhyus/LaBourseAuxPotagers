@@ -12,13 +12,23 @@
                     <div class="text-container">
                         <h4>Compte</h4>
                         <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="espace-producteur.php">Espace Producteurs</a>
-                            </li>
-                            <li>
-                                <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
-                            </li>
-
+                            <?php if(!isset($_SESSION['user_account'])){ ?>
+                                <li>
+                                    <a class="white" href="connexion.php">Connexion</a>
+                                </li>
+                            <?php } else { 
+                                if($_SESSION['user_account']['type'] == 1) { ?>
+                                <li>
+                                    <a class="white" href="espace-producteur.php">Espace Producteurs</a>
+                                </li>
+                                <li>
+                                    <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                                </li>
+                            <?php } else { ?>
+                                <li>
+                                    <a class="white" href="espace-investisseur.php">Espace Investisseurs</a>
+                                </li>
+                            <?php } } ?>
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->

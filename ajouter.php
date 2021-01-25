@@ -35,6 +35,17 @@ session_start();
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/logosite.png">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        function add_counterpart()
+        {
+            $lino=$("#counterpart_list li").length;
+            $lino=$lino+1;
+            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><div class='form-group'><input type='text' class='form-control-input' id='option_min' name='option_min' required><label class='label-control' for='option_min'>Don minimum</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_max' name='option_max' required><label class='label-control' for='option_max'>Don maximum</label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='ajouterProjetForm' class='form-control-input' id='counterpart' name='counterpart' required></textarea><label class='label-control' for='counterpart'>En échange du don</label><div class='help-block with-errors'></div></div></li>");
+        }
+    </script>
+
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -94,17 +105,10 @@ session_start();
      <!-- Profil -->
      <div id="profil" class="basic-3">
         <div class="container">
-<<<<<<< Updated upstream
             <div class="section-title">VOTRE COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
-=======
-            <div class="section-title">MON COMPTE</div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="whiteC white">@username</h2>
->>>>>>> Stashed changes
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -122,100 +126,70 @@ session_start();
                             <form id="ajouterProjetForm" data-toggle="validator" data-focus="false" method="post" action="forms/ajouter.php">
                                 <?php 
                                 if(isset($_GET['erreur'])){
-                                    if ($_GET['erreur'] == true) {?><p style="color:red">Ce mail est déjà utilisé.</p> <?php } 
+                                    if ($_GET['erreur'] == true) {?><p style="color:red">Une erreur est survenue veuillez réessayer s'il vous plaît.</p> <?php } 
                                 }
                                 ?>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="project_name" name="project_name" required>
-                                    <label class="label-control" for="cusername">Nom du projet</label>
+                                    <label class="label-control" for="project_name">Nom du projet</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" name="project_description_short" required></textarea>
-                                    <label class="label-control" for="cnom">Description courte</label>
+                                    <label class="label-control" for="project_description_short">Description courte</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="project_localisation" name="project_localisation" required>
-                                    <label class="label-control" for="cprenom">Localisation</label>
+                                    <label class="label-control" for="project_localisation">Localisation</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <!-- PENSER à convertir le text en float -->
                                     <input type="text" class="form-control-input" id="goal" name="goal" required>
-                                    <label class="label-control" for="cbirthdate">Objectif financier</label>
+                                    <label class="label-control" for="goal">Objectif financier</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_long" name="project_description_long" required></textarea>
-                                    <label class="label-control" for="cnom">Description longue</label>
+                                    <label class="label-control" for="project_description_long">Description longue</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <label for="group-select"></label>
-                                <select id="cgroup">
-                                    <option value="">Quel type de produit c'est </option>
+                                <label for="product_type">Quel type de culture?</label>
+                                <select class="form-control-input" id="product_type" name="product_type">
                                     <option value="legume">Légumes</option>
                                     <option value="fruit">Fruits</option>
                                 </select>
                                 <div class="form-group checkbox">
-                                    <input type="checkbox" id="innovation" value="innovation" required>Est-ce que c'est un projet innovant
+                                    <input type="checkbox" id="innovative" name="innovative" required>
+                                    <label class="label-control" for="innovative">Est-ce que c'est un projet innovant?</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-
-                                <div class="section-title" name ="counterpart_name" >CRITERE DE DONS N°1</div>
-                                <div class="form-group">    
-                                    <input type="number" min="0" class="form-control-input" id="don_min" name="option_min" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don minimum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="number" min = "0" class="form-control-input" id="don_max" name="option_max" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don maximum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En échange du don</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="section-title" name ="counterpart_name" >CRITERE DE DONS N°2</div>
-                                <div class="form-group">    
-                                    <input type="number" min="0" class="form-control-input" id="don_min" name="option_min" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don minimum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="number" min = "0" class="form-control-input" id="don_max" name="option_max" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don maximum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En échange du don</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="section-title" name ="counterpart_name" >CRITERE DE DONS N°3</div>
-                                <div class="form-group">    
-                                    <input type="number" min="0" class="form-control-input" id="don_min" name="option_min" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don minimum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="number" min = "0" class="form-control-input" id="don_max" name="option_max" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Don maximum</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="text" class="form-control-input" id="counter" name="counterpart_description" minlength="8" required>
-                                    <label class="label-control" for="cmdp">En échange du don</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
+                                <ul class="navbar-nav ml-auto" id="counterpart_list">
+                                    <li class="nav-item" id="counterpart_1">
+                                        <div class="section-title" name="counterpart">CRITERE DE DONS N°1</div>
+                                        <div class="form-group">    
+                                            <input type="text" class="form-control-input" id="option_min" name="option_min" required>
+                                            <label class="label-control" for="option_min">Don minimum</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">    
+                                            <input type="text" class="form-control-input" id="option_max" name="option_max" required>
+                                            <label class="label-control" for="option_max">Don maximum</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea form="ajouterProjetForm" class="form-control-input" id="counterpart" name="counterpart" required></textarea>
+                                            <label class="label-control" for="counterpart">En échange du don</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </li>
+                                    <div class="button"><a class="btn-solid-reg page-scroll" onclick="add_counterpart();" color=white>Ajouter une contrepartie</a></div>
+                                </ul>
+                                <br>
                                 <input type="hidden" name="redirection" value="<?php 
                                 if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
-                                <input class="btn-solid-reg page-scroll" type="submit" value="Enregistrer"/>
+                                <input class="btn-solid-reg page-scroll" type="submit" value="Soumettre le projet"/>
                             </form>
                         </div>
 
@@ -233,17 +207,10 @@ session_start();
                 <div class="col-lg-6">
                     <div class="text-container">
                         <div class="section-title">Aide</div>
-<<<<<<< Updated upstream
                         <h2>Un probleme ? </h2>
                         <p>N'hesitez pas nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>37 quai de grenelle 75015 Paris</li>
-=======
-                        <h2>Un problème ?</h2>
-                        <p>N'hésitez pas, nous sommes là pour vous</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
->>>>>>> Stashed changes
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202">0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>

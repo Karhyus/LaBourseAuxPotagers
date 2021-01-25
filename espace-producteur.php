@@ -604,7 +604,7 @@
                         <h2>Un problème ? </h2>
                         <p>N'hésitez pas, nous sommes là pour vous </p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 Quai de grenelle 75015 Paris</li>
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>

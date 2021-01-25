@@ -92,7 +92,7 @@ session_start();
      <!-- Profil -->
     <div id="profil" class="basic-3">
         <div class="container">
-            <div class="section-title"> MON PROFIL</div>
+            <div class="section-title">MON PROFIL</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
