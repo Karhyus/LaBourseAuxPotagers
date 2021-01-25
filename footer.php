@@ -44,7 +44,7 @@
                 </div> <!-- end of col -->
                 <div class="col-md-2">
                     <div class="text-container">
-                        <h4>Partners</h4>
+                        <h4>Partenaire</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li>
                                 <a class="white" href="http://www.cueillette-de-la-croix-verte.com">Cueillette de la croix verte</a>

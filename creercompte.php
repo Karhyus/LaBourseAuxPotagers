@@ -68,18 +68,6 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php">RETOUR A L'ACCUEIL<span class="sr-only">(current)</span></a>
                 </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
-
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#aide">AIDE</a>
                 </li>
@@ -135,11 +123,11 @@
                                     <label class="label-control" for="cmdp">Mot de passe (8 caractères minimum)</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <div class="form-group checkbox">
+                                <div class="form-group checkbox white">
                                     <input type="checkbox" id="cstatus">Je suis un(e) agriculteur(rice).
                                 </div>
-                                <div class="form-group checkbox">
-                                    <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>En créant mon compte, j'accepte les <a href="terms-conditions.php">Conditions Générales.</a> 
+                                <div class="form-group checkbox white">
+                                    <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>En créant mon compte, j'accepte les <a href="terms-conditions.php" class="white">Conditions Générales.</a> 
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <input type="hidden" name="redirection" value="<?php 

@@ -80,21 +80,9 @@ session_start();
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR <span class="sr-only">(current)</span></a>
             </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#aide">AIDE</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#aide">AIDE</a>
+            </li>
             </ul>
             <ul class="navbar-nav ml-auto">
             </ul>
@@ -105,7 +93,7 @@ session_start();
      <!-- Profil -->
      <div id="profil" class="basic-3">
         <div class="container">
-            <div class="section-title">VOTRE COMPTE</div>
+            <div class="section-title">MON COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
@@ -135,8 +123,15 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" name="project_description_short" required></textarea>
+                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_short" maxlength="140" name="project_description_short" required></textarea>
                                     <label class="label-control" for="project_description_short">Description courte</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                <label for="photo">Mettre vos photos du projets</label> <br>
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
@@ -146,25 +141,30 @@ session_start();
                                 </div>
                                 <div class="form-group">
                                     <!-- PENSER à convertir le text en float -->
-                                    <input type="text" class="form-control-input" id="goal" name="goal" required>
+                                    <input type="text" class="form-control-input" min = "0" id="goal" name="goal" required>
                                     <label class="label-control" for="goal">Objectif financier</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-input" id="project_description_long" name="project_description_long" required></textarea>
+                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
                                     <label class="label-control" for="project_description_long">Description longue</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <label for="product_type">Quel type de culture?</label>
-                                <select class="form-control-input" id="product_type" name="product_type">
-                                    <option value="legume">Légumes</option>
-                                    <option value="fruit">Fruits</option>
-                                </select>
-                                <div class="form-group checkbox">
-                                    <input type="checkbox" id="innovative" name="innovative" required>
-                                    <label class="label-control" for="innovative">Est-ce que c'est un projet innovant?</label>
+                                <div class="form-group checkbox ">
+                                    <label for="product_type"></label>
+                                    <select id="cgroup" class = "label-control">
+                                        <option value="">Type de produit</option>
+                                        <option value="legume">Légumes</option>
+                                        <option value="fruit">Fruits</option>
+                                    </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="innovative" name="innovative" required>
+                                    <label class="label-control white" for="innovative">Est-ce que c'est un projet innovant?</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
                                 <ul class="navbar-nav ml-auto" id="counterpart_list">
                                     <li class="nav-item" id="counterpart_1">
                                         <div class="section-title" name="counterpart">CRITERE DE DONS N°1</div>
@@ -184,7 +184,7 @@ session_start();
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </li>
-                                    <div class="button"><a class="btn-solid-reg page-scroll" onclick="add_counterpart();" color=white>Ajouter une contrepartie</a></div>
+                                    <div class="button"><input class="btn-solid-reg page-scroll" type="submit" onclick="add_counterpart();" value="Ajouter une contrepartie"></div>
                                 </ul>
                                 <br>
                                 <input type="hidden" name="redirection" value="<?php 

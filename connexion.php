@@ -65,18 +65,6 @@
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="index.php">RETOUR A L'ACCUEIL<span class="sr-only">(current)</span></a>
             </li>
-
-            <!-- Dropdown Menu -->          
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="terms-conditions.php"><span class="item-text">TERMS CONDITIONS</span></a>
-                    <div class="dropdown-items-divide-hr"></div>
-                    <a class="dropdown-item" href="privacy-policy.php"><span class="item-text">PRIVACY POLICY</span></a>
-                </div>
-            </li>
-            <!-- end of dropdown menu -->
-
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#aide">AIDE</a>
             </li>

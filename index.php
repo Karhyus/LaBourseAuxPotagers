@@ -78,20 +78,20 @@ session_start();?>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">LES REUSSITES</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#reussite"><span class="item-text">PROJETS ACCOMPLIS</span></a>
+                        <a class="page-scroll dropdown-item" href="#reussite"><span class="item-text">PROJETS ACCOMPLIS</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="onu.php"><span class="item-text">OBJECTIFS DEVELOPPEMENT DURABLE</span></a>
+                        <a class="page-scroll dropdown-item" href="onu.php"><span class="item-text">OBJECTIFS DEVELOPPEMENT DURABLE</span></a>
                     </div>
                 </li>
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">A PROPOS DE NOUS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#propos"><span class="item-text">NOTRE IDEE ET NOS VALEURS</span></a>
+                        <a class="page-scroll dropdown-item" href="#propos"><span class="item-text">NOTRE IDEE ET NOS VALEURS</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="#Partenaire"><span class="item-text">NOS PARTENAIRES</span></a>
+                        <a class="page-scroll dropdown-item" href="#Partenaire"><span class="item-text">NOS PARTENAIRES</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="#equipe"><span class="item-text">L'EQUIPE</span></a>
+                        <a class="page-scroll dropdown-item" href="#equipe"><span class="item-text">L'EQUIPE</span></a>
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
@@ -904,6 +904,22 @@ session_start();?>
     <!-- end of team -->
     
 <!-- VIDEO-->
+<div id="video" class="basic-2">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">NOTRE VIDEO</div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    <video controls width="600">
+
+        <source src="images/nous.mp4"
+                type="video/mp4">
+
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+</div>
+
+
     <!-- Contact -->
     <div id="contact" class="form-2">
         <div class="container">
