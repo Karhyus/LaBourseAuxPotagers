@@ -42,7 +42,7 @@ session_start();
         {
             $lino=$("#counterpart_list li").length;
             $lino=$lino+1;
-            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><div class='form-group'><input type='text' class='form-control-input' id='option_min' name='option_min' required><label class='label-control' for='option_min'>Don minimum</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_max' name='option_max' required><label class='label-control' for='option_max'>Don maximum</label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='ajouterProjetForm' class='form-control-input' id='counterpart' name='counterpart' required></textarea><label class='label-control' for='counterpart'>En échange du don</label><div class='help-block with-errors'></div></div></li>");
+            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><div class='form-group'><input type='text' class='form-control-input' id='option_min' name='option_min[]' required><label class='label-control' for='option_min'>Don minimum</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_max' name='option_max[]' required><label class='label-control' for='option_max'>Don maximum</label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='ajouterProjetForm' class='form-control-input' id='counterpart' name='counterpart[]' required></textarea><label class='label-control' for='counterpart'>En échange du don</label><div class='help-block with-errors'></div></div></li>");
         }
     </script>
 
@@ -129,14 +129,14 @@ session_start();
                                 </div>
                                 <div class="form-group">
                                 <label for="photo">Mettre vos photos du projets</label> <br>
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg">
+                                    <input type="file" id="photo1" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo2" name="photo2" accept="image/png, image/jpeg, image/jpg"> 
+                                    <input type="file" id="photo3" name="photo3" accept="image/png, image/jpeg, image/jpg">
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control-input" id="project_localisation" name="project_localisation" required>
-                                    <label class="label-control" for="project_localisation">Localisation</label>
+                                    <input type="text" class="form-control-input" id="project_location" name="project_location" required>
+                                    <label class="label-control" for="project_location">Localisation</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
@@ -152,7 +152,7 @@ session_start();
                                 </div>
                                 <div class="form-group checkbox ">
                                     <label for="product_type"></label>
-                                    <select id="cgroup" class = "label-control">
+                                    <select id="product_type" name="product_type" form="ajouterProjetForm" class = "label-control">
                                         <option value="">Type de produit</option>
                                         <option value="legume">Légumes</option>
                                         <option value="fruit">Fruits</option>
@@ -160,7 +160,7 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group checkbox">
-                                    <input type="checkbox" id="innovative" name="innovative" required>
+                                    <input type="checkbox" id="innovative" name="innovative" value="1">
                                     <label class="label-control white" for="innovative">Est-ce que c'est un projet innovant?</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -169,22 +169,22 @@ session_start();
                                     <li class="nav-item" id="counterpart_1">
                                         <div class="section-title" name="counterpart">CRITERE DE DONS N°1</div>
                                         <div class="form-group">    
-                                            <input type="text" class="form-control-input" id="option_min" name="option_min" required>
+                                            <input type="text" class="form-control-input" id="option_min" name="option_min[]" required>
                                             <label class="label-control" for="option_min">Don minimum</label>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">    
-                                            <input type="text" class="form-control-input" id="option_max" name="option_max" required>
+                                            <input type="text" class="form-control-input" id="option_max" name="option_max[]" required>
                                             <label class="label-control" for="option_max">Don maximum</label>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <textarea form="ajouterProjetForm" class="form-control-input" id="counterpart" name="counterpart" required></textarea>
+                                            <textarea form="ajouterProjetForm" class="form-control-input" id="counterpart" name="counterpart[]" required></textarea>
                                             <label class="label-control" for="counterpart">En échange du don</label>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </li>
-                                    <div class="button"><input class="btn-solid-reg page-scroll" type="submit" onclick="add_counterpart();" value="Ajouter une contrepartie"></div>
+                                    <div class="button"><input class="btn-solid-reg page-scroll" type="button" onclick="add_counterpart();" value="Ajouter une contrepartie"></div>
                                 </ul>
                                 <br>
                                 <input type="hidden" name="redirection" value="<?php 
