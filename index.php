@@ -566,10 +566,13 @@ session_start();?>
 
     <!-- Details 1 -->
 	<div id="propos" class="accordion">
-        <div class="section-title">A PROPOS DE NOUS</div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">A PROPOS DE NOUS</div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
 		<div class="area-1">
 		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
-            
             <!-- Accordion -->
             <div class="accordion-container" id="accordionOne">
                 <h3>La Bourse aux Potagers est une plateforme de financement collaboratif pour les petits et grands projets d’agricultures biologiques ou en transition écologique.</h3>

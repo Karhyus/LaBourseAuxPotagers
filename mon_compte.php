@@ -102,64 +102,135 @@ session_start();
     </div> <!-- end of basic-1 -->
     <!-- end of Partenaire -->
 
+    <!-- Details 2 -->
+    <div class="tabs">
+        <div class="tabs-containerbis">
+            
+            <!-- Tabs Links -->
+            <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>Modifier mes infos personnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>Modifier mon profil public</a>
+                </li>
+            </ul>
+            <!-- end of tabs links -->
+            
+            <!-- Tabs Content -->
+            <div class="tab-content" id="ariaTabsContent">
 
-    <!-- Changement  -->
-    <div class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">Modification de mon profil</div>
-                        <div class="text-container">
-                            <?php
-                            //Préremplissage du formulaire avec ses infos
-                            $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
-                            $user_account = $req->fetch();
-                            ?>
-                             <!-- Contact Form -->
-                            <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
-                                <?php 
-                                if(isset($_GET['erreur'])){
-                                    if ($_GET['erreur'] == true){
-                                        ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
-                                    }else{
-                                        ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
-                                    } 
-                                }
+                <!-- Tab -->
+                <div class="tab-pane fade  show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                    <div class="text-container">
+                                <?php
+                                //Préremplissage du formulaire avec ses infos
+                                $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
+                                $user_account = $req->fetch();
                                 ?>
-                                <div class="form-group">
-                                    <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-input" id="cmail" name="email"  required>
-                                    <label class="label-control" for="cmail">Email</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-input" id="cusername" name="user_name" required>
-                                    <label class="label-control" for="cusername">Nom d'utilisateur</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" value="<?php echo $user_account['last_name'] ?>" class="form-control-input" id="cnom" name="last_name" required>
-                                    <label class="label-control" for="cnom">Nom</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" value="<?php echo $user_account['first_name'] ?>" class="form-control-input" id="cprenom" name="first_name" required>
-                                    <label class="label-control" for="cprenom">Prénom</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="date" value="<?php echo $user_account['date_of_birth'] ?>" class="form-control-input" id="cbirthdate" name="date_of_birth" required>
-                                    <label class="label-control" for="cbirthdate">Date de naissance</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <input type="hidden" name="redirection" value="<?php 
-                                if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
-                                <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
-                            </form>
-                        </div>
-                </div>  
-            </div>  
-        </div>  
-    </div>  
+                                <!-- Contact Form -->
+                                <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
+                                    <?php 
+                                    if(isset($_GET['erreur'])){
+                                        if ($_GET['erreur'] == true){
+                                            ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
+                                        }else{
+                                            ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
+                                        } 
+                                    }
+                                    ?>
+                                    <div class="form-group"> 
+                                        <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-select" id="cmail" name="email"  required >
+                                        <label class="label-control" for="cmail"><strong>Email</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-select" id="cusername" name="user_name" required>
+                                        <label class="label-control" for="cusername"><strong>Nom d'utilisateur</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['last_name'] ?>" class="form-control-select" id="cnom" name="last_name" required>
+                                        <label class="label-control" for="cnom"><strong>Nom</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['first_name'] ?>" class="form-control-select" id="cprenom" name="first_name" required>
+                                        <label class="label-control" for="cprenom"><strong>Prénom</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" value="<?php echo $user_account['date_of_birth'] ?>" class="form-control-select" id="cbirthdate" name="date_of_birth" required>
+                                        <label class="label-control" for="cbirthdate"><strong>Date de naissance</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <input type="hidden" name="redirection" value="<?php 
+                                    if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
+                                    <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
+                                </form>
+                    </div>
+                </div> <!-- end of tab-pane --> 
+
+                <!-- end of tab -->
+
+                <!-- Tab -->
+                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                    <div class="text-container">
+                                <?php
+                                //Préremplissage du formulaire avec ses infos
+                                $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
+                                $user_account = $req->fetch();
+                                ?>
+                                <!-- Contact Form -->
+                                <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
+                                    <?php 
+                                    if(isset($_GET['erreur'])){
+                                        if ($_GET['erreur'] == true){
+                                            ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
+                                        }else{
+                                            ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
+                                        } 
+                                    }
+                                    ?>
+                                    <div class="form-group"> 
+                                        <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-select" id="cmail" name="email"  required >
+                                        <label class="label-control" for="cmail"><strong>Email</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-select" id="cusername" name="user_name" required>
+                                        <label class="label-control" for="cusername"><strong>Nom d'utilisateur</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['last_name'] ?>" class="form-control-select" id="cnom" name="last_name" required>
+                                        <label class="label-control" for="cnom"><strong>Nom</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $user_account['first_name'] ?>" class="form-control-select" id="cprenom" name="first_name" required>
+                                        <label class="label-control" for="cprenom"><strong>Prénom</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" value="<?php echo $user_account['date_of_birth'] ?>" class="form-control-select" id="cbirthdate" name="date_of_birth" required>
+                                        <label class="label-control" for="cbirthdate"><strong>Date de naissance</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <input type="hidden" name="redirection" value="<?php 
+                                    if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
+                                    <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
+                                </form>
+                    </div>
+                </div> <!-- end of tab-pane --> 
+
+                <!-- end of tab -->
+
+            </div> <!-- end of tab-content -->
+            <!-- end of tabs content -->
+
+        </div> <!-- end of tabs-containerbis -->
+    </div> <!-- end of tabs -->
 
 
    <!-- Les Projets -->
@@ -214,7 +285,7 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
                                                 </span>
                                                 <span class="fa-stack">
                                                     <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
@@ -263,7 +334,7 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
                                                 </span>
                                                 <span class="fa-stack">
                                                     <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
@@ -312,7 +383,7 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
                                                 </span>
                                                 <span class="fa-stack">
                                                     <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  

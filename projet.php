@@ -124,7 +124,7 @@
     <!-- end of Partenaire -->
    
     <!--Image-->
-    <div id="photo" class="slider ">
+    <div id="photo" class="slider">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -163,7 +163,7 @@
 
 
     <!-- Terms Content -->
-    <div class="ex-basic-2">
+    <div class="ex-basic-2 tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
