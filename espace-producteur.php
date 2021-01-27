@@ -310,7 +310,8 @@
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-12">
                 <h3>Mettre une nouvelle video pour ma communauté</h3>
-                <input type="file" id="video" name="video1" accept="video/*"> 
+                <a class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Une vidéo à la fois ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></a><br>
+                <br><input type="file" id="video" name="video1" accept="video/*"> 
              </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
@@ -323,7 +324,8 @@
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-12">
                 <h3>Mettre des news pour ma communauté</h3>
-                <input type="file" id="news" name="news1" accept=".doc,.pdf"> 
+                <a class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Un fichier à la fois ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></a><br>
+                <br><input type="file" id="news" name="news1" accept=".doc,.pdf"> 
              </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->

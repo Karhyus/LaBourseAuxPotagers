@@ -105,8 +105,10 @@ h5 {
 
 h6 {
 	color: #484a46;
-	font: 700 1rem/1.375rem "Montserrat", sans-serif;
+	font: 700 1rem/1.325rem "Montserrat", sans-serif;
 }
+
+
 
 a {
 	color: #787976;
@@ -118,7 +120,13 @@ a:hover {
 	text-decoration: underline;
 }
 
-a.green {
+a.ecolo {
+	color: #14bf98;
+	font: 700 0.8rem/1.025rem "Montserrat", sans-serif;
+}
+
+a.green, 
+.green {
 	color: #14bf98;
 }
 
@@ -1724,7 +1732,7 @@ input[type='checkbox'] {
 
 .basic-2 .image-wrapper img {
 	margin: 0;
-	transition: all 0.5s;
+	transition: all 0.7s;
 }
 
 /* end of hover animation */

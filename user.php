@@ -94,22 +94,15 @@
         <div class="container">
             <div class="section-title"> PROFIL</div>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="text-container">
                         <h2 class="white"> Jean-Pierre</h2>
                         <p class="white ">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p> 
                         <p class="testimonial-text white ">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                     
                     </div> <!-- end of text-container --> 
                 </div> <!-- end of col -->
-                <div class="col-lg-1">
-                    </div> 
-                <div class="col-lg-3">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/testimonial-6.jpg" alt="alternative">
-                        </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                     <div class="text-container ">
                         <ul class="list-unstyled li-space-lg white">
                             <li class="address "><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
@@ -316,7 +309,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
                                             <div class="testimonial-author">Jude Thorn - Founder</div>
@@ -328,7 +320,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
                                             <div class="testimonial-author">Marsha Singer - Marketer</div>
@@ -340,7 +331,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
                                             <div class="testimonial-author">Roy Smith - Developer</div>
@@ -352,7 +342,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
                                             <div class="testimonial-author">Ronald Spice - Owner</div>
@@ -364,7 +353,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
                                             <div class="testimonial-author">Lindsay Rune - Manager</div>
@@ -376,7 +364,6 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
                                         <div class="card-body">
                                             <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
                                             <div class="testimonial-author">Ann Black - Consultant</div>

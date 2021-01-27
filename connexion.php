@@ -83,6 +83,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">CONNEXION</div>
+                        <a class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Pensez à enregistrer notre site dans vos navigateurs favoris ! Moins de clics c'est plus écologique </em></i></a><br>
                         <div class="text-container">
                              <!-- Contact Form -->
                             <form id="connexionForm" data-toggle="validator" data-focus="false" method="post" action="forms/connexion.php">
