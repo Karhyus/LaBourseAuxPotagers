@@ -124,7 +124,7 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group checkbox white">
-                                    <input type="checkbox" id="cstatus">Je suis un(e) agriculteur(rice).
+                                    <input type="checkbox" id="cstatus" name="type" value="1">Je suis un(e) agriculteur(rice).
                                 </div>
                                 <div class="form-group checkbox white">
                                     <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>En créant mon compte, j'accepte les <a href="terms-conditions.php" class="white">Conditions Générales.</a> 

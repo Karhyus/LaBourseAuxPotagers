@@ -15,6 +15,7 @@ while($tmp = $req->fetch()){
 		
 	}
 }
+
 $req->closeCursor();
 
 if($erreur == false){
