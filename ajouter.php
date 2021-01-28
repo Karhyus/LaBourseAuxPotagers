@@ -42,7 +42,7 @@ session_start();
         {
             $lino=$("#counterpart_list li").length;
             $lino=$lino+1;
-            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><div class='form-group'><input type='text' class='form-control-input' id='option_min' name='option_min[]' required><label class='label-control' for='option_min'>Don minimum</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_max' name='option_max[]' required><label class='label-control' for='option_max'>Don maximum</label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='ajouterProjetForm' class='form-control-input' id='counterpart' name='counterpart[]' required></textarea><label class='label-control' for='counterpart'>En échange du don</label><div class='help-block with-errors'></div></div></li>");
+            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><div class='form-group'><input type='text' class='form-control-input' id='counterpart_name' name='counterpart_name[]' required><label class='label-control' for='counterpart_name'>Nom de la contrepartie</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_min' name='option_min[]' required><label class='label-control' for='option_min'>Don minimum</label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-input' id='option_max' name='option_max[]' required><label class='label-control' for='option_max'>Don maximum</label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='ajouterProjetForm' class='form-control-input' id='counterpart_description' name='counterpart_description[]' required></textarea><label class='label-control' for='counterpart_description'>En échange du don</label><div class='help-block with-errors'></div></div></li>");
         }
     </script>
 
@@ -78,7 +78,7 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#aide">AIDE</a>
@@ -128,6 +128,11 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
+                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
+                                    <label class="label-control" for="project_description_long">Description longue</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
                                 <label for="photo">Mettre vos photos du projets</label> <br>
                                     <input type="file" id="photo1" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
                                     <input type="file" id="photo2" name="photo2" accept="image/png, image/jpeg, image/jpg"> 
@@ -146,8 +151,8 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
-                                    <label class="label-control" for="project_description_long">Description longue</label>
+                                    <input type="date" class="form-control-input" min = "0" id="end_date" name="end_date" required>
+                                    <label class="label-control" for="goal">Date de fin de financement</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group checkbox ">
@@ -169,6 +174,11 @@ session_start();
                                     <li class="nav-item" id="counterpart_1">
                                         <div class="section-title" name="counterpart">CRITERE DE DONS N°1</div>
                                         <div class="form-group">    
+                                            <input type="text" class="form-control-input" id="counterpart_name" name="counterpart_name[]" required>
+                                            <label class="label-control" for="counterpart_name">Nom de la contrepartie</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">    
                                             <input type="text" class="form-control-input" id="option_min" name="option_min[]" required>
                                             <label class="label-control" for="option_min">Don minimum</label>
                                             <div class="help-block with-errors"></div>
@@ -179,8 +189,8 @@ session_start();
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <textarea form="ajouterProjetForm" class="form-control-input" id="counterpart" name="counterpart[]" required></textarea>
-                                            <label class="label-control" for="counterpart">En échange du don</label>
+                                            <textarea form="ajouterProjetForm" class="form-control-input" id="counterpart_description" name="counterpart_description[]" required></textarea>
+                                            <label class="label-control" for="counterpart_description">En échange du don</label>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </li>
