@@ -99,7 +99,7 @@ session_start();
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
+    </div> <!-- end of basic-3 -->
     <!-- end of Partenaire -->
 
     <!-- Details 2 -->

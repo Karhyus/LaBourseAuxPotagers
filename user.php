@@ -112,7 +112,7 @@
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
+    </div> <!-- end of basic-3 -->
     <!-- end of Partenaire -->
       
    <!-- Les Projets -->
