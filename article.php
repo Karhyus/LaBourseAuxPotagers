@@ -99,7 +99,7 @@
                         <p>Je recommande ce site sur la permaculture qui m’a permis de gagner de la place sur mon terrain et de cultiver une plus grande diversité de produits en même temps !</p>
                         <p>Pour ma part, à la fin de la récolte de mes laitues, j’ai pu planter du choux et ainsi, avoir des récoltes variées de légumes saisonniers.</p>
                         <span class="fa-stack ">
-                                <a href="user.php">Jérome<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a href="user.php">Mélanie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container -->  
                     <div class="text-container">
