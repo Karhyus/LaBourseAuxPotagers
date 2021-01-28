@@ -81,7 +81,7 @@
             </span>  
             
             <ul class="navbar-nav ml-auto">
-            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
+            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir (I) OU Modifier (P)</a>
             </ul>  
     
             <ul class="navbar-nav ml-auto">
