@@ -92,13 +92,28 @@ session_start();?>
                         <a class="page-scroll dropdown-item" href="#Partenaire"><span class="item-text">NOS PARTENAIRES</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                         <a class="page-scroll dropdown-item" href="#equipe"><span class="item-text">L'EQUIPE</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="page-scroll dropdown-item" href="#contact"><span class="item-text">CONTACT</span></a>
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>
+               
+                <?php if(!isset($_SESSION['user_account'])){ ?>
+                    <?php } else { 
+                        if($_SESSION['user_account']['type'] == 1) { ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">MON ESPACE</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="page-scroll dropdown-item" href="espace-producteur.php"><span class="item-text">ESPACE PRODUCTEUR</span></a>
+                                <div class="dropdown-items-divide-hr"></div>
+                                <a class="page-scroll dropdown-item" href="espace-investisseur.php"><span class="item-text">ESPACE INVESTISSEUR</span></a>
+                            </div>
+                        </li>
+                    <?php } else { ?>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="espace-investisseur.php">MON ESPACE</a>
+                        </li>
+                    <?php } } ?>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <?php if(!isset($_SESSION['user_account'])){ ?>
@@ -107,7 +122,7 @@ session_start();?>
                 	</li>
                	<?php } else { ?>
                		<li class="nav-item">
-                		<a class="nav-link page-scroll" href="mon_compte.php">MON COMPTE</a>
+                		<a class="nav-link page-scroll" href="mon_compte.php">MES INFOS</a>
                 	</li>
                 	<li class="nav-item">
                 		<a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
@@ -958,12 +973,6 @@ session_start();?>
                             <label class="label-control" for="cmessage">Ton message</label>
                             <div class="help-block with-errors"></div>
                         </div>
-                 <!-- 
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    -->
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
                         </div>
@@ -1011,248 +1020,3 @@ session_start();?>
     
 </body>
 </html>
-
-
-    <!-- Call Me
-    <div id="callMe" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">CALL ME</div>
-                        <h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
-                        <p class="white">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">It's very easy just fill in the form so we can call</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">During the call we'll require some info about the company</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div> <!-- end of col 
-                <div class="col-lg-6">
-                   
-                    <!-- Call Me Form 
-                    <form id="callMeForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="lname" name="lname" required>
-                            <label class="label-control" for="lname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                            <label class="label-control" for="lphone">Phone</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
-                            <label class="label-control" for="lemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control-select" id="lselect" required>
-                                <option class="select-option" value="" disabled selected>Interested in...</option>
-                                <option class="select-option" value="Off The Ground">Off The Ground</option>
-                                <option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
-                                <option class="select-option" value="Market Domination">Market Domination</option>
-                            </select>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox white">
-                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CALL ME</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of call me form 
-                    
-                </div> <!-- end of col
-            </div> <!-- end of row 
-        </div> <!-- end of container 
-    </div> <!-- end of form-1 -->
-    <!-- end of call me -->
-
-<!-- RECAP ! 
-    <div id="recap" class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-xl-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col 
-                <div class="col-lg-7 col-xl-6">
-                    <div class="text-container">
-                        <div class="section-title">ABOUT</div>
-                        <h2>We're Passionate About Delivering Growth Services</h2>
-                        <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Everything we recommend has direct positive impact</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">You will become an important partner of our company</div>
-                            </li>
-                        </ul>
-
-                        <!-- Counter 
-                        <div id="counter">
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="231">1</div>
-                                <div class="counter-info">Happy<br>Users</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="121">1</div>
-                                <div class="counter-info">Issues<br>Solved</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="159">1</div>
-                                <div class="counter-info">Good<br>Reviews</div>
-                            </div>
-                        </div>
-                        <!-- end of counter -->
-
-                    </div> <!-- end of text-container -->      
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of about -->
-  
-<!-- Details 2 
-<div class="tabs">
-        <div class="area-1">
-            <div class="tabs-container">
-                
-                <!-- Tabs Links 
-                <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Agriculture pédagogique</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> Circuit court </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Economie circulaire </a>
-                    </li>
-                </ul>
-                <!-- end of tabs links -->
-                
-                <!-- Tabs Content 
-                <div class="tab-content" id="ariaTabsContent">
-
-                    <!-- Tab --
-                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                        <h4>Business Services For Companies</h4>
-                        <p>Aria provides the most innovative and customized business services in the industry. Our <a class="green page-scroll" href="#services">Services</a> section shows how flexible we are for all types of budgets.</p>
-                        
-                        <!-- Progress Bars --
-                        <div class="progress-container">
-                            <div class="title">Business Development 100%</div>
-                            <div class="progress">
-                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="title">Opportunity Spotting 76%</div>
-                            <div class="progress">
-                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="title">Online Marketing 90%</div>
-                            <div class="progress">
-                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div> <!-- end of progress-container -->
-                        <!-- end of progress bars -->
-                        
-                    </div> <!-- end of tab-pane --> 
-                    <!-- end of tab -->
-
-                    <!-- Tab --
-                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                        <ul class="list-unstyled li-space-lg first">
-                            <li class="media">
-                                <div class="media-bullet">1</div>
-                                <div class="media-body"><strong>High quality</strong> is on top of our list when it comes to the way we deliver the services</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">2</div>
-                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">3</div>
-                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
-                            </li>
-                        </ul>
-                        <ul class="list-unstyled li-space-lg last">
-                            <li class="media">
-                                <div class="media-bullet">4</div>
-                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">5</div>
-                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">6</div>
-                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab --
-                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <p> Conscients que notre projet aura un impact sur l’environnement, nous avons souhaité l’inclure dans une dynamique <strong>d’économie circulaire.</strong> Voici nos engagements pour l'éco-conception de notre plateforme : </p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Inclure seulement les fonctionnalités essentielles</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Design simple et minimaliste</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Site optimisé pour la sobriété numérique</div>
-                            </li>
-                        </ul>
-                        <p>En termes de consommation responsable, écologie industrielle et recyclage, nous avons un réel impact sensibilisant et engageant pour notre <strong>communauté éco-responsable :</strong></p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Financement participatif de projets respectueux de l’environnement</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Emergence de “petits” ou “grands” projets locaux</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Témoignages “open source” de bonnes pratiques écologiques</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                </div> <!-- end of tab-content -->
-                <!-- end of tabs content -->
-
-            </div> <!-- end of tabs-container -->
-        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
-    </div> <!-- end of tabs -->
-    <!-- end of details 2 -->

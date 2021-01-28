@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('bdd_connexion.php'); 
+session_start();?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -79,10 +81,13 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#aide">AIDE</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="espace-investisseur.php">ESPACE INVESTISSEUR</a>
+                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="mon_compte.php">MON COMPTE</a>
+                    <a class="nav-link page-scroll" href="mon_compte.php">MES INFOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.php">DECONNEXION</a>
@@ -310,7 +315,7 @@
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-12">
                 <h3>Mettre une nouvelle video pour ma communauté</h3>
-                <a class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Une vidéo à la fois ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></a><br>
+                <div class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Une vidéo à la fois ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></div><br>
                 <br><input type="file" id="video" name="video1" accept="video/*"> 
              </div> <!-- end of col -->
         </div> <!-- end of row -->
@@ -619,68 +624,8 @@
     </div> <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
     <!-- end of project lightboxes -->
-
-        
-        
-        
-<!-- Aide -->
-    <div id="aide" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">Aide</div>
-                        <h2>Un problème ? </h2>
-                        <p>N'hésitez pas, nous sommes là pour vous </p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>37 Quai de grenelle 75015 Paris</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Nom et Prénom </label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Ton message </label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                 <!-- 
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    -->
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CLIQUE et on te répondra au plus vite</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
-
  
-
+    <?php include('aide.php') ?>
     <?php include('footer.php') ?>
 
     <!-- Copyright -->
