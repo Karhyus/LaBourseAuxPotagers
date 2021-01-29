@@ -114,7 +114,7 @@ while($tmp = $req->fetch()){
 
 
 	unset($_SESSION['project']);
-	//header('Location: ../' . $redirection);
+	header('Location: ../' . $redirection);
 }
 
 ?>
