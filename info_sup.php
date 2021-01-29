@@ -78,72 +78,60 @@
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
     
-<!-- Header -->
-    <header id="creation" class="header counter">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">CREER UN COMPTE</div>
+    <!-- Profil -->
+    <div id="profil" class="basic-3">
+        <div class="container">
+            <div class="section-title">MON COMPTE</div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of Partenaire -->
+
+    <!-- Changement  -->
+    <div class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">TES INFOS SUPLEMENTAIRES</div>
                         <div class="text-container">
                              <!-- Contact Form -->
-                            <form id="inscriptionForm" data-toggle="validator" data-focus="false" method="post" action="forms/creercompte.php">
-                                <?php 
-                                if(isset($_GET['erreur'])){
-                                    if ($_GET['erreur'] == true) {?><p style="color:red">Ce mail est déjà utilisé.</p> <?php } 
-                                }
-                                ?>
+                             <form id="inscriptionForm" data-toggle="validator" data-focus="false" method="post" action="forms/creercompte.php">
                                 <div class="form-group">
-                                    <input type="text" class="form-control-input" id="cusername" name="user_name" required>
-                                    <label class="label-control" for="cusername">Nom d'utilisateur</label>
+                                    <input type="text" class="form-control-textarea" id="cdes" name="description" required>
+                                    <label class="label-control" for="cusername">Description</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control-input" id="cnom" name="last_name" required>
-                                    <label class="label-control" for="cnom">Nom</label>
+                                    <input type="text" class="form-control-input" id="cnom_com" name="company_name" required>
+                                    <label class="label-control" for="cnom">Nom de la compagnie</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cville" name="city" required>
+                                    <label class="label-control" for="cprenom">Ville</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control-input" id="cprenom" name="first_name" required>
-                                    <label class="label-control" for="cprenom">Prénom</label>
+                                    <input type="date" class="form-control-input" id="ccode" name="zip_code" required>
+                                    <label class="label-control" for="cbirthdate">Code Postal</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="date" class="form-control-input" id="cbirthdate" name="date_of_birth" required>
-                                    <label class="label-control" for="cbirthdate">Date de naissance</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control-input" id="cmail" name="email" required>
-                                    <label class="label-control" for="cmail">Email</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="password" class="form-control-input" id="cmdp" name="password" minlength="8" required>
-                                    <label class="label-control" for="cmdp">Mot de passe (8 caractères minimum)</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group checkbox white">
-                                    <input type="checkbox" id="cstatus" name="type" value="1">Je suis un(e) agriculteur(rice).
-                                </div>
-                                <div class="form-group checkbox white">
-                                    <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>En créant mon compte, j'accepte les <a href="terms-conditions.php" class="white">Conditions Générales.</a> 
-                                    <div class="help-block with-errors"></div>
-                                </div>
+                                <!-- END-->
                                 <input type="hidden" name="redirection" value="<?php 
                                 if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
-                                <input class="btn-solid-reg page-scroll" type="submit" value="M'inscrire"/>
+                                <input class="btn-solid-reg page-scroll" type="submit" value="Enregistrer"/>
                             </form>
                         </div>
-
                     </div><!-- end of col --> 
                 </div> <!-- end of row -->
-                        <div class="button"><a class="btn-solid-reg page-scroll" href="connexion.php">J'ai déjà un compte</a>
-                        </div> <!-- end of button-container -->
             </div> <!-- end of container -->
         </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
+    </div> <!-- end of header -->
     <!-- end of header -->
+
   
     <?php include('aide.php') ?>
     <?php include('footer.php') ?>

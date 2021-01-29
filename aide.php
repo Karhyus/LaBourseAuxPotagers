@@ -12,7 +12,8 @@
                             <li><i class="fas fa-phone"></i><a href="tel:0601172202"> 0601172202</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:bourseauxpotagers@gmail.com">bourseauxpotagers@gmail.com</a></li>
                         </ul>
-                    </div> <!-- end of text-container -->
+                        <div class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : En moyenne en emission de CO2, un email = 4g et un SMS = 0.014g. Pensez y en nous contactant !</em></i></div><br>           
+                   </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     
