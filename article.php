@@ -80,7 +80,7 @@
      <!-- Resume -->
     <div id="resume" class="basic-3">
         <div class="container">
-            <div class="section-title">CONDITIONS GENERALES</div>
+            <div class="section-title">LES ARTICLES DES BONNES PRATIQUES</div>
             
         </div> <!-- end of container -->
     </div> <!-- end of basic-3 -->
@@ -88,34 +88,43 @@
    
 
     <!-- Terms Content -->
-    <div class="ex-basic-2">
+    <div class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">La réglementation du statut des plateformes de crowdfunding.</div>
                     <div class="text-container">
-                        <p>La loi sécurité financière n° 2003-706 du 1er août 2003 et l’ordonnance du 30 mai 2014 (n°2014-559) ont institué deux statuts pour les plateformes de crowdfunding, l’un adapté au crowdlending et au crowdfunding en dons, et l’autre adapté au crowdinvesting.</p>
-                    </div> <!-- end of text-container -->   
-                    <div class="text-container">
-                        <h5>Le statut d’Intermédiaire en Financement Participatif (IFP) :</h5><br>
-                        <p>Ce statut permet aux plateformes en bénéficiant, de déroger au monopole bancaire en matière de crédit.</p><br>
-                        <p>Non concernés par ce statut en 2014, les sites internet de dons en ligne sont obligés de détenir le statut d’IFP depuis le 1er mars 2017.</p><br>
-                        <p>“Intermédiaire en Financement Participatif” est un statut qui autorise les plateformes de prêts (avec ou sans intérêt) à mettre en relation des porteurs de projets et des prêteurs par l’intermédiaire d’un site internet. Pour bénéficier du statut d’IFP, il est nécessaire de déposer un dossier auprès du Registre des Intermédiaires en Assurance (ORIAS) sur lequel sont renseignées différentes rubriques permettant de justifier notamment l’honorabilité et les compétences professionnelles afin d’obtenir une immatriculation.</p><br>
-                        <p> Les plateformes de dons ne sont pas concernées par la justification des compétences professionnelles.<br>
-                        - les porteurs de projets ne peuvent pas emprunter plus de 1 million d’euros ; <br>
-                        - les prêteurs peuvent investir 2.000€ maximum par prêteur et par projet quand c’est un prêt rémunéré et 5.000€ maximum pour un prêt non rémunéré.</p><br>
-                        <p>Les IFP ne peuvent exercer que les activités mentionnées à l’art. L. 548-1 CMF ou, le cas échéant, celles qu’ils sont autorisées à exercer en leur qualité d’établissement de crédit, de société de financement, d’établissement de paiement, d’établissement de monnaie électronique, d’entreprise d’investissement, d’agent de prestataire de services de paiement ou de conseiller en investissements participatifs.</p><br>
-                        <p>Le cumul avec une activité d’intermédiaire en assurance est possible pour l’activité d’IFP exercée à titre accessoire par un établissement de crédit, un établissement de paiement ou de monnaie électronique ou une société de financement.</p><br>
-                        <p>Le cumul avec une activité de conseiller en investissements participatifs est possible, à condition de ne pas fournir de services de paiement.</p><br>
-                        <p>Si la plateforme encaisse des fonds pour le compte de tiers dans le cadre des opérations de financement participatif, elle doit être agréée a minima en qualité d’établissement de paiement par l’ACPR ou être enregistrée en tant qu’agent de prestataire de services de paiement.</p><br>
-                        <p>Pour les plateformes de dons, tout dépend de la façon dont elles interviennent dans la circulation des mouvements de fonds, d’autant plus que, contrairement aux IFP prêts, les plateformes de dons n’ont pas à intervenir après la période de collecte.</p><br>
-                        <p>Les IFP doivent souscrire une assurance responsabilité civile professionnelle depuis le 1er juillet 2016.</p><br>
-                        <p>Le fait, pour toute personne d’exercer l’activité d’IFP pour les opérations de prêt avec ou sans intérêt en violation des articles L. 548-1 à L. 548-4 CMF, est puni de cinq ans d’emprisonnement et 375 000 euros d’amende.</p><br>
+                        <h5>Mon coup de cœur de ce mois-ci :</h5><br>
+                        <div class="section-title">La permaculture</div>
+                        <p><em><a href="https://www.permaculturedesign.fr/association-legume-jardin-potager-permaculture/">https://www.permaculturedesign.fr/association-legume-jardin-potager-permaculture/</a></em></p>
+                        <p>Je recommande ce site sur la permaculture qui m’a permis de gagner de la place sur mon terrain et de cultiver une plus grande diversité de produits en même temps !</p>
+                        <p>Pour ma part, à la fin de la récolte de mes laitues, j’ai pu planter du choux et ainsi, avoir des récoltes variées de légumes saisonniers.</p>
+                        <span class="fa-stack ">
+                                <a href="user.php">Mélanie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                        </span>  
                     </div> <!-- end of text-container -->  
                     <div class="text-container">
-                        <h5>Protection des données des utilisateurs </h5><br>
-                        <p>Il existe une collecte de données personnelles des internautes dans les domaines de E-commerce qui est soumise à une réglementation stricte issue de la loi dite « Informatique et Libertés » du 6 janvier 1978. Elle concerne les clients et prospects du site qui doivent faire l’objet d’une déclaration à la Commission Nationale Informatique et Liberté (CNIL) conformément à la norme simplifiée n°48 de la CNIL applicable aux fichiers clients – prospects et vente en ligne.</p><br>
-                        <p>Le site de E-commerce doit respecter des obligations concernant le traitement des données personnelles collectées auprès de ses utilisateurs. En particulier, il est tenu d’assurer la confidentialité des données et la sécurité des fichiers. Il doit également informer les personnes dont les données personnelles sont collectées en leur communiquant : son identité, la finalité du traitement des données, le caractère facultatif ou obligatoire des réponses, les destinataires des données, les transmissions envisagées et les droits dont dispose l’utilisateur sur les informations le concernant.</p><br>
+                        <div class="section-title">Tarte au Citron</div>
+                        <p><em><a href="https://cuisine.journaldesfemmes.fr/recette/353020-tarte-au-citron">https://cuisine.journaldesfemmes.fr/recette/353020-tarte-au-citron</a></em></p>
+                        <p>Voici ma recette de tarte au citron bio préférée. Gourmande, avec très peu de sucre je recommande !</p>
+                        <span class="fa-stack ">
+                                <a href="user.php">Alice<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                        </span>  
+                    </div> <!-- end of text-container --> 
+                    <div class="text-container">
+                        <div class="section-title">Agriculture Régéneratrice</div>
+                        <p><em><a href="https://youmatter.world/fr/definition/agriculture-regenerative-definition-cest-quoi-lagriculture-regenerative/">https://youmatter.world/fr/definition/agriculture-regenerative-definition-cest-quoi-lagriculture-regenerative/</a></em></p>
+                        <p>Un article sur l’agriculture régénératrice pour fertiliser naturellement les sols. Tous les bons gestes à pratiquer sont présentés dans cet article. Pour ma part j’ai réalisé des aménagements anti-érosion naturels, ce qui me permet de récupérer facilement l’eau de pluie, cet article m’a beaucoup aidé.</p>
+                        <span class="fa-stack ">
+                                <a href="user.php">Gérard<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                        </span>  
+                    </div> <!-- end of text-container -->  
+                    <div class="text-container">
+                        <div class="section-title">Agriculture Biologique</div>
+                        <p><em><a href="https://www.pensersante.fr/bio-tout-bon">https://www.pensersante.fr/bio-tout-bon</a></em></p>
+                        <p>Voici un petit résumé des effets positifs de l’agriculture biologique sur notre santé et l’environnement en général. À faire partager avec vos clients.</p>
+                        <span class="fa-stack ">
+                                <a href="user.php">Annie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                        </span>  
                     </div> <!-- end of text-container -->  
                 </div> 
             </div> 

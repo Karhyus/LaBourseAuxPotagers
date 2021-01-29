@@ -126,6 +126,27 @@
                                 <div class="form-group checkbox white">
                                     <input type="checkbox" id="cstatus" name="type" value="1">Je suis un(e) agriculteur(rice).
                                 </div>
+                                <!-- IF cstatus = 1 : je suis un agriculteur , on affiche ca -->
+                                <div class="form-group">
+                                    <input type="text" class="form-control-textarea" id="cdes" name="description" required>
+                                    <label class="label-control" for="cusername">Description</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cnom_com" name="company_name" required>
+                                    <label class="label-control" for="cnom">Nom de la compagnie</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cville" name="city" required>
+                                    <label class="label-control" for="cprenom">Ville</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control-input" id="ccode" name="zip_code" required>
+                                    <label class="label-control" for="cbirthdate">Code Postal</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <!-- END-->
                                 <div class="form-group checkbox white">
                                     <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>En créant mon compte, j'accepte les <a href="terms-conditions.php" class="white">Conditions Générales.</a> 
                                     <div class="help-block with-errors"></div>

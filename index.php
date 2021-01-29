@@ -663,7 +663,7 @@ session_start();?>
                     <div class="tab-pane fade  show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <p>Un des objectifs majeurs de notre plateforme est de promouvoir de bonnes pratiques agricoles, alimentaires et environnementales. <br>
                         Nous incitons les agriculteurs à proposer des visites, des ateliers ou simplement de donner des nouvelles des avancées de leurs projets en contrepartie du financement. <br>
-                        Les agriculteurs ont aussi la possibilité d’écrire leurs bonnes pratiques agricoles, leurs innovations responsables dans notre dossier <a class="green page-scroll" href="#services">Les articles des bonnes pratiques</a>. <br>
+                        Les agriculteurs ont aussi la possibilité d’écrire leurs bonnes pratiques agricoles, leurs innovations responsables dans notre dossier <a class="green page-scroll" href="article.php">Les articles des bonnes pratiques</a>. <br>
                         Ceci dans le but de <strong>sensibiliser</strong> et <strong>faire connaître</strong> au plus grand nombre les contraintes du métier ainsi que les bonnes idées et astuces pour une agriculture durable. <br>
                         </p>
                         <p>Cette pédagogie active permettra de faire des rencontres avec des agriculteurs, et de se familiariser avec les bonnes pratiques qu’il propose sur son terrain : compost, gestion des déchets, goûter des produits, apprendre les mécanismes de l’eau et des écosystèmes...
