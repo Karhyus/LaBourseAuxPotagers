@@ -76,7 +76,7 @@ session_start();
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="javascript:history.back()"> RETOUR <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
@@ -238,7 +238,7 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">MES PROJETS </div>
+                    <div class="section-title">MES PROJETS</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">

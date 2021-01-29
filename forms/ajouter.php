@@ -87,7 +87,7 @@ while($tmp = $req->fetch()){
 			echo "OUI";
 	        $chemin = '../upload/'. $_SESSION['user_account']['user_name'] . '/' . $_SESSION['project']['id'] . '/';
 	        
-	        move_uploaded_file($_FILES['photo1']['tmp_name'], $chemin . basename($_FILES['photo1']['name']));
+	        move_uploaded_file($_FILES['photo1']['tmp_name'], $chemin . 1 . '.' . $extension_upload1);
     	}
 	}
 	if(isset($_FILES['photo2'])){
@@ -96,7 +96,7 @@ while($tmp = $req->fetch()){
 			if (in_array($extension_upload2, $extensions_autorisees)) {
 		        $chemin = '../upload/'. $_SESSION['user_account']['user_name'] . '/' . $_SESSION['project']['id'] . '/';
 		        
-		        move_uploaded_file($_FILES['photo2']['tmp_name'], $chemin . basename($_FILES['photo2']['name']));
+		        move_uploaded_file($_FILES['photo2']['tmp_name'], $chemin . 2 . '.' . $extension_upload2);
 	    	}
 	    }
 	}
@@ -106,7 +106,7 @@ while($tmp = $req->fetch()){
 			if (in_array($extension_upload3, $extensions_autorisees)) {
 		        $chemin = '../upload/'. $_SESSION['user_account']['user_name'] . '/' . $_SESSION['project']['id'] . '/';
 		        
-		        move_uploaded_file($_FILES['photo3']['tmp_name'], $chemin . basename($_FILES['photo3']['name']));
+		        move_uploaded_file($_FILES['photo3']['tmp_name'], $chemin . 3 . '.' . $extension_upload3);
 		    }
 		}
 	}
