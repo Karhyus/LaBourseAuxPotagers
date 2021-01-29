@@ -1543,6 +1543,10 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
     text-align: center;
 }
+.filter .ecolo{
+	margin-bottom: 2rem;
+}
+
 
 .filter h2,
 .filter .section-title {
@@ -1777,6 +1781,9 @@ input[type='checkbox'] {
 }
 
 .counter .section-title {
+	margin-bottom: 2rem;
+}
+.counter .ecolo {
 	margin-bottom: 2rem;
 }
 

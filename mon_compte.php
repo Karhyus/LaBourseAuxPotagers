@@ -285,10 +285,10 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>          
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>                 
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -334,10 +334,10 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>          
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>                 
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
@@ -383,10 +383,10 @@ session_start();
                                         <div class="button-container">
                                             <div class="row">  
                                                 <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
+                                                    <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>          
                                                 </span>
                                                 <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
+                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>                 
                                                 </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                

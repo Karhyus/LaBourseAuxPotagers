@@ -102,9 +102,11 @@ session_start();?>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                    <br>
-                    <br>
-                    <br>
+                    <?php if(!isset($_SESSION['user_account'])){ ?>
+                        <?php } else { 
+                            if($_SESSION['user_account']['type'] == 1) { ?>
+                            <div class="section-title">ESPACE PRODUCTEUR </div>
+                        <?php } } ?>
                         <div id="counter">
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="5">1</div>
