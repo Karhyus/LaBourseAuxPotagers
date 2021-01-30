@@ -408,8 +408,8 @@ session_start();?>
                         <div class="element-item legumes">
                             <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Les carottes de Picardie</span></div><img src="images/project-1.jpg" alt="alternative"></a>
                         </div>
-                        <div class="element-item innovations fruits">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Les fraises “Les Reines des Vallées” de Marseille</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                        <div class="element-item fruits">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Les fraises “Les Reines des Vallées”</span></div><img src="images/project-2.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item fruits">
                             <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Les clémentines de la Vallée de Chevreuse</span></div><img src="images/project-3.png" alt="alternative"></a>
@@ -455,7 +455,7 @@ session_start();?>
                 <h3>Les carottes de Picardie</h3>
                 <hr class="line-heading">
                 <h6>Gustave<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Retraité et ancien ingénieur informaticien, je souhaite mettre à profit mes connaissances en matière de technologie pour la gestion des cultures de carottes biologiques. Ayant déjà un terrain en Picardie, je recherche un financement à hauteur de 3 000 euros pour acquérir les technologies nécessaires à l’optimisation des ressources naturelles utilisées. Mon but est de gérer convenablement le débit d’eau, être informé des fuites d’eau et pouvoir réguler la quantité d’engrais biologique automatiquement en fonction des besoins des denrées. Je souhaite partager avec mes investisseurs les avancées de mes productions et leur proposer des visites et dégustations sur site 2 fois dans l’année.</p>
+                <p>Retraité et ancien ingénieur informaticien, je souhaite mettre à profit mes connaissances en matière de technologie pour la gestion des cultures de carottes biologiques. Ayant déjà un terrain en Picardie, je recherche un financement à hauteur de 3 000 euros pour acquérir les technologies nécessaires à l’optimisation des ressources naturelles utilisées. Mon but est de gérer convenablement le débit d’eau, être informé des fuites d’eau et pouvoir réguler la quantité d’engrais biologiques automatiquement en fonction des besoins des denrées. Je souhaite partager avec mes investisseurs les avancées de mes productions et leur proposer des visites et dégustations sur site 2 fois dans l’année.</p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
             </div> <!-- end of col -->
@@ -471,10 +471,10 @@ session_start();?>
                 <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
             </div> <!-- end of col -->
             <div class="col-lg-6">
-                <h3>Les fraises “Les Reines des Vallées” de Marseille</h3>
+                <h3>Les fraises “Les Reines des Vallées”</h3>
                 <hr class="line-heading">
-                <h6>Michelle et Jean-Michel<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
-                <p>Anciennement expert comptable, j’ai décidé de profiter de ma cinquantième bougie pour tout lâcher et complètement changer de voie à l’aide de mon épouse Michelle. Depuis mon enfance, j’attache un attrait particulier à l’écologie, à la nature. Grand sportif, je me lance chaque année le défi de suivre les itinéraires des Grandes Randonnées (GR) à travers la France afin de découvrir la beauté que nous réserve le monde. Cette année, il s’agit d’un défi professionnel et pour cela j’ai besoin de l’aide de chacun. Le fraisier Reine des Vallées est une variété de type fraise des bois remontante que je souhaite cultiver et faire découvrir aux autres. Je souhaite partager mon goût pour les produits sains et bio. </p>
+                <h6>Roméo<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <p>Anciennement expert comptable, j’ai décidé de profiter de ma cinquantième bougie pour tout lâcher et complètement changer de voie à l’aide de mon épouse Michelle. Depuis mon enfance, j’attache un attrait particulier à l’écologie, à la nature. Grand sportif, je me lance chaque année le défi de suivre les itinéraires des Grandes Randonnées (GR) à travers la France afin de découvrir la beauté que nous réserve le monde. Cette année, il s’agit d’un défi professionnel et pour cela j’ai besoin de l’aide de chacun. Le fraisier “Reine des Vallées” est une variété de type fraises des bois remontantes que je souhaite cultiver et faire découvrir aux autres. Je souhaite partager mon goût pour les produits sains et bio.  </p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
             </div> <!-- end of col -->
@@ -511,7 +511,7 @@ session_start();?>
             <div class="col-lg-6">
                 <h3>Les courgettes bio d’Alsace</h3>
                 <hr class="line-heading">
-                <h6>Charles et Annie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <h6>Annie<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
                 <p>Habitants de l’Alsace depuis plus de 40 ans, nous avons auparavant investi dans des champs de tomates et de salades. Aujourd’hui nous souhaitons proposer à nos fidèles clients, voisins, amis, investisseurs des courgettes biologiques. Un légume cultivé en France qui va ravir petits et grands aussi bien pour les plats d’été que les ratatouilles d’hiver. La culture de ces légumes nécessite une quantité d’eau très importante ainsi qu’un entretien régulier. Nous souhaitons donc proposer à des investisseurs écolos de nous aider à financer notre projet de récupération d’eau de pluie et d’arrosage optimisé pour nos nouvelles plantations. Nous accueillerons à bras ouverts nos futurs investisseurs et leur proposeront de goûter les saveurs de nos courgettes alsaciennes bio.</p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
@@ -569,7 +569,7 @@ session_start();?>
             <div class="col-lg-6">
                 <h3>Les oliviers d’Aix en Provence</h3>
                 <hr class="line-heading">
-                <h6>Charlotte et Gérard<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
+                <h6>Gérard<span class="fa-stack"><a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a></span></h6>
                 <p>Issus d’une famille d’oléiculteurs, nous souhaitons profiter de notre terroir ancestral afin de cultiver notre propre verger d’oliviers. Notre volonté est de produire des olives biologiques de qualité et d’utiliser des engrais de type organique. Nous avons de l’expérience en termes de production d’huile d’olive et souhaitons faire partager notre production avec les investisseurs de notre beau projet. Nous recherchons un financement à hauteur de 2 000 euros pour lancer le projet qui sera situé sur les hauteurs d’Aix en Provence (le terrain est déjà en notre possession). Ce que nous attendons le plus de ce projet, c’est qu’il rassemble nos investisseurs autour de notre passion et notre savoir-faire : l’huile d’olive provençale! </p>
                 <p class="testimonial-text">Envie de tenter l'expérience ? cliquez sur "Je me lance" pour découvrir les projets qui n'attendent que vous</p>
                 <a class="btn-solid-reg" href="connexion.php">JE ME LANCE</a> <a class="btn-outline-reg mfp-close as-button" href="#reussite">RETOUR</a> 
