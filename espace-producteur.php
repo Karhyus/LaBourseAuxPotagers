@@ -155,10 +155,10 @@ session_start();?>
                                                 <!-- Card -->
                                                 <div class="card">
                                                     <div class="card-image">
-                                                        <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
                                                     </div>
                                                     <div class="card-body">
-                                                        <h3 class="card-title"><?php echo('upload/' . $_SESSION["user_account"]["user_name"] . '/' . $tmp["id"] . '/' . 1) ?></h3>
+                                                        <h3 class="card-title"><?php echo $tmp['project_name'] ?></h3>
                                                         <p><?php echo $tmp['project_description_short'] ?></p>
                                                         
                                                         <ul class="list-unstyled li-space-lg">

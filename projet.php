@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('bdd_connexion.php'); 
+include('fonctions.php');
+session_start();
+$req = $bdd->query('SELECT * FROM project WHERE id = ' . $_GET['id']);
+$tmp = $req->fetch();
+$req2 = $bdd->query('SELECT * FROM user_account WHERE id=' . $tmp['participant_id']);
+$user = $req2->fetch();
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -105,17 +113,17 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2 class = "white"> CITRONS</h2>
-                        <p class = "white">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+                        <h2 class = "white"><?php echo $tmp['project_name'] ?></h2>
+                        <p class = "white"><?php echo $tmp['project_description_short'] ?></p>
                         <p class="testimonial-text white">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                    
                         <span class="fa-stack ">
-                                <a class ="white" href="user.php">Jean-Pierre<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a class ="white" href="user.php?id=<?php echo $user['id'] ?>"><?php echo $user['user_name']  ?><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container --> 
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" src="images/partenaire.png" alt="alternative">
+                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
                         </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -141,15 +149,15 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/citron_2.jpg" alt="alternative" >
+                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" >
                                 </div>
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/citron_1.jpg" alt="alternative" >
+                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
                                 </div>
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <img class="img-fluid" src="images/citron_3.jpg" alt="alternative" >
+                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
                                 </div>
                     </div> <!-- end of swiper-wrapper -->
                         </div> <!-- end of swiper-container -->
@@ -169,7 +177,7 @@
                 <div class="col-lg-12">
                     <div class="section-title">LE PROJET EN DETAIL</div>
                     <div class="text-container">
-                        <p>Aria also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
+                        <p><?php echo $tmp['project_description_long'] ?></p>
                         <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
                         <ul class="list-unstyled">
                             <li class="media">
@@ -212,45 +220,43 @@
 
                                     <!-- Tabs Links -->
                                     <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-wallet"></i> +1000 €</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-wallet"></i> Entre 1000 et 100 € </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-wallet"></i> -100€</a>
-                                        </li>
+                                        <?php
+                                        $req3 = $bdd->query('SELECT * FROM counterpart WHERE project_id='. $tmp['id']);
+                                        $inc = 1;
+                                        while($ct = $req3->fetch()){ ?>
+                                            <li class="nav-item">
+                                            <a class="nav-link" id="nav-tab-<?php echo ($inc) ?>" data-toggle="tab" href="#tab-<?php echo ($inc) ?>" role="tab" aria-controls="tab-<?php echo ($inc) ?>" aria-selected="false"><i class="fas fa-wallet"></i><?php echo $ct['counterpart_name'] ?> (de <?php echo $ct['option_min'] ?>€ à <?php echo $ct['option_max']?>€)</a>
+                                            </li>
+                                        <?php
+                                            $inc = $inc + 1;
+                                        }
+                                        ?> 
                                     </ul>
                                     <!-- end of tabs links -->
 
                                     <!-- Tabs Content -->
                                     <div class="tab-content" id="ariaTabsContent">
+                                        <?php
+                                        $req4 = $bdd->query('SELECT * FROM counterpart WHERE project_id='. $tmp['id']);
+                                        $inc = 1;
+                                        while($ct2 = $req4->fetch()){
 
-                                        <!-- Tab -->
-                                        <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
-                                                your company achieve its full potential and establish long term stability for</p>
-                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
-                                        </div> <!-- end of tab-pane -->
-
-                                      <!-- Tab -->
-                                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
-                                                your company achieve its full potential and establish long term stability for</p>
-                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
-                                        </div> <!-- end of tab-pane -->
-                                        
-                                        <!-- Tab -->
-                                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                                            <p> 100% customer satisfaction for both types of customers: hiring companies and job seekers.
-                                                your company achieve its full potential and establish long term stability for</p>
-                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
-                                        </div> <!-- end of tab-pane -->
-                                        <!-- end of tab -->
-
+                                        ?>
+                                            <!-- Tab -->
+                                            <div class="tab-pane fade" id="tab-<?php echo ($inc) ?>" role="tabpanel" aria-labelledby="tab-<?php echo ($inc) ?>">
+                                                <p><?php echo $ct2['counterpart_description'] ?></p>
+                                                <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
+                                            </div> <!-- end of tab-pane -->
+                                        <?php 
+                                          $inc = $inc + 1;  
+                                        }
+                                        ?>
                                     </div> <!-- end of tab-content -->
-                                    <!-- end of tabs content -->
+                                    <!-- end of tabs content -->  
+
+                                      
+
+                                    
 
                                 </div> <!-- end of tabs-container -->
                             </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
@@ -288,7 +294,58 @@
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-                                
+                                <?php
+                                    $req4 = $bdd->query('SELECT * FROM project WHERE participant_id=' . $tmp['participant_id'] . ' AND id!=' . $tmp['id']);
+                                    while($tmp2 = $req4->fetch()){ ?>
+                                        <!-- Slide -->
+                                            <div class="swiper-slide">
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp2['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp2['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h3 class="card-title"><?php echo $tmp2['project_name'] ?></h3>
+                                                        <p><?php echo $tmp2['project_description_short'] ?></p>
+                                                        
+                                                        <ul class="list-unstyled li-space-lg">
+                                                            <li class="media">
+                                                                <i class="fas fa-square"></i>
+                                                                <div class="media-body"><?php echo $tmp2['collected'] ?></div>
+                                                            </li>
+                                                            <li class="media">
+                                                                <i class="fas fa-square"></i>
+                                                                <div class="media-body"><?php echo $tmp2['investors'] ?></div>
+                                                            </li>                                         
+                                                        </ul> <!-- end of points -->
+                                                        
+                                                        <!-- Progress Bars -->
+                                                        <div class="progress-container">
+                                                            <div class="price">Cagnotte current/total</div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div> <!-- end of progress-container -->
+                                                        <!-- end of progress bars -->
+                                                        
+                                                    </div> <!-- end of card-body -->
+                                                    
+                                                    <div class="button-container">
+                                                        <div class="row">  
+                                                            <span class="fa-stack">
+                                                                <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                            </span>
+                                                            <span class="fa-stack">
+                                                                <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
+                                                            </span>
+                                                        </div> <!-- end of rol -->
+                                                    </div> <!-- end of button-container -->                
+                                                    
+                                                </div>
+                                                <!-- end of card -->
+                                             </div> <!-- end of swiper-slide -->
+                                            <!-- end of slide -->
+                                    <?php } ?>
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <!-- Card -->
