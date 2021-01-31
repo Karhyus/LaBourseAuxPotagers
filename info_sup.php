@@ -105,21 +105,21 @@ $user = $req->fetch();
                              <form id="participantForm" data-toggle="validator" data-focus="false" method="post" action="forms/participant.php">
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="cnom_com" name="company_name" required>
-                                    <label class="label-control" for="cnom">Nom de l'exploitation</label>
+                                    <label class="label-control" for="cnom_com">Nom de l'exploitation</label>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="cville" name="city" required>
-                                    <label class="label-control" for="cprenom">Ville</label>
+                                    <label class="label-control" for="cville">Ville</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="ccode" name="zip_code" required>
-                                    <label class="label-control" for="cbirthdate">Code Postal</label>
+                                    <label class="label-control" for="ccode">Code Postal</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-textarea" id="cdes" name="description" required>
-                                    <label class="label-control" for="cusername">Description</label>
+                                    <label class="label-control" for="cdes">Description</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <input type="hidden" name="user_account_id" value="<?php if(isset($_GET['id'])){echo $_GET['id']; } ?>" />

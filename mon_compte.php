@@ -50,44 +50,44 @@ session_start();
     <!-- end of preloader -->
     
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-    <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
-    <!-- Image Logo -->
-    <a class="navbar-brand logo-image" href="index.php"><img src="images/logo3.png" alt="alternative"></a>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.php"><img src="images/logo3.png" alt="alternative"></a>
 
-    <!-- Mobile Menu Toggle Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-    </button>
-    <!-- end of mobile menu toggle button -->
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#profil">MON PROFIL<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projets">MES PROJETS</a>
+                    </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#profil">MON PROFIL<span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projets">MES PROJETS</a>
-                </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
-            </li>
 
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="#aide">AIDE</a>
-            </li>
-        </ul>
-    </div>
-</nav> <!-- end of navbar -->
-<!-- end of navbar -->
-    
-    
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#aide">AIDE</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+        
+        
 
      <!-- Profil -->
     <div id="profil" class="basic-3">
@@ -103,7 +103,7 @@ session_start();
     <!-- end of Partenaire -->
 
     <!-- Details 2 -->
-    <div class="tabs">
+    <div class="tabs cards-1">
         <div class="tabs-containerbis">
             
             <!-- Tabs Links -->
@@ -139,11 +139,6 @@ session_start();
                                         } 
                                     }
                                     ?>
-                                    <div class="form-group"> 
-                                        <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-select" id="cmail" name="email"  required >
-                                        <label class="label-control" for="cmail"><strong>Email</strong></label>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
                                     <div class="form-group">
                                         <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-select" id="cusername" name="user_name" required>
                                         <label class="label-control" for="cusername"><strong>Nom d'utilisateur</strong></label>
@@ -164,11 +159,21 @@ session_start();
                                         <label class="label-control" for="cbirthdate"><strong>Date de naissance</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
+                                    <div class="form-group"> 
+                                        <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-select" id="cmail" name="email"  required >
+                                        <label class="label-control" for="cmail"><strong>Email</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group"> 
+                                        <input type="password" value="<?php echo $user_account['password'] ?>" class="form-control-select" id="cmdp" name="password" minlength="8" required>
+                                        <label class="label-control" for="cmdp"><strong>Mot de passe (8 caractères minimum)</strong></label>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
                                     <input type="hidden" name="redirection" value="<?php 
                                     if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
                                     <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
                                 </form>
-                    </div>
+                        </div>
                 </div> <!-- end of tab-pane --> 
 
                 <!-- end of tab -->
@@ -178,7 +183,7 @@ session_start();
                     <div class="text-container">
                                 <?php
                                 //Préremplissage du formulaire avec ses infos
-                                $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
+                                $req = $bdd->query('SELECT * FROM participant WHERE id = ' . $_SESSION['user_account']['id']);
                                 $user_account = $req->fetch();
                                 ?>
                                 <!-- Contact Form -->
@@ -192,36 +197,30 @@ session_start();
                                         } 
                                     }
                                     ?>
-                                    <div class="form-group"> 
-                                        <input type="email" value="<?php echo $user_account['email'] ?>" class="form-control-select" id="cmail" name="email"  required >
-                                        <label class="label-control" for="cmail"><strong>Email</strong></label>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $participant['company_name'] ?>" class="form-control-select" id="cnom_com" name="company_name" required>
+                                        <label class="label-control" for="cnom_com"><strong>Nom de l'exploitation</strong></label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" value="<?php echo $participant['city'] ?>" class="form-control-select" id="cville" name="city" required>
+                                        <label class="label-control" for="cville"><strong>Ville</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="<?php echo $user_account['user_name'] ?>" class="form-control-select" id="cusername" name="user_name" required>
-                                        <label class="label-control" for="cusername"><strong>Nom d'utilisateur</strong></label>
+                                        <input type="text" value="<?php echo $participant['zip_code'] ?>" class="form-control-select" id="ccode" name="zip_code" required>
+                                        <label class="label-control" for="ccode"><strong>Code Postal</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="<?php echo $user_account['last_name'] ?>" class="form-control-select" id="cnom" name="last_name" required>
-                                        <label class="label-control" for="cnom"><strong>Nom</strong></label>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" value="<?php echo $user_account['first_name'] ?>" class="form-control-select" id="cprenom" name="first_name" required>
-                                        <label class="label-control" for="cprenom"><strong>Prénom</strong></label>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="date" value="<?php echo $user_account['date_of_birth'] ?>" class="form-control-select" id="cbirthdate" name="date_of_birth" required>
-                                        <label class="label-control" for="cbirthdate"><strong>Date de naissance</strong></label>
+                                        <input type="text" value="<?php echo $participant['description'] ?>" class="form-control-textarea" id="cdes" name="description" required>
+                                        <label class="label-control" for="cdes"><strong>Description</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <input type="hidden" name="redirection" value="<?php 
                                     if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
                                     <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
                                 </form>
-                    </div>
+                        </div>
                 </div> <!-- end of tab-pane --> 
 
                 <!-- end of tab -->

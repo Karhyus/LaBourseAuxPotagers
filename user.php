@@ -173,7 +173,7 @@ $tmp = $req->fetch();
                                             <div class="row">  
                                                 <div class="col-lg-8">
                                                     <span class="fa-stack">
-                                                        <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
                                                     </span>
                                                 </div> <!-- end of button-container -->   
                                             </div> <!-- end of rol -->
@@ -220,7 +220,7 @@ $tmp = $req->fetch();
                                             <div class="row">  
                                                 <div class="col-lg-8">
                                                     <span class="fa-stack">
-                                                        <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
                                                     </span>
                                                 </div> <!-- end of rol -->   
                                             </div> <!-- end of rol -->
@@ -268,7 +268,7 @@ $tmp = $req->fetch();
                                             <div class="row">  
                                                 <div class="col-lg-8">
                                                     <span class="fa-stack">
-                                                        <a href="#your-link"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
                                                     </span>
                                                 </div> <!-- end of rol -->
                                             </div> <!-- end of rol -->

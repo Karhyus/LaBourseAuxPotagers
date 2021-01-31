@@ -75,9 +75,6 @@ $participant = $req_part->fetch();
                     <a class="nav-link page-scroll" href="#projetsE">PROJETS EN COURS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projetsS">PROJETS SOUMIS</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#reussite">MES REUSSITES</a>
                 </li>
                 <!-- end of dropdown menu -->
@@ -396,90 +393,6 @@ $participant = $req_part->fetch();
         </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
-
-
-    <!-- Projets SOUMIS-->
-    <div id="projetsS" class="cards-2 slider filter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PROJETS SOUMIS POUR VALIDATION <div class="button-group filters-button-group">
-                    <a class="btn-solid-reg" href="ajouter.php"> + Ajouter un nouveau projet</a>
-                    </div></div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12"> 
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                         <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-1.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Carottes de Patrick</h3>
-
-                                            <p>Description courte du projet</p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent demandé</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Critère(s) de dons</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Validation</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->  
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of swiper-container -->
-                </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of cards-2 -->
-    <!-- end of services -->
-        
-    <!-- Mon compte  -->
 
  <!-- Projects -->
 	<div id="reussite" class="filter">
