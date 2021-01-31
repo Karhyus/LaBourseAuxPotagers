@@ -124,7 +124,7 @@ $user = $req3->fetch();
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '1.jpg')) ?>" alt="alternative">
+                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
                         </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -149,19 +149,19 @@ $user = $req3->fetch();
                             <div class="swiper-wrapper">
                             	<?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
                             		<div class="swiper-slide">
-                                        <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '1.jpg')) ?>" alt="alternative">
+                                        <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
                                     </div>
                                 <?php } ?>
                                 <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2))){ ?>
                                 	<!-- Slide -->
                                		<div class="swiper-slide">
-                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '2.jpg')) ?>" alt="alternative" >
+                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
                                 	</div>
                                 <?php } ?>
                                 <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3))){ ?>
 	                                <!-- Slide -->
 	                                <div class="swiper-slide">
-	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '3.jpg')) ?>" alt="alternative" >
+	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
 	                                </div>
 	                            <?php } ?>
                     </div> <!-- end of swiper-wrapper -->
