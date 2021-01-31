@@ -2,9 +2,13 @@
 <html lang="en">
 <?php
 include('bdd_connexion.php');
+include('fonctions.php');
 session_start();
-$req = $bdd->query('SELECT * FROM user_account where id=' . $_GET['id']);
+$req = $bdd->query('SELECT * FROM user_account WHERE id=' . $_GET['id']);
 $tmp = $req->fetch();
+
+$req2 = $bdd->query('SELECT * FROM participant WHERE user_account_id=' . $tmp['id']);
+$participant = $req2->fetch();
 ?>
 <head>
     <meta charset="utf-8">
@@ -102,8 +106,8 @@ $tmp = $req->fetch();
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2 class="white">Jean-Pierre</h2>
-                        <p class="white ">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p> 
+                        <h2 class="white"><?php echo $tmp['user_name'] ?></h2>
+                        <p class="white "><?php echo $participant['description'] ?></p> 
                         <p class="testimonial-text white ">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                     
                     </div> <!-- end of text-container --> 
                 </div> <!-- end of col -->
@@ -111,9 +115,9 @@ $tmp = $req->fetch();
             <div class="col-lg-12">
                     <div class="text-container ">
                         <ul class="list-unstyled li-space-lg white">
-                            <li class="address "><i class="fas fa-map-marker-alt"></i>37, Quai de grenelle 75015 Paris</li>
-                            <li><i class="fas fa-phone"></i><a class="white"  href="tel:0644444444">0644444444</a></li>
-                            <li><i class="fas fa-envelope"></i><a class="white" href="mailto:jp@gmail.com">jp@gmail.com</a></li>
+                            <li class="address "><i class="fas fa-map-marker-alt"></i><?php echo $participant['city'] ?>, <?php echo $participant['zip_code'] ?></li>
+                            <li><i class="fas fa-phone"></i><a class="white"  href="tel:0644444444">06********</a></li>
+                            <li><i class="fas fa-envelope"></i><a class="white" href="mailto:jp@gmail.com"><?php echo $tmp['email'] ?></a></li>
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -126,7 +130,7 @@ $tmp = $req->fetch();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">MES PROJETS </div>
+                    <div class="section-title">SES AUTRES PROJETS </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -136,150 +140,60 @@ $tmp = $req->fetch();
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-                                
+
+                            <?php
+                            $req3 = $bdd->query('SELECT * FROM project WHERE participant_id=' . $participant['id']);
+                            while($project = $req3->fetch()){ ?>
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <!-- Card -->
                                     <div class="card">
                                         <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
+                                            <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $tmp['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
-                                            <h3 class="card-title">Aubergines XXL</h3>
-                                            <p>Description courte du projet</p>
-                                            
+                                            <h3 class="card-title"><?php echo $project['project_name'] ?></h3>
+                                            <p><?php echo $project['project_description_short'] ?></p>
+
                                             <ul class="list-unstyled li-space-lg">
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
+                                                    <div class="media-body"><?php echo $project['collected'] ?></div>
                                                 </li>
                                                 <li class="media">
                                                     <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
+                                                    <div class="media-body"><?php echo $project['investors'] ?></div>
                                                 </li>                                         
                                             </ul> <!-- end of points -->
-                                            
+
                                             <!-- Progress Bars -->
                                             <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
+                                                <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
                                                 <div class="progress">
                                                     <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                             </div> <!-- end of progress-container -->
                                             <!-- end of progress bars -->
-                                            
+
                                         </div> <!-- end of card-body -->
+
                                         <div class="button-container">
                                             <div class="row">  
-                                                <div class="col-lg-8">
-                                                    <span class="fa-stack">
-                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
-                                                    </span>
-                                                </div> <!-- end of button-container -->   
+                                                <span class="fa-stack">
+                                                    <a href="projet.php?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                </span>
+                                                <span class="fa-stack">
+                                                    <a href="user.php?id=<?php echo ($tmp['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
+                                                </span>
                                             </div> <!-- end of rol -->
                                         </div> <!-- end of button-container -->                
+
                                     </div>
                                     <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
+                                </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Clémentines de Marseille</h3>
-                                            <p>Description courte du projet </p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <div class="col-lg-8">
-                                                    <span class="fa-stack">
-                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
-                                                    </span>
-                                                </div> <!-- end of rol -->   
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">                                
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title"> Citrons </h3>
-                                            <p>Description courte du projet</p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <div class="col-lg-8">
-                                                    <span class="fa-stack">
-                                                        <a href="projet.php"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
-                                                    </span>
-                                                </div> <!-- end of rol -->
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
+
+                            <?php } ?>                                
                             </div> <!-- end of swiper-wrapper -->
         
                             <!-- Add Arrows -->

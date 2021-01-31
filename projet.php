@@ -125,7 +125,7 @@ $user = $req3->fetch();
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
+                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
                         </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -148,21 +148,21 @@ $user = $req3->fetch();
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-                            	<?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
+                            	<?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
                             		<div class="swiper-slide">
-                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" >
+                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" >
                                 	</div>
                                 <?php } ?>
-                                <?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2))){ ?>
+                                <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2))){ ?>
                                 	<!-- Slide -->
                                		<div class="swiper-slide">
-                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
+                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
                                 	</div>
                                 <?php } ?>
-                                <?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3))){ ?>
+                                <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3))){ ?>
 	                                <!-- Slide -->
 	                                <div class="swiper-slide">
-	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
+	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
 	                                </div>
 	                            <?php } ?>
                     </div> <!-- end of swiper-wrapper -->
@@ -268,7 +268,7 @@ $user = $req3->fetch();
                                                 <!-- Card -->
                                                 <div class="card">
                                                     <div class="card-image">
-                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp2['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp2['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp2['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp2['id']. '/' . 1)) ?>" alt="alternative" ></a>
                                                     </div>
                                                     <div class="card-body">
                                                         <h3 class="card-title"><?php echo $tmp2['project_name'] ?></h3>
@@ -287,7 +287,7 @@ $user = $req3->fetch();
                                                         
                                                         <!-- Progress Bars -->
                                                         <div class="progress-container">
-                                                            <div class="price">Cagnotte current/total</div>
+                                                            <div class="price">Cagnotte <?php echo $tmp2['collected'] ?>€/<?php echo intval($tmp2['goal']) ?>€</div>
                                                             <div class="progress">
                                                                 <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
@@ -302,7 +302,7 @@ $user = $req3->fetch();
                                                             <a href="projet.php?id=<?php echo ($tmp2['id']) ?>"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
                                                         </span>
                                                         <span class="fa-stack">
-                                                            <a href="user.php"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
+                                                            <a href="user.php?id=<?php echo($user['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
                                                         </span>
                                                         </div> <!-- end of rol -->
                                                     </div> <!-- end of button-container -->                

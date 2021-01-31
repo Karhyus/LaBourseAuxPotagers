@@ -5,6 +5,14 @@ include('fonctions.php');
 session_start();
 $req_part = $bdd->query('SELECT * FROM participant WHERE user_account_id=' . $_SESSION['user_account']['id']);
 $participant = $req_part->fetch();
+$cpt_project = $bdd->query('SELECT COUNT(*) FROM project WHERE participant_id=' . $participant['id'])-> fetchColumn();
+$req2 = $bdd->query('SELECT * FROM project WHERE participant_id=' . $participant['id']);
+$cpt_recolt = 0;
+$cpt_invest = 0;
+while($project = $req2->fetch()){
+    $cpt_recolt = $cpt_recolt + $project['collected'];
+    $cpt_invest = $cpt_invest + $project['investors'];
+}  
 ?>
 <head>
     <meta charset="utf-8">
@@ -110,15 +118,15 @@ $participant = $req_part->fetch();
                         <?php } } ?>
                         <div id="counter">
                             <div class="cell">
-                                <div class="counter-value number-count" data-count="5">1</div>
-                                <div class="counter-info">Nombre<br>Projets</div>
+                                <div class="counter-value number-count" data-count="<?php echo($cpt_project) ?>">0</div>
+                                <div class="counter-info"><br>Projet(s)</div>
                             </div>
                             <div class="cell">
-                                <div class="counter-value number-count" data-count="121">1</div>
-                                <div class="counter-info">Argent<br>Récolté</div>
+                                <div class="counter-value number-count" data-count="<?php echo($cpt_recolt) ?>">0</div>
+                                <div class="counter-info"><br>Récoltés</div>
                             </div>
                             <div class="cell">
-                                <div class="counter-value number-count" data-count="12">1</div>
+                                <div class="counter-value number-count" data-count="<?php echo("$cpt_invest") ?>">0</div>
                                 <div class="counter-info">Personnes<br>Engagées</div>
                             </div>
                         </div>
@@ -174,7 +182,7 @@ $participant = $req_part->fetch();
                                                         
                                                         <!-- Progress Bars -->
                                                         <div class="progress-container">
-                                                            <div class="price">Cagnotte current/total</div>
+                                                            <div class="price">Cagnotte <?php echo $tmp['collected'] ?>€/<?php echo intval($tmp['goal']) ?>€</div>
                                                             <div class="progress">
                                                                 <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
