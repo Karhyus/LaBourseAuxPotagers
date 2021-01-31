@@ -137,7 +137,7 @@ session_start();?>
 
    
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 silder filter">
+    <div id="projetsE" class="cards-2 slider ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

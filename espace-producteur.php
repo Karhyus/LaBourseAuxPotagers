@@ -348,7 +348,6 @@ $participant = $req_part->fetch();
                                  </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
                                 
-                                
                             </div> <!-- end of swiper-wrapper -->
         
                             <!-- Add Arrows -->
