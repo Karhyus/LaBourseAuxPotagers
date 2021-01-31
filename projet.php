@@ -5,8 +5,10 @@ include('fonctions.php');
 session_start();
 $req = $bdd->query('SELECT * FROM project WHERE id = ' . $_GET['id']);
 $tmp = $req->fetch();
-$req2 = $bdd->query('SELECT * FROM user_account WHERE id=' . $tmp['participant_id']);
-$user = $req2->fetch();
+$req2 = $bdd->query('SELECT * FROM participant WHERE id=' . $tmp['participant_id']);
+$participant = $req2->fetch();
+$req3 = $bdd->query('SELECT * FROM user_account WHERE id=' . $participant['user_account_id']);
+$user = $req3->fetch();
 ?>
 <head>
     <meta charset="utf-8">
@@ -136,7 +138,7 @@ $user = $req2->fetch();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">IMAGES</div>
+                    <div class="section-title"><?php echo('upload/' . $user['user_name'] . '/' . $tmp['id'] . '/' . 1) ?></div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -146,19 +148,23 @@ $user = $req2->fetch();
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
+                            	<?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
+                            		<div class="swiper-slide">
                                     <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" >
-                                </div>
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
-                                </div>
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
-                                </div>
+                                	</div>
+                                <?php } ?>
+                                <?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2))){ ?>
+                                	<!-- Slide -->
+                               		<div class="swiper-slide">
+                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
+                                	</div>
+                                <?php } ?>
+                                <?php if(file_exists(file_existance('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3))){ ?>
+	                                <!-- Slide -->
+	                                <div class="swiper-slide">
+	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
+	                                </div>
+	                            <?php } ?>
                     </div> <!-- end of swiper-wrapper -->
                         </div> <!-- end of swiper-container -->
                     </div> <!-- end of sliedr-container -->

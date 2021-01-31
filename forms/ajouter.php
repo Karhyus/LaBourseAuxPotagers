@@ -27,8 +27,19 @@ if(!$erreur){
 	}else{
 		$innovative = 0;
 	}
-	//temporaire
-	$participant_id = $_SESSION['user_account']['id'];
+	/*$request = $bdd->query('SELECT id FROM participant WHERE user_account_id=' . $_SESSION['user_account']['id']);
+	$part = $request->fetch();*/
+	$request = $bdd->query('SELECT * FROM participant');
+	while($part = $request->fetch()){
+		if($part['user_account_id'] == $_SESSION['user_account']['id']){
+
+			$participant_id = $part['id'];
+		}
+	}
+	//$participant_id = $part['id'];
+	echo $participant_id;
+
+	//$participant_id = $_SESSION['user_account']['id'];
 	$start_date = date("Y-m-d");
 	$date1 = $_POST['end_date'];
 	$end_date = date("Y-m-d", strtotime($date1));
@@ -45,7 +56,8 @@ if(!$erreur){
 $req = $bdd->query('SELECT * FROM project');
 
 while($tmp = $req->fetch()){
-	if($_POST['project_name'] == $tmp['project_name'] and $_POST['project_description_short'] == $tmp['project_description_short'] and $_SESSION['user_account']['id'] == $tmp['participant_id']){
+	if($_POST['project_name'] == $tmp['project_name'] and $_POST['project_description_short'] == $tmp['project_description_short'] and $participant_id == $tmp['participant_id']){
+		echo 'OUI';
 		$_SESSION['project'] = $tmp;
 		$erreur = false;
 		break;
@@ -60,10 +72,10 @@ while($tmp = $req->fetch()){
 	$option_max = $_POST['option_max'];
 	$counterpart_description = $_POST['counterpart_description'];
 
-	echo $_SESSION['project']['id'];
+	/*echo $_SESSION['project']['id'];
 	echo $option_min[0];
 	echo $option_max[0];
-	echo $counterpart_description[0];
+	echo $counterpart_description[0];*/
 
 	for($i=0;$i<count($counterpart_name);$i++){
 		if($option_min[$i]!="" && $option_max[$i]!="" && $counterpart_name[$i]!="" && $counterpart_description[$i]!=""){

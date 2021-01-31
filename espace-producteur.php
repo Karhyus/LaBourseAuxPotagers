@@ -2,7 +2,10 @@
 <html lang="en">
 <?php include('bdd_connexion.php'); 
 include('fonctions.php');
-session_start();?>
+session_start();
+$req_part = $bdd->query('SELECT * FROM participant WHERE user_account_id=' . $_SESSION['user_account']['id']);
+$participant = $req_part->fetch();
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -149,7 +152,7 @@ session_start();?>
                                     $req = $bdd->query('SELECT * FROM project');
                                     while($tmp = $req->fetch()){
                                         //Faire en fonction du status aussi
-                                        if($tmp['participant_id'] == $_SESSION['user_account']['id']){ ?>
+                                        if($tmp['participant_id'] == $participant['id']){ ?>
                                              <!-- Slide -->
                                             <div class="swiper-slide">
                                                 <!-- Card -->
