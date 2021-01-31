@@ -130,7 +130,7 @@ $participant = $req_part->fetch();
     <!-- end of header -->
       
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 slider filter">
+    <div id="projetsE" class="cards-2 slider">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -397,11 +397,7 @@ $participant = $req_part->fetch();
  <!-- Projects -->
 	<div id="reussite" class="filter">
 		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
                     <div class="section-title">MES PROJETS ACCOMPLIS </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Filter -->
@@ -426,9 +422,6 @@ $participant = $req_part->fetch();
                         </div>
                         <div class="element-item legumes innovations">
                             <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span> Aubergines XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item fruit">
-                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span> Citrons des montagnes</span></div><img src="images/project-6.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item design legumes innovations">
                             <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span> Mini salades</span></div><img src="images/project-7.jpg" alt="alternative"></a>
@@ -533,25 +526,6 @@ $participant = $req_part->fetch();
                 <h3>Aubergines XXL</h3>
                 <hr class="line-heading">
                 <h6>Légumes</h6>
-                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
-                <p>Si vous êtes interessé par la proposition, cliquez sur "Investir" pour poursuivre les démarches</p>
-                <a class="btn-solid-reg" href="#your-link">ANALYSE</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">RETOUR</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
-    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
-            </div> <!-- end of col -->
-            <div class="col-lg-6">
-                <h3>Citrons des montagnes</h3>
-                <hr class="line-heading">
-                <h6>Fruits</h6>
                 <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
                 <p>Si vous êtes interessé par la proposition, cliquez sur "Investir" pour poursuivre les démarches</p>
                 <a class="btn-solid-reg" href="#your-link">ANALYSE</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">RETOUR</a> 

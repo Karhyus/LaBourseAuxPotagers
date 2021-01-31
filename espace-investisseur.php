@@ -137,7 +137,7 @@ session_start();?>
 
    
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 silder filter">
+    <div id="projetsE" class="cards-2 silder">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -362,11 +362,7 @@ session_start();?>
     <!-- Projects -->
 	<div id="reussite" class="filter">
 		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
                     <div class="section-title">PROJETS ACCOMPLIS </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Filter -->
