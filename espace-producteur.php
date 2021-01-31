@@ -130,7 +130,7 @@ $participant = $req_part->fetch();
     <!-- end of header -->
       
    <!-- VOS Projets -->
-    <div id="projetsE" class="cards-2 slider">
+    <div id="projetsE" class="cards-2 slider filter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
