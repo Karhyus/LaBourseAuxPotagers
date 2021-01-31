@@ -356,7 +356,6 @@ while($project = $req2->fetch()){
                                  </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
                                 
-                                
                             </div> <!-- end of swiper-wrapper -->
         
                             <!-- Add Arrows -->
