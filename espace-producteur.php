@@ -163,7 +163,7 @@ while($project = $req2->fetch()){
                                                 <!-- Card -->
                                                 <div class="card">
                                                     <div class="card-image">
-                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . '1.jpg')) ?>" alt="alternative" ></a>
                                                     </div>
                                                     <div class="card-body">
                                                         <h3 class="card-title"><?php echo $tmp['project_name'] ?></h3>

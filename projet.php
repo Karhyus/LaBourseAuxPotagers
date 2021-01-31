@@ -117,7 +117,6 @@ $user = $req3->fetch();
                     <div class="text-container">
                         <h2 class = "white"><?php echo $tmp['project_name'] ?></h2>
                         <p class = "white"><?php echo $tmp['project_description_short'] ?></p>
-                        <p class="testimonial-text white">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                    
                         <span class="fa-stack ">
                                 <a class ="white" href="user.php?id=<?php echo $user['id'] ?>"><?php echo $user['user_name']  ?><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
@@ -125,7 +124,7 @@ $user = $req3->fetch();
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                         <div class="image-container">
-                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative">
+                            <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '1.jpg')) ?>" alt="alternative">
                         </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -138,7 +137,7 @@ $user = $req3->fetch();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title"><?php echo('upload/' . $user['user_name'] . '/' . $tmp['id'] . '/' . 1) ?></div>
+                    <div class="section-title"> IMAGES </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -150,19 +149,19 @@ $user = $req3->fetch();
                             <div class="swiper-wrapper">
                             	<?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
                             		<div class="swiper-slide">
-                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" >
-                                	</div>
+                                        <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '1.jpg')) ?>" alt="alternative">
+                                    </div>
                                 <?php } ?>
                                 <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2))){ ?>
                                 	<!-- Slide -->
                                		<div class="swiper-slide">
-                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 2)) ?>" alt="alternative" >
+                                    	<img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '2.jpg')) ?>" alt="alternative" >
                                 	</div>
                                 <?php } ?>
                                 <?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3))){ ?>
 	                                <!-- Slide -->
 	                                <div class="swiper-slide">
-	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 3)) ?>" alt="alternative" >
+	                                    <img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $tmp['id']. '/' . '3.jpg')) ?>" alt="alternative" >
 	                                </div>
 	                            <?php } ?>
                     </div> <!-- end of swiper-wrapper -->
@@ -226,7 +225,6 @@ $user = $req3->fetch();
                                         <!-- Tab -->
                                         <div class="tab-pane fade" id="tab-<?php echo ($inc) ?>" role="tabpanel" aria-labelledby="tab-<?php echo ($inc) ?>">
                                             <p><?php echo $ct2['counterpart_description'] ?></p>
-                                            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir</a>
                                         </div> <!-- end of tab-pane -->
                                         <?php 
                                           $inc = $inc + 1;  

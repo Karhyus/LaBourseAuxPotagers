@@ -108,7 +108,6 @@ $participant = $req2->fetch();
                     <div class="text-container">
                         <h2 class="white"><?php echo $tmp['user_name'] ?></h2>
                         <p class="white "><?php echo $participant['description'] ?></p> 
-                        <p class="testimonial-text white ">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                     
                     </div> <!-- end of text-container --> 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -149,7 +148,7 @@ $participant = $req2->fetch();
                                     <!-- Card -->
                                     <div class="card">
                                         <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $tmp['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                            <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $tmp['user_name']. '/' . $project['id']. '/' . '1.jpg')) ?>" alt="alternative" ></a>
                                         </div>
                                         <div class="card-body">
                                             <h3 class="card-title"><?php echo $project['project_name'] ?></h3>

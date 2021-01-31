@@ -826,6 +826,7 @@ input[type='checkbox'] {
 }
 
 .basic-1 .text-container {
+	text-align: justify;
 }
 
 .basic-1 .section-title {
@@ -930,6 +931,9 @@ input[type='checkbox'] {
 .basic-3 .image-container {
 	overflow: hidden;
 	border-radius: 0.25rem;
+	margin-left: 10rem;
+	width: 18rem;
+	height: 18rem;
 }
 
 .basic-3 .image-container img {
@@ -1102,6 +1106,7 @@ input[type='checkbox'] {
 		background: url('../images/hexagon-green.svg') center center no-repeat;
 		background-size: 3rem 3rem;
 		transition: all 0.2s ease;
+		margin-left: 2rem;
 	}
 
 .cards-2 .fa-stack:hover .hexagon {
@@ -1741,6 +1746,7 @@ input[type='checkbox'] {
 
 /* Hover Animation */
 .basic-2 .image-wrapper {
+	margin-bottom: 1rem;
 }
 
 .basic-2 .image-wrapper img {
@@ -2206,6 +2212,7 @@ a:hover.back-to-top {
 	}
 
 	.counter #counter .cell {
+		margin-top : 0rem;
 	}
 	/* end of about */
 
@@ -2324,7 +2331,7 @@ a:hover.back-to-top {
 
 	/* Services */
 	.cards-2 .card {
-		max-width: 18.25rem;
+		max-width: 30rem;
 		display: inline-block;
 		vertical-align: top;
 	}
@@ -2531,8 +2538,8 @@ a:hover.back-to-top {
 
 	/* Services */
 	.cards-2 .card {
-		max-width: 20rem;
-        max-height: 40rem;
+		max-width: 30rem;
+        max-height: 50rem;
 	}
 
 	.cards-2 .card-body {
