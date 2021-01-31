@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include('bdd_connexion.php'); ?>
+<?php include('bdd_connexion.php');
+$req = $bdd->query('SELECT * FROM user_account WHERE id=' . $_GET['id']);
+$user = $req->fetch();
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -84,7 +87,7 @@
             <div class="section-title">MON COMPTE</div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="whiteC white"><?php echo $_SESSION['user_account']['user_name'] ?></h2>
+                    <h2 class="whiteC white"><?php echo $user['user_name'] ?></h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -96,18 +99,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">TES INFOS SUPLEMENTAIRES</div>
+                    <div class="section-title">INFORMATIONS SUPPLEMENTAIRES</div>
                         <div class="text-container">
                              <!-- Contact Form -->
-                             <form id="inscriptionForm" data-toggle="validator" data-focus="false" method="post" action="forms/creercompte.php">
-                                <div class="form-group">
-                                    <input type="text" class="form-control-textarea" id="cdes" name="description" required>
-                                    <label class="label-control" for="cusername">Description</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+                             <form id="participantForm" data-toggle="validator" data-focus="false" method="post" action="forms/participant.php">
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="cnom_com" name="company_name" required>
-                                    <label class="label-control" for="cnom">Nom de la compagnie</label>
+                                    <label class="label-control" for="cnom">Nom de l'exploitation</label>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control-input" id="cville" name="city" required>
@@ -115,10 +113,16 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="date" class="form-control-input" id="ccode" name="zip_code" required>
+                                    <input type="text" class="form-control-input" id="ccode" name="zip_code" required>
                                     <label class="label-control" for="cbirthdate">Code Postal</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-textarea" id="cdes" name="description" required>
+                                    <label class="label-control" for="cusername">Description</label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <input type="hidden" name="user_account_id" value="<?php if(isset($_GET['id'])){echo $_GET['id']; } ?>" />
                                 <!-- END-->
                                 <input type="hidden" name="redirection" value="<?php 
                                 if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />

@@ -44,7 +44,20 @@ if(!$erreur){
 		mkdir('../upload/'. $user_name,0777,true);
 	}
 
-	header('Location: ../' . $redirection);
+	$req2 = $bdd->query('SELECT * FROM user_account');
+	while($user = $req2->fetch()){
+		if($user['email'] == $email && $user['password'] == $password){
+			$id = $user['id'];
+		}
+	}
+
+	if($type==1){
+		header('Location: ../info_sup.php?id=' . $id);
+	}else{
+		unset($_SESSION['user_account']); // unset permet de détruire la variable qui a été placé en argument donc de plus avoir d'utilisateur en ligne
+		header('Location: ../' . $redirection);
+
+	}
 	}
 
 	

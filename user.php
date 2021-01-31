@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+include('bdd_connexion.php');
+session_start();
+$req = $bdd->query('SELECT * FROM user_account where id=' . $_GET['id']);
+$tmp = $req->fetch();
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -76,7 +82,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="javascript:history.back()"> RETOUR <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
@@ -92,11 +98,11 @@
      <!-- Profil -->
     <div id="profil" class="basic-3">
         <div class="container">
-            <div class="section-title"> PROFIL</div>
+            <div class="section-title">PROFIL</div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2 class="white"> Jean-Pierre</h2>
+                        <h2 class="white">Jean-Pierre</h2>
                         <p class="white ">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p> 
                         <p class="testimonial-text white ">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>                     
                     </div> <!-- end of text-container --> 
