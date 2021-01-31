@@ -137,7 +137,7 @@ $user = $req3->fetch();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title"> IMAGES </div>
+                    <div class="section-title">PHOTOS</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
