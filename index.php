@@ -572,6 +572,7 @@ session_start();?>
     <!-- end of lightbox -->
     <!-- end of project lightboxes -->
 
+
     <!-- Details 1 -->
 	<div id="propos" class="accordion">
         <div class="row">
@@ -634,7 +635,6 @@ session_start();?>
 	<div class="tabs">
         <div class="area-1">
             <div class="tabs-container">
-                
                 <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
                     <li class="nav-item">
@@ -721,7 +721,7 @@ session_start();?>
  
     
 <!-- valeurs -->
-    <div class="cards-1">
+    <div id="valeurs" class="cards-1">
         <div class="container">
             <div class="section-title"> NOS VALEURS </div>
             <p class="p-heading">Dans la conception d’un avenir durable où symbiose et équilibre sont nos objectifs, nous axons notre plateforme sur la triple performance (triple bottom line) :</p>
