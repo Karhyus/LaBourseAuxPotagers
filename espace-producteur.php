@@ -99,7 +99,7 @@ while($project = $req2->fetch()){
                     <a class="nav-link page-scroll" href="mon_compte.php">MES INFOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.php">DECONNEXION</a>
+                    <a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
                 </li>
             </ul>
         </div>
@@ -172,11 +172,11 @@ while($project = $req2->fetch()){
                                                         <ul class="list-unstyled li-space-lg">
                                                             <li class="media">
                                                                 <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp['collected'] ?></div>
+                                                                <div class="media-body"><?php echo $tmp['collected'] ?>€ collectés</div>
                                                             </li>
                                                             <li class="media">
                                                                 <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp['investors'] ?></div>
+                                                                <div class="media-body"><?php echo $tmp['investors'] ?> investisseurs</div>
                                                             </li>                                         
                                                         </ul> <!-- end of points -->
                                                         

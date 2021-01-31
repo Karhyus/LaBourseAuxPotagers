@@ -91,7 +91,11 @@ $user = $req3->fetch();
             </span>  
             
             <ul class="navbar-nav ml-auto">
-            <a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir (I) OU Modifier (P)</a>
+            	<?php if($user['id'] == $participant['user_account_id']){ ?>
+            		<a class="btn-solid-reg page-scroll" href="modif_projet.php?id=<?php echo $tmp['id'] ?>">Modifier (P)</a>
+            	<?php }else{ ?>
+            		<a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir (I)</a>
+            	<?php } ?>	
             </ul>  
     
             <ul class="navbar-nav ml-auto">
@@ -275,11 +279,11 @@ $user = $req3->fetch();
                                                         <ul class="list-unstyled li-space-lg">
                                                             <li class="media">
                                                                 <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp2['collected'] ?></div>
+                                                                <div class="media-body"><?php echo $tmp2['collected'] ?>€ collectés</div>
                                                             </li>
                                                             <li class="media">
                                                                 <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp2['investors'] ?></div>
+                                                                <div class="media-body"><?php echo $tmp2['investors'] ?> investisseurs</div>
                                                             </li>                                         
                                                         </ul> <!-- end of points -->
                                                         

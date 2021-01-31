@@ -208,11 +208,11 @@
                                                 <ul class="list-unstyled li-space-lg">
                                                     <li class="media">
                                                         <i class="fas fa-square"></i>
-                                                        <div class="media-body"><?php echo $project['collected'] ?></div>
+                                                        <div class="media-body"><?php echo intval($project['collected']) ?>€ collectés</div>
                                                     </li>
                                                     <li class="media">
                                                         <i class="fas fa-square"></i>
-                                                        <div class="media-body"><?php echo $project['investors'] ?></div>
+                                                        <div class="media-body"><?php echo $project['investors'] ?> investisseurs</div>
                                                     </li>                                         
                                                 </ul> <!-- end of points -->
 

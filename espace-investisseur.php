@@ -80,6 +80,7 @@ session_start();?>
                 </li>
 
                 <?php if(!isset($_SESSION['user_account'])){ ?>
+
                     <?php } else { 
                         if($_SESSION['user_account']['type'] == 1) { ?>
                         <li class="nav-item">
@@ -97,7 +98,7 @@ session_start();?>
                     <a class="nav-link page-scroll" href="mon_compte.php">MES INFOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.php">DECONNEXION</a>
+                    <a class="nav-link page-scroll" href="actions/deconnexion.php">DECONNEXION</a>
                 </li>
             </ul>
         </div>
