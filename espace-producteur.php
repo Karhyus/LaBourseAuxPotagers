@@ -199,6 +199,9 @@ while($project = $req2->fetch()){
                                                         <span class="fa-stack">
                                                             <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                         </span>
+                                                        <span class="fa-stack">
+                                                            <a href="modif_projet.php?id=<?php echo $tmp['id'] ?>"><span class="hexagon"><i class="fas fa-pen fa-stack-1x"></i></span></a>                  
+                                                        </span>
                                                     </div> <!-- end of rol -->
                                                 </div> <!-- end of button-container -->                
                                                     

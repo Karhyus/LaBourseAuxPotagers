@@ -1108,7 +1108,7 @@ input[type='checkbox'] {
 		background: url('../images/hexagon-green.svg') center center no-repeat;
 		background-size: 3rem 3rem;
 		transition: all 0.2s ease;
-		margin-left: 4rem;
+		margin-left: 3rem;
 	}
 
 .cards-2 .fa-stack:hover .hexagon {

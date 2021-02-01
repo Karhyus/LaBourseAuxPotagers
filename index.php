@@ -190,7 +190,7 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                         
                         <!-- Card Slider -->
                         <div class="slider-container">
-                            <div class="swiper-container card-slider">
+                            <div class="swiper-container card-sliderbis">
                                 <div class="swiper-wrapper">
                                 <?php $req = $bdd->query('SELECT * FROM project ORDER BY id DESC');
                                 while($project = $req->fetch()){ 

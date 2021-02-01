@@ -149,7 +149,7 @@ $user = $req3->fetch();
                     
                     <!-- Card Slider -->
                     <div class="slider-container">
-                        <div class="swiper-container card-slider">
+                        <div class="swiper-container card-sliderbis">
                             <div class="swiper-wrapper">
                             	<?php if(file_exists(file_existance('upload/', $user['user_name']. '/' . $tmp['id']. '/' . 1))){ ?>
                             		<div class="swiper-slide">
