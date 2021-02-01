@@ -154,12 +154,13 @@ while($project = $req2->fetch()){
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
                                 <!-- Slide -->
-                                <div class="swiper-slide">
                                     <?php
                                     $req = $bdd->query('SELECT * FROM project');
                                     while($tmp = $req->fetch()){
                                         //Faire en fonction du status aussi
                                         if($tmp['participant_id'] == $participant['id']){ ?>
+
+                                        <div class="swiper-slide">
                                             <div class="card">
                                                 <div class="card-image">
                                                     <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
@@ -201,14 +202,11 @@ while($project = $req2->fetch()){
                                                     </div> <!-- end of rol -->
                                                 </div> <!-- end of button-container -->                
                                                     
-                                            </div>
+                                            </div><!-- end of card -->
+                                        </div> <!-- end of swiper-slide -->
                                         <?php } ?>
                                    <?php } ?>
-                                                <!-- end of card -->
-                                </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-             
-                                
+    
                             </div> <!-- end of swiper-wrapper -->
         
                             <!-- Add Arrows -->

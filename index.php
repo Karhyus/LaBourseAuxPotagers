@@ -1,13 +1,13 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <?php include('bdd_connexion.php');
-    include('fonctions.php');
-    session_start();
-    $cpt_project = $bdd->query('SELECT COUNT(*) FROM project')->fetchColumn();
-    $cpt_agri = $bdd->query('SELECT COUNT(*) FROM participant')->fetchColumn();
-    $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColumn();
-    ?>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<?php include('bdd_connexion.php');
+include('fonctions.php');
+session_start();
+$cpt_project = $bdd->query('SELECT COUNT(*) FROM project')->fetchColumn();
+$cpt_agri = $bdd->query('SELECT COUNT(*) FROM participant')->fetchColumn();
+$cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColumn();
+?>
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
@@ -840,14 +840,14 @@
         </div> <!-- end of basic-2 -->
         <!-- end of team -->
         
-    <!-- VIDEO-->
-    <div id="video" class="basic-2">
-        <div class="section-title">NOTRE VIDEO</div>
-        <video controls width="600">
-            <source src="images/nous.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-    </div>
+        <!-- VIDEO-->
+        <div id="video" class="basic-2">
+            <div class="section-title">NOTRE VIDEO</div>
+            <video controls width="600">
+                <source src="images/nous.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+        </div>
 
 
         <!-- Contact -->

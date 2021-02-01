@@ -77,12 +77,6 @@ session_start();
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#profil">MON PROFIL<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projets">MES AUTRES PROJETS</a>
-                </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -143,6 +137,7 @@ session_start();
                                 </div>
                                 <div class="form-group">
                                 <label for="photo">Mettez les photos de votre projet</label> <br>
+                                <div class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Pas plus de 3 images ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></div>
                                     <input type="file" id="photo1" name="photo1"> 
                                     <input type="file" id="photo2" name="photo2"> 
                                     <input type="file" id="photo3" name="photo3">
@@ -226,188 +221,7 @@ session_start();
         </div> <!-- end of header-content -->
     </div>
     <!-- end of header -->
-    
-<!-- Les Projets -->
-    <div id="projets" class="cards-2 slider ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">MES AUTRES PROJETS </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Aubergines XXL</h3>
-                                            <p>Description courte du projet</p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Clémentines de Marseille</h3>
-                                            <p>Description courte du projet </p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">                                
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title"> Citrons </h3>
-                                            <p>Description courte du projet</p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="modif_projet.php"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>              
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="#your-link"><span class="hexagon"><i class="fas fa-times fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of services -->
-    
+     
     <?php include('aide.php') ?>
     <?php include('footer.php') ?>
 
