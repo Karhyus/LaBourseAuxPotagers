@@ -79,9 +79,6 @@ $participant = $req2->fetch();
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#projets">SES PROJETS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#avis">AVIS</a>
-                </li>
 
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -168,9 +165,7 @@ $participant = $req2->fetch();
                                             <!-- Progress Bars -->
                                             <div class="progress-container">
                                                 <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
+                                            <br>
                                             </div> <!-- end of progress-container -->
                                             <!-- end of progress bars -->
 
@@ -210,104 +205,6 @@ $participant = $req2->fetch();
     </div> <!-- end of cards-2 -->
     <!-- end of services -->
     
-    <!-- avis -->
-    <div id="avis" class="slider cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title"> LES AVIS SUR JEAN-PIERRE</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-sliderbis">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
-                                            <div class="testimonial-author">Jude Thorn - Founder</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
-                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
-                                            <div class="testimonial-author">Roy Smith - Developer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
-                                            <div class="testimonial-author">Ronald Spice - Owner</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
-                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
-                                            <div class="testimonial-author">Ann Black - Consultant</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
-    <!-- end of testimonials -->
-
     <?php include('aide.php') ?>
     <?php include('footer.php') ?>
 

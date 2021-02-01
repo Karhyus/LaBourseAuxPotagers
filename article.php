@@ -99,7 +99,7 @@
                         <p>Je recommande ce site sur la permaculture qui m’a permis de gagner de la place sur mon terrain et de cultiver une plus grande diversité de produits en même temps !</p>
                         <p>Pour ma part, à la fin de la récolte de mes laitues, j’ai pu planter du choux et ainsi, avoir des récoltes variées de légumes saisonniers.</p>
                         <span class="fa-stack ">
-                                <a href="user.php">Mélanie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a href="user.php?id=3">Mélanie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container -->  
                     <div class="text-container">
@@ -107,7 +107,7 @@
                         <p><em><a href="https://cuisine.journaldesfemmes.fr/recette/353020-tarte-au-citron">https://cuisine.journaldesfemmes.fr/recette/353020-tarte-au-citron</a></em></p>
                         <p>Voici ma recette de tarte au citron bio préférée. Gourmande, avec très peu de sucre je recommande !</p>
                         <span class="fa-stack ">
-                                <a href="user.php">Alice<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a href="user.php?id=2">Alice<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container --> 
                     <div class="text-container">
@@ -115,7 +115,7 @@
                         <p><em><a href="https://youmatter.world/fr/definition/agriculture-regenerative-definition-cest-quoi-lagriculture-regenerative/">https://youmatter.world/fr/definition/agriculture-regenerative-definition-cest-quoi-lagriculture-regenerative/</a></em></p>
                         <p>Un article sur l’agriculture régénératrice pour fertiliser naturellement les sols. Tous les bons gestes à pratiquer sont présentés dans cet article. Pour ma part j’ai réalisé des aménagements anti-érosion naturels, ce qui me permet de récupérer facilement l’eau de pluie, cet article m’a beaucoup aidé.</p>
                         <span class="fa-stack ">
-                                <a href="user.php">Gérard<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a href="user.php?id=1">Gérard<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container -->  
                     <div class="text-container">
@@ -123,7 +123,7 @@
                         <p><em><a href="https://www.pensersante.fr/bio-tout-bon">https://www.pensersante.fr/bio-tout-bon</a></em></p>
                         <p>Voici un petit résumé des effets positifs de l’agriculture biologique sur notre santé et l’environnement en général. À faire partager avec vos clients.</p>
                         <span class="fa-stack ">
-                                <a href="user.php">Annie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
+                                <a href="user.php?id=5">Annie<span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
                         </span>  
                     </div> <!-- end of text-container -->  
                 </div> 

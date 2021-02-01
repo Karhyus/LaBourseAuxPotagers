@@ -195,9 +195,7 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                                                 <!-- Progress Bars -->
                                                 <div class="progress-container">
                                                     <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar first" role="progressbar" aria-valuenow="<?php echo (($project['collected']/$project['goal']) * 100) ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
+                                                    <br>
                                                 </div> <!-- end of progress-container -->
                                                 <!-- end of progress bars -->
 
@@ -206,7 +204,10 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                                             <div class="button-container">
                                                 <div class="row">  
                                                     <span class="fa-stack">
-                                                        <a href="projet.php?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                        <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                    </span>
+                                                    <span class="fa-stack">
+                                                        <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                     </span>
                                                     <span class="fa-stack">
                                                         <a href="user.php?id=<?php echo ($user['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
@@ -216,169 +217,6 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                                         </div>
                                     </div>
                                 <?php } ?>
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Aubergines XXL</h3>
-                                            <p>Description courte du projet</p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nom du producteur</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent misé</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Avancement du projet</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Clémentines de Marseille</h3>
-                                            <p>Description courte du projet </p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nom du producteur</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent misé</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Avancement du projet</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                            <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">                                
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title"> Citrons </h3>
-                                            <p>Description courte du projet</p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nom du producteur</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent misé</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Avancement du projet</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                            <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
                                 
                             </div> <!-- end of swiper-wrapper -->
         
@@ -440,15 +278,6 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                     </div> <!-- end of button group -->
                     <div class="grid">
                         <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span> Carottes de Patrick</span></div><img src="images/project-1.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item innovations fruits">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span> Fraises hors sol de Brigitte</span></div><img src="images/project-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item fruits">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span> Clémentines Marseillaises</span></div><img src="images/project-3.png" alt="alternative"></a>
-                        </div>
-                        <div class="element-item legumes">
                             <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Courgettes Bretonnes </span></div><img src="images/project-4.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item legumes innovations">
@@ -456,12 +285,6 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                         </div>
                         <div class="element-item fruit">
                             <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span> Citrons des montagnes</span></div><img src="images/project-6.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span> Mini salades</span></div><img src="images/project-7.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span> Olives provencales</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                         </div>
                     </div> <!-- end of grid -->
                     <!-- end of filter -->

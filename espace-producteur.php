@@ -183,9 +183,7 @@ while($project = $req2->fetch()){
                                                     <!-- Progress Bars -->
                                                     <div class="progress-container">
                                                         <div class="price">Cagnotte <?php echo $tmp['collected'] ?>€/<?php echo intval($tmp['goal']) ?>€</div>
-                                                        <div class="progress">
-                                                            <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
+                                                    <br>
                                                     </div> <!-- end of progress-container -->
                                                         <!-- end of progress bars -->
                                                         
@@ -200,7 +198,7 @@ while($project = $req2->fetch()){
                                                             <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
                                                         </span>
                                                         <span class="fa-stack">
-                                                            <a href="modif_projet.php?id=<?php echo $tmp['id'] ?>"><span class="hexagon"><i class="fas fa-pen fa-stack-1x"></i></span></a>                  
+                                                            <a href="modif_projet.php?id=<?php echo $tmp['id'] ?>"><span class="hexagon"><i class="fas fa-pencil-alt fa-stack-1x"></i></span></a>                  
                                                         </span>
                                                     </div> <!-- end of rol -->
                                                 </div> <!-- end of button-container -->                
@@ -269,26 +267,8 @@ while($project = $req2->fetch()){
                         <a class="button" data-filter=".innovations"><span>Innovations</span></a>
                     </div> <!-- end of button group -->
                     <div class="grid">
-                        <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span> Carottes de Patrick</span></div><img src="images/project-1.jpg" alt="alternative"></a>
-                        </div>
                         <div class="element-item innovations fruits">
                             <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span> Fraises hors sol de Brigitte</span></div><img src="images/project-2.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item fruits">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span> Clémentines Marseillaises</span></div><img src="images/project-3.png" alt="alternative"></a>
-                        </div>
-                        <div class="element-item legumes">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span> Courgettes Bretonnes </span></div><img src="images/project-4.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span> Aubergines XXL </span></div><img src="images/project-5.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design legumes innovations">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span> Mini salades</span></div><img src="images/project-7.jpg" alt="alternative"></a>
-                        </div>
-                        <div class="element-item design marketing">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span> Olives provencales</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                         </div>
                     </div> <!-- end of grid -->
                     <!-- end of filter -->

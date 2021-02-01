@@ -224,9 +224,7 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                                                 <!-- Progress Bars -->
                                                 <div class="progress-container">
                                                     <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar first" role="progressbar" aria-valuenow="<?php echo (($project['collected']/$project['goal']) * 100) ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
+                                                    <br>
                                                 </div> <!-- end of progress-container -->
                                                 <!-- end of progress bars -->
 
@@ -346,10 +344,10 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
                             <div class="element-item legumes innovations">
                                 <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Les aubergines de plein champ XXL</span></div><img src="images/project-5.jpg" alt="alternative"></a>
                             </div>
-                            <div class="element-item design legumes innovations">
+                            <div class="element-item legumes innovations">
                                 <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Les laitues du Languedoc</span></div><img src="images/project-7.jpg" alt="alternative"></a>
                             </div>
-                            <div class="element-item design marketing">
+                            <div class="element-item legumes">
                                 <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Les oliviers d’Aix en Provence</span></div><img src="images/project-8.jpg" alt="alternative"></a>
                             </div>
                         </div> <!-- end of grid -->

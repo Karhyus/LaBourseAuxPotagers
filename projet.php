@@ -86,9 +86,6 @@ $user = $req3->fetch();
                         <a class="nav-link page-scroll" href="#autre">AUTRES PROJETS</a>
                     </li>
             </ul>
-            <span class="fa-stack">
-                    <a href="user.php"><span class="hexagon "><i class="fas fa-user fa-stack-1x"></i></span></a>             
-            </span>  
             
             <ul class="navbar-nav ml-auto">
             	<?php if($_SESSION['user_account']['id'] == $participant['user_account_id']){ ?>
@@ -289,9 +286,7 @@ $user = $req3->fetch();
                                                         <!-- Progress Bars -->
                                                         <div class="progress-container">
                                                             <div class="price">Cagnotte <?php echo $tmp2['collected'] ?>€/<?php echo intval($tmp2['goal']) ?>€</div>
-                                                            <div class="progress">
-                                                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                        <br>
                                                         </div> <!-- end of progress-container -->
                                                         <!-- end of progress bars -->
                                                         

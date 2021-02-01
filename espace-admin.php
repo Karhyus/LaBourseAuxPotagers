@@ -151,9 +151,7 @@ session_start();
                                                 <!-- Progress Bars -->
                                                 <div class="progress-container">
                                                     <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
+                                                <br>
                                                 </div> <!-- end of progress-container -->
                                                 <!-- end of progress bars -->
 
