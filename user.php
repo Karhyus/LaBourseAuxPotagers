@@ -222,7 +222,7 @@ $participant = $req2->fetch();
                 <div class="col-lg-12">
                     <!-- Card Slider -->
                     <div class="slider-container">
-                        <div class="swiper-container card-slider">
+                        <div class="swiper-container card-sliderbis">
                             <div class="swiper-wrapper">
                                 
                                 <!-- Slide -->

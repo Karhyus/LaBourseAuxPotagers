@@ -204,7 +204,7 @@ session_start();
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" value="<?php echo $participant['description'] ?>" class="form-control-textarea" id="cdes" name="description" required>
+                                        <textarea form="modifProjetForm" class="form-control-textarea" id="cdes" name="description" required><?php echo $participant['description'] ?></textarea>
                                         <label class="label-control" for="cdes"><strong>Description</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>

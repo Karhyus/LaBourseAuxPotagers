@@ -279,7 +279,7 @@ strong {
 	}
 }
 
-.form-control-input:focus + .label-control,
+/*.form-control-input:focus + .label-control,
 .form-control-input.notEmpty + .label-control,
 .form-control-textarea:focus + .label-control,
 .form-control-textarea.notEmpty + .label-control {
@@ -287,7 +287,7 @@ strong {
 	opacity: 1;
 	font-size: 0.75rem;
 	font-weight: 500;
-}
+}*/
 
 .form-control-input,
 .form-control-select {
