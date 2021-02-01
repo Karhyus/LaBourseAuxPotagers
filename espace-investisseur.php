@@ -101,7 +101,7 @@ $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColu
             </ul>
 
             <ul class="navbar-nav ml-auto">
-            <a class="btn-solid-reg page-scroll" href="index.php">Investir dans de nouveaux projets</a>
+            <a class="btn-solid-reg page-scroll" href="index.php">Découvrir de nouveaux projets</a>
             </ul>  
     
             <ul class="navbar-nav ml-auto">

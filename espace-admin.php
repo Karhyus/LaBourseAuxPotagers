@@ -117,7 +117,7 @@ session_start();
                 <div class="col-lg-12">
                     <!-- Card Slider -->
                     <div class="slider-container">
-                            <div class="swiper-container card-slider">
+                            <div class="swiper-container card-sliderbis">
                                 <div class="swiper-wrapper">
                                 <?php $req = $bdd->query('SELECT * FROM project ORDER BY id DESC');
                                 while($project = $req->fetch()){ 
@@ -131,7 +131,7 @@ session_start();
                                         <!-- Card -->
                                         <div class="card">
                                             <div class="card-image">
-                                                <a class="nav-link page-scroll"  href="add_money.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
                                             </div>
                                             <div class="card-body">
                                                 <h3 class="card-title"><?php echo $project['project_name'] ?></h3>
@@ -160,7 +160,7 @@ session_start();
                                             <div class="button-container">
                                                 <div class="row">  
                                                     <span class="fa-stack">
-                                                        <a href="#investir?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-plus fa-stack-1x"></i></span></a>                  
+                                                        <a href="add_money.php?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-plus fa-stack-1x"></i></span></a>                  
                                                     </span>
                                                     <span class="fa-stack">
                                                         <a href="user.php?id=<?php echo ($user['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
@@ -172,7 +172,7 @@ session_start();
                                         <!-- end of card -->
                                     </div> <!-- end of swiper-slide -->
                                     <!-- end of slide -->
-                                <?php } ?>                                                 <!-- end of card -->
+                                <?php } ?>   <!-- end of card -->
                                 </div> <!-- end of swiper-slide -->
                                             <!-- end of slide -->
                             </div> <!-- end of swiper-wrapper -->
@@ -191,41 +191,6 @@ session_start();
         </div> <!-- end of container -->
     </div> <!-- end of cards-2 -->
     <!-- end of services -->
-
-    <!-- Project Lightboxes -->
-    <!-- Lightbox -->
-    <div id="investir?id" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">ENTRER LE NOUVEL INVESTISSEUR POUR PROJET A</div>
-                        <div class="text-container">
-                             <!-- Contact Form -->
-                            <form id="inscriptionForm" data-toggle="validator" data-focus="false" method="post" action="forms/espace-admin.php">
-                                <div class="form-group">
-                                    <input type="email" class="form-control-input" id="cmail" name="projet_investor" required>
-                                    <label class="label-control" for="cmail">Email de l'investisseur</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group">    
-                                    <input type="text" class="form-control-input" id="dons" name="amount" required>
-                                    <label class="label-control" for="option_max">Montant du don</label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <input type="hidden" name="redirection" value="<?php 
-                                if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
-                                <input class="btn-solid-reg page-scroll" type="submit" value="Enregister"/>
-                            </form>
-                        </div>
-                    </div><!-- end of col --> 
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
 
 
     <?php include('aide.php') ?>

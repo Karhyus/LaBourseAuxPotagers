@@ -170,18 +170,6 @@ $participant = $req2->fetch();
                                             <!-- end of progress bars -->
 
                                         </div> <!-- end of card-body -->
-
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a href="projet.php?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a href="user.php?id=<?php echo ($tmp['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-
                                     </div>
                                     <!-- end of card -->
                                 </div> <!-- end of swiper-slide -->

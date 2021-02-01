@@ -62,14 +62,14 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
+        </ul>
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="index.php">RETOUR A L'ACCUEIL<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#aide">AIDE</a>
             </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
         </ul>
     </div>
 </nav> <!-- end of navbar -->
