@@ -3,16 +3,7 @@
 <?php include('bdd_connexion.php'); 
 include('fonctions.php');
 session_start();
-$req_part = $bdd->query('SELECT * FROM participant WHERE user_account_id=' . $_SESSION['user_account']['id']);
-$participant = $req_part->fetch();
-$cpt_project = $bdd->query('SELECT COUNT(*) FROM project WHERE participant_id=' . $participant['id'])-> fetchColumn();
-$req2 = $bdd->query('SELECT * FROM project WHERE participant_id=' . $participant['id']);
-$cpt_recolt = 0;
-$cpt_invest = 0;
-while($project = $req2->fetch()){
-    $cpt_recolt = $cpt_recolt + $project['collected'];
-    $cpt_invest = $cpt_invest + $project['investors'];
-}  
+  
 ?>
 <head>
     <meta charset="utf-8">
@@ -119,7 +110,6 @@ while($project = $req2->fetch()){
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">PROJETS EN COURS <div class="button-group filters-button-group">
-                    <a class="btn-solid-reg" href="ajouter.php"> + Ajouter un nouveau projet</a>
                     </div> </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -141,7 +131,7 @@ while($project = $req2->fetch()){
                                         <!-- Card -->
                                         <div class="card">
                                             <div class="card-image">
-                                                <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                <a class="nav-link page-scroll"  href="add_money.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
                                             </div>
                                             <div class="card-body">
                                                 <h3 class="card-title"><?php echo $project['project_name'] ?></h3>

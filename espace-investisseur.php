@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include('bdd_connexion.php'); 
-session_start();?>
+include('fonctions.php');
+session_start();
+$req_pinv = $bdd->query('SELECT * FROM project_investor WHERE user_account_id=' . $_SESSION['user_account']['id']);
+$cpt = 0;
+$amount_givent = 0;
+while($pinv = $req_pinv->fetch()){
+    $cpt = $cpt + 1;
+    $amount_givent = $amount_givent + $pinv['amount_given'];
+}
+$cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColumn();
+
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -117,15 +128,15 @@ session_start();?>
                         <?php } } ?>
                             <div id="counter">
                                 <div class="cell">
-                                    <div class="counter-value number-count" data-count="5">1</div>
-                                    <div class="counter-info">Nombre<br>Projets</div>
+                                    <div class="counter-value number-count" data-count="<?php echo $cpt ?>"></div>
+                                    <div class="counter-info"><br>Projets</div>
                                 </div>
                                 <div class="cell">
-                                    <div class="counter-value number-count" data-count="121">1</div>
-                                    <div class="counter-info">Argent<br>Récolté</div>
+                                    <div class="counter-value number-count" data-count="<?php echo $amount_givent ?>"></div>
+                                    <div class="counter-info">€<br>Donnés</div>
                                 </div>
                                 <div class="cell">
-                                    <div class="counter-value number-count" data-count="12">1</div>
+                                    <div class="counter-value number-count" data-count="<?php echo $cpt_investors ?>"></div>
                                     <div class="counter-info">Personnes<br>Engagées</div>
                                 </div>
                              </div>
@@ -151,7 +162,61 @@ session_start();?>
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
+                                <?php $req_pinv2 = $bdd->query('SELECT * FROM project_investor WHERE user_account_id=' . $_SESSION['user_account']['id']);
                                 
+                                while($pinvestors = $req_pinv2->fetch()){
+                                    $req = $bdd->query('SELECT * FROM project WHERE id=' . $pinvestors['project_id']);
+                                    $project = $req->fetch();
+                                    $req2 = $bdd->query('SELECT * FROM participant WHERE id=' . $project['participant_id']);
+                                    $participant = $req2->fetch();
+                                    $req3 = $bdd->query('SELECT * FROM user_account WHERE id=' . $participant['user_account_id']);
+                                    $user = $req3->fetch(); ?>
+                                    <div class="swiper-slide">
+                                        <!-- Card -->
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($project['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $user['user_name']. '/' . $project['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                            </div>
+                                            <div class="card-body">
+                                                <h3 class="card-title"><?php echo $project['project_name'] ?></h3>
+                                                <p><?php echo $project['project_description_short'] ?></p>
+
+                                                <ul class="list-unstyled li-space-lg">
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body"><?php echo intval($project['collected']) ?>€ collectés</div>
+                                                    </li>
+                                                    <li class="media">
+                                                        <i class="fas fa-square"></i>
+                                                        <div class="media-body"><?php echo $project['investors'] ?> investisseurs</div>
+                                                    </li>                                         
+                                                </ul> <!-- end of points -->
+
+                                                <!-- Progress Bars -->
+                                                <div class="progress-container">
+                                                    <div class="price">Cagnotte <?php echo $project['collected'] ?>€/<?php echo intval($project['goal']) ?>€</div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar first" role="progressbar" aria-valuenow="<?php echo (($project['collected']/$project['goal']) * 100) ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div> <!-- end of progress-container -->
+                                                <!-- end of progress bars -->
+
+                                            </div> <!-- end of card-body -->
+
+                                            <div class="button-container">
+                                                <div class="row">  
+                                                    <span class="fa-stack">
+                                                        <a href="projet.php?id=<?php echo ($project['id']) ?>"><span class="hexagon"><i class="fas fa-eye fa-stack-1x"></i></span></a>                  
+                                                    </span>
+                                                    <span class="fa-stack">
+                                                        <a href="user.php?id=<?php echo ($user['id']) ?>"><span class="hexagon"><i class="fas fa-user fa-stack-1x"></i></span></a>                  
+                                                    </span>
+                                                </div> <!-- end of rol -->
+                                            </div> <!-- end of button-container -->   
+                                        </div>
+                                    </div>
+                                <?php } ?>
+
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <!-- Card -->

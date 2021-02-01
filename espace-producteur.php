@@ -123,7 +123,7 @@ while($project = $req2->fetch()){
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="<?php echo($cpt_recolt) ?>">0</div>
-                                <div class="counter-info"><br>Récoltés</div>
+                                <div class="counter-info">€<br>Récoltés</div>
                             </div>
                             <div class="cell">
                                 <div class="counter-value number-count" data-count="<?php echo("$cpt_invest") ?>">0</div>
