@@ -129,7 +129,7 @@ $participant = $req2->fetch();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title">SES AUTRES PROJETS </div>
+                    <div class="section-title">SES PROJETS </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">

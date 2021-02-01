@@ -114,16 +114,16 @@
                                     <a class="page-scroll dropdown-item" href="espace-investisseur.php"><span class="item-text">ESPACE INVESTISSEUR</span></a>
                                 </div>
                             </li>
-                        <?php } else { 
-                            if($_SESSION['user_account']['type'] == 2) { ?>
+                        <?php } else if($_SESSION['user_account']['type'] == 2){ 
+                             ?>
                             <li class="nav-item">
                                 <a class="nav-link page-scroll" href="espace-investisseur.php">MON ESPACE</a>
                             </li>
-                        <?php } else { ?>
+                        <?php } else if($_SESSION['user_account']['type'] == 0){ ?>
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="espace-admin.php">MON ESPACE</a>
                         </li>
-                    <?php } } ?> } ?>
+                    <?php } }  ?>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <?php if(!isset($_SESSION['user_account'])){ ?>
