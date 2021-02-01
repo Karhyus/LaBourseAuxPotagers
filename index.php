@@ -4,7 +4,7 @@
 include('fonctions.php');
 session_start();
 $cpt_project = $bdd->query('SELECT COUNT(*) FROM project')->fetchColumn();
-$cpt_agri = $bdd->query('SELECT COUNT(*) FROM participant')->fetchColumn();
+$cpt_agri = $bdd->query('SELECT COUNT(*) FROM participant WHERE particapted_in=1')->fetchColumn();
 $cpt_investors = $bdd->query('SELECT COUNT(*) FROM project_investor')->fetchColumn();
 ?>
 <head>
