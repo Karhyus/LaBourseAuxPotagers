@@ -91,10 +91,10 @@ $user = $req3->fetch();
             </span>  
             
             <ul class="navbar-nav ml-auto">
-            	<?php if($user['id'] == $participant['user_account_id']){ ?>
+            	<?php if($_SESSION['user_account']['id'] == $participant['user_account_id']){ ?>
             		<a class="btn-solid-reg page-scroll" href="modif_projet.php?id=<?php echo $tmp['id'] ?>">Modifier (P)</a>
             	<?php }else{ ?>
-            		<a class="btn-solid-reg page-scroll" href="lien cagnotte lydia">Investir (I)</a>
+            		<a class="btn-solid-reg page-scroll" href="https://lydia-app.com/collect/10484-les-fraises-de-bernadette/fr">Investir (I)</a>
             	<?php } ?>	
             </ul>  
     

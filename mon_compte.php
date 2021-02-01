@@ -76,7 +76,7 @@ session_start();
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="javascript:history.back()">RETOUR<span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="index.php">RETOUR<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
@@ -108,12 +108,18 @@ session_start();
             
             <!-- Tabs Links -->
             <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+            <?php if($_SESSION['user_account']['type'] == 1){ ?>
                 <li class="nav-item">
                     <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>Modifier mes infos personnelles</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i>Modifier mon profil public</a>
                 </li>
+            <?php }else{ ?>
+                <li class="nav-item">
+                    <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i>Modifier mes infos personnelles</a>
+                </li>
+            <?php } ?>
             </ul>
             <!-- end of tabs links -->
             
@@ -164,11 +170,6 @@ session_start();
                                         <label class="label-control" for="cmail"><strong>Email</strong></label>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <div class="form-group"> 
-                                        <input type="password" value="<?php echo $user_account['password'] ?>" class="form-control-select" id="cmdp" name="password" minlength="8" required>
-                                        <label class="label-control" for="cmdp"><strong>Mot de passe (8 caractères minimum)</strong></label>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
                                     <input type="hidden" name="redirection" value="<?php 
                                     if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
                                     <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
@@ -177,26 +178,17 @@ session_start();
                 </div> <!-- end of tab-pane --> 
 
                 <!-- end of tab -->
-
+                <?php if($_SESSION['user_account']['type'] == 1){ ?>
                 <!-- Tab -->
                 <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                     <div class="text-container">
                                 <?php
                                 //Préremplissage du formulaire avec ses infos
-                                $req = $bdd->query('SELECT * FROM participant WHERE id = ' . $_SESSION['user_account']['id']);
-                                $user_account = $req->fetch();
+                                $req_participant = $bdd->query('SELECT * FROM participant WHERE user_account_id = ' . $_SESSION['user_account']['id']);
+                                $participant = $req_participant->fetch();
                                 ?>
                                 <!-- Contact Form -->
-                                <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
-                                    <?php 
-                                    if(isset($_GET['erreur'])){
-                                        if ($_GET['erreur'] == true){
-                                            ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
-                                        }else{
-                                            ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
-                                        } 
-                                    }
-                                    ?>
+                                <form id="modifPublicForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte_public.php?id=<?php echo $participant['id'] ?>">
                                     <div class="form-group">
                                         <input type="text" value="<?php echo $participant['company_name'] ?>" class="form-control-select" id="cnom_com" name="company_name" required>
                                         <label class="label-control" for="cnom_com"><strong>Nom de l'exploitation</strong></label>
@@ -222,7 +214,7 @@ session_start();
                                 </form>
                         </div>
                 </div> <!-- end of tab-pane --> 
-
+            <?php } ?>
                 <!-- end of tab -->
 
             </div> <!-- end of tab-content -->

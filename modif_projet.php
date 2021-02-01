@@ -36,6 +36,16 @@ session_start();
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/logosite.png">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        function add_counterpart()
+        {
+            $lino=$("#counterpart_list li").length;
+            $lino=$lino+1;
+            $("#counterpart_list li:last").after("<li class='nav-item' id='counterpart_"+$lino+"'><div class='section-title' name='counterpart'>CRITERE DE DONS N°"+$lino+"</div><input type='hidden' id='id_ct' name='id_ct[]' value='0' /><div class='form-group'><input type='text' class='form-control-select' id='counterpart_name' name='counterpart_name[]' required><label class='label-control' for='counterpart_name'><strong>Nom de la contrepartie</strong></label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-select' id='option_min' name='option_min[]' required><label class='label-control' for='option_min'><strong>Don minimum</strong></label><div class='help-block with-errors'></div></div><div class='form-group'><input type='text' class='form-control-select' id='option_max' name='option_max[]' required><label class='label-control' for='option_max'><strong>Don maximum</strong></label><div class='help-block with-errors'></div></div><div class='form-group'><textarea form='modifProjetForm' class='form-control-select' id='counterpart_description' name='counterpart_description[]' required></textarea><label class='label-control' for='counterpart_description'><strong>En échange du don</strong></label><div class='help-block with-errors'></div></div></li>");
+        }
+    </script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -76,7 +86,7 @@ session_start();
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" href="javascript:history.back()"> RETOUR <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="projet.php?id=<?php echo $_GET['id'] ?>">RETOUR<span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
@@ -111,56 +121,52 @@ session_start();
                         <div class="text-container">
                             <?php
                             //Préremplissage du formulaire avec ses infos
-                            $req = $bdd->query('SELECT * FROM user_account WHERE id = ' . $_SESSION['user_account']['id']);
-                            $user_account = $req->fetch();
+                            $req = $bdd->query('SELECT * FROM project WHERE id = ' . $_GET['id']);
+                            $project = $req->fetch();
                             ?>
                             <!-- Contact Form -->
-                            <form id="modifForm" data-toggle="validator" data-focus="false" method="post" action="forms/mon_compte.php">
-                                <?php 
-                                if(isset($_GET['erreur'])){
-                                    if ($_GET['erreur'] == true){
-                                        ?><p style="color:red">Ce mail est déjà utilisé.</p> <?php
-                                    }else{
-                                        ?><p style="color:green">Vos informations ont été modifiées avec succès</p> <?php
-                                    } 
-                                }
-                                ?>
+                            <form id="modifProjetForm" data-toggle="validator" data-focus="false" method="post" action="forms/modif_projet.php?id=<?php echo $_GET['id'] ?>" enctype="multipart/form-data">
                                 <div class="form-group">
-                                    <input type="text" class="form-control-select" id="project_name" name="project_name" required>
+                                    <input type="text" value="<?php echo $project['project_name'] ?>" class="form-control-select" id="project_name" name="project_name" required>
                                     <label class="label-control" for="project_name"><strong>Nom du projet</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-select" id="project_description_short" maxlength="140" name="project_description_short" required></textarea>
+                                    <textarea form="modifProjetForm" class="form-control-select" id="project_description_short" maxlength="140" name="project_description_short" required><?php echo $project['project_description_short'] ?></textarea>
                                     <label class="label-control" for="project_description_short"><strong>Description courte</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                <label for="photo">Mettre vos photos du projets</label> <br>
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg"> 
-                                    <input type="file" id="photo" name="photo1" accept="image/png, image/jpeg, image/jpg">
+                                    <textarea form="modifProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required><?php echo $project['project_description_long'] ?></textarea>
+                                    <label class="label-control" for="project_description_long"><strong>Description longue</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control-select" id="project_localisation" name="project_localisation" required>
+                                <label for="photo">Mettez les photos de votre projet</label> <br>
+                                    <input type="file" id="photo1" name="photo1"> 
+                                    <input type="file" id="photo2" name="photo2"> 
+                                    <input type="file" id="photo3" name="photo3">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" value="<?php echo $project['project_location'] ?>" class="form-control-select" id="project_localisation" name="project_location" required>
                                     <label class="label-control" for="project_localisation"><strong>Localisation</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <!-- PENSER à convertir le text en float -->
-                                    <input type="text" class="form-control-select" min = "0" id="goal" name="goal" required>
+                                    <input type="text" value="<?php echo $project['goal'] ?>" class="form-control-select" min = "0" id="goal" name="goal" required>
                                     <label class="label-control" for="goal"><strong>Objectif financier</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="ajouterProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required></textarea>
-                                    <label class="label-control" for="project_description_long"><strong>Description longue</strong></label>
+                                    <input type="date" value="<?php echo $project['end_date'] ?>" class="form-control-select" min = "0" id="end_date" name="end_date" required>
+                                    <label class="label-control" for="goal"><strong>Date de fin de financement</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group checkbox ">
                                     <label for="product_type"></label>
-                                    <select id="cgroup" class = "label-control">
+                                    <select id="product_type" name="product_type" form="modifProjetForm" class = "label-control" required>
                                         <option value="">Type de produit</option>
                                         <option value="legume">Légumes</option>
                                         <option value="fruit">Fruits</option>
@@ -168,36 +174,49 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group checkbox">
-                                    <input type="checkbox" id="innovative" name="innovative" required>
+                                    <input type="checkbox" id="innovative" name="innovative">
                                     <label class="label-control white" for="innovative">Est-ce que c'est un projet innovant?</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <ul class="navbar-nav ml-auto" id="counterpart_list">
-                                    <li class="nav-item" id="counterpart_1">
-                                        <div class="section-title" name="counterpart">CRITERE DE DONS N°1</div>
-                                        <div class="form-group">    
-                                            <input type="text" class="form-control-select" id="option_min" name="option_min" required>
-                                            <label class="label-control" for="option_min"><strong>Don minimum</strong></label>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                        <div class="form-group">    
-                                            <input type="text" class="form-control-select" id="option_max" name="option_max" required>
-                                            <label class="label-control" for="option_max"><strong>Don maximum</strong></label>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea form="ajouterProjetForm" class="form-control-select" id="counterpart" name="counterpart" required></textarea>
-                                            <label class="label-control" for="counterpart"><strong>En échange du don</strong></label>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </li>
-                                    <div class="button"><input class="btn-solid-reg page-scroll" type="submit" onclick="add_counterpart();" value="Ajouter une contrepartie"></div>
+                                    <?php $req_counterpart = $bdd->query('SELECT * FROM counterpart WHERE project_id=' . $project['id']);
+                                    $cpt = 1;
+                                    while($counterpart = $req_counterpart->fetch()){ ?>
+                                        <li class="nav-item" id="counterpart_<?php echo $cpt?>">
+                                            <div class="section-title" name="counterpart">CRITERE DE DONS N°<?php echo $cpt ?></div>
+                                            <input type="hidden" id="id_ct" name="id_ct[]" value="<?php echo $counterpart['id'] ?>" />
+                                            <div class="form-group">    
+                                                <input type="text" value="<?php echo $counterpart['counterpart_name'] ?>" class="form-control-select" id="counterpart_name" name="counterpart_name[]" required>
+                                                <label class="label-control" for="counterpart_name"><strong>Nom de la contrepartie</strong></label>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">    
+                                                <input type="text" value="<?php echo $counterpart['option_min'] ?>" class="form-control-select" id="option_min" name="option_min[]" required>
+                                                <label class="label-control" for="option_min"><strong>Don minimum</strong></label>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">    
+                                                <input type="text" value="<?php echo $counterpart['option_max'] ?>" class="form-control-select" id="option_max" name="option_max[]" required>
+                                                <label class="label-control" for="option_max"><strong>Don maximum</strong></label>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea form="modifProjetForm" class="form-control-select" id="counterpart_description" name="counterpart_description[]" required><?php echo $counterpart['counterpart_description'] ?></textarea>
+                                                <label class="label-control" for="counterpart"><strong>En échange du don</strong></label>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </li>
+                                    <?php
+                                    $cpt = $cpt + 1;
+                                    } ?>
+                                    
+                                    <div class="button"><input class="btn-solid-reg page-scroll" type="button" onclick="add_counterpart();" value="Ajouter une contrepartie"></div>
                                 </ul>
                                 <br>
                                 <input type="hidden" name="redirection" value="<?php 
                                     if(isset($_GET['redirection'])){echo $_GET['redirection']; } ?>" />
-                                    <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
+                                <input class="btn-solid-reg page-scroll" type="submit" value="Modifier"/>
                                 </form>
                         </div>
 

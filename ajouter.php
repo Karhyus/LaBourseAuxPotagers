@@ -131,7 +131,7 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                <label for="photo">Mettre vos photos du projet</label> <br>
+                                <label for="photo">Mettez les photos de votre projet</label> <br>
                                 <div class="ecolo"><i class="fab fa-envira" size="2x"><em> Le clic écologique : Pas plus de 3 images ! Le moins de contenu est stocké, le plus de banquises seront sauvées</em></i></div>
                                     <input type="file" id="photo1" name="photo1"> 
                                     <input type="file" id="photo2" name="photo2"> 
