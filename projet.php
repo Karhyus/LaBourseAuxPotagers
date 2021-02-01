@@ -187,8 +187,7 @@ $user = $req3->fetch();
                     <div class="section-title">LE PROJET EN DETAIL</div>
                     <div class="text-container">
                         <p><?php echo $tmp['project_description_long'] ?></p>
-                        <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
-                        
+
                     </div> <!-- end of text-container -->
                     
                     <div class="text-container">

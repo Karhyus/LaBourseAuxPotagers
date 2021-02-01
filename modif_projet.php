@@ -132,12 +132,12 @@ session_start();
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="modifProjetForm" class="form-control-select" id="project_description_short" maxlength="140" name="project_description_short" required><?php echo $project['project_description_short'] ?></textarea>
+                                     <br><textarea form="modifProjetForm" class="form-control-textarea" id="project_description_short" maxlength="140" name="project_description_short" required><?php echo $project['project_description_short'] ?></textarea>
                                     <label class="label-control" for="project_description_short"><strong>Description courte</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea form="modifProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required><?php echo $project['project_description_long'] ?></textarea>
+                                    <br><textarea form="modifProjetForm" class="form-control-textarea" id="project_description_long" name="project_description_long" required><?php echo $project['project_description_long'] ?></textarea>
                                     <label class="label-control" for="project_description_long"><strong>Description longue</strong></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -202,7 +202,7 @@ session_start();
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                             <div class="form-group">
-                                                <textarea form="modifProjetForm" class="form-control-select" id="counterpart_description" name="counterpart_description[]" required><?php echo $counterpart['counterpart_description'] ?></textarea>
+                                                <br><textarea form="modifProjetForm" class="form-control-textarea" id="counterpart_description" name="counterpart_description[]" required><?php echo $counterpart['counterpart_description'] ?></textarea>
                                                 <label class="label-control" for="counterpart"><strong>En échange du don</strong></label>
                                                 <div class="help-block with-errors"></div>
                                             </div>
@@ -224,7 +224,7 @@ session_start();
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
+    </div>
     <!-- end of header -->
     
 <!-- Les Projets -->

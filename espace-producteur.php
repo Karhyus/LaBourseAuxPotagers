@@ -153,208 +153,61 @@ while($project = $req2->fetch()){
                     <div class="slider-container">
                         <div class="swiper-container card-slider">
                             <div class="swiper-wrapper">
-                                <?php
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <?php
                                     $req = $bdd->query('SELECT * FROM project');
                                     while($tmp = $req->fetch()){
                                         //Faire en fonction du status aussi
                                         if($tmp['participant_id'] == $participant['id']){ ?>
-                                             <!-- Slide -->
-                                            <div class="swiper-slide">
-                                                <!-- Card -->
-                                                <div class="card">
-                                                    <div class="card-image">
-                                                        <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <h3 class="card-title"><?php echo $tmp['project_name'] ?></h3>
-                                                        <p><?php echo $tmp['project_description_short'] ?></p>
-                                                        
-                                                        <ul class="list-unstyled li-space-lg">
-                                                            <li class="media">
-                                                                <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp['collected'] ?>€ collectés</div>
-                                                            </li>
-                                                            <li class="media">
-                                                                <i class="fas fa-square"></i>
-                                                                <div class="media-body"><?php echo $tmp['investors'] ?> investisseurs</div>
-                                                            </li>                                         
-                                                        </ul> <!-- end of points -->
-                                                        
-                                                        <!-- Progress Bars -->
-                                                        <div class="progress-container">
-                                                            <div class="price">Cagnotte <?php echo $tmp['collected'] ?>€/<?php echo intval($tmp['goal']) ?>€</div>
-                                                            <div class="progress">
-                                                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
-                                                        </div> <!-- end of progress-container -->
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <a class="nav-link page-scroll"  href="projet.php?id=<?php echo ($tmp['id']) ?>"><img class="img-fluid" src="<?php echo(chemin_photo('upload/', $_SESSION['user_account']['user_name']. '/' . $tmp['id']. '/' . 1)) ?>" alt="alternative" ></a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h3 class="card-title"><?php echo $tmp['project_name'] ?></h3>
+                                                    <p><?php echo $tmp['project_description_short'] ?></p>
+                                                    
+                                                    <ul class="list-unstyled li-space-lg">
+                                                        <li class="media">
+                                                            <i class="fas fa-square"></i>
+                                                            <div class="media-body"><?php echo $tmp['collected'] ?>€ collectés</div>
+                                                        </li>
+                                                        <li class="media">
+                                                            <i class="fas fa-square"></i>
+                                                            <div class="media-body"><?php echo $tmp['investors'] ?> investisseurs</div>
+                                                        </li>                                         
+                                                    </ul> <!-- end of points -->
+                                                    
+                                                    <!-- Progress Bars -->
+                                                    <div class="progress-container">
+                                                        <div class="price">Cagnotte <?php echo $tmp['collected'] ?>€/<?php echo intval($tmp['goal']) ?>€</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div> <!-- end of progress-container -->
                                                         <!-- end of progress bars -->
                                                         
-                                                    </div> <!-- end of card-body -->
+                                                </div> <!-- end of card-body -->
                                                     
-                                                    <div class="button-container">
-                                                        <div class="row">  
-                                                            <span class="fa-stack">
-                                                                <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                            </span>
-                                                            <span class="fa-stack">
-                                                                <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                            </span>
-                                                        </div> <!-- end of rol -->
-                                                    </div> <!-- end of button-container -->                
+                                                <div class="button-container">
+                                                    <div class="row">  
+                                                        <span class="fa-stack">
+                                                            <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
+                                                        </span>
+                                                        <span class="fa-stack">
+                                                            <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
+                                                        </span>
+                                                    </div> <!-- end of rol -->
+                                                </div> <!-- end of button-container -->                
                                                     
-                                                </div>
-                                                <!-- end of card -->
-                                             </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-                                       <?php } ?>
+                                            </div>
+                                        <?php } ?>
                                    <?php } ?>
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-5.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Aubergines XXL</h3>
-                                            <p>Description courte du projet</p>
-                                            
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-3.png" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title">Clémentines de Marseille</h3>
-                                            <p>Description courte du projet </p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">                                
-                                    <!-- Card -->
-                                    <div class="card">
-                                        <div class="card-image">
-                                            <a class="nav-link page-scroll"  href="projet.php"><img class="img-fluid" src="images/project-6.jpg" alt="alternative" ></a>
-                                        </div>
-                                        <div class="card-body">
-                                            <h3 class="card-title"> Citrons </h3>
-                                            <p>Description courte du projet</p>
-                                            <ul class="list-unstyled li-space-lg">
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Argent récolté</div>
-                                                </li>
-                                                <li class="media">
-                                                    <i class="fas fa-square"></i>
-                                                    <div class="media-body">Nombre d'investisseurs</div>
-                                                </li>                                         
-                                            </ul> <!-- end of points -->
-                                            
-                                            <!-- Progress Bars -->
-                                            <div class="progress-container">
-                                                <div class="price">Cagnotte current/total</div>
-                                                <div class="progress">
-                                                    <div class="progress-bar second" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div> <!-- end of progress-container -->
-                                            <!-- end of progress bars -->
-                                            
-                                        </div> <!-- end of card-body -->
-                                        
-                                        <div class="button-container">
-                                            <div class="row">  
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#video-1"><span class="hexagon"><i class="fas fa-video fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                                <span class="fa-stack">
-                                                    <a class="popup-with-move-anim" href="#news-1"><span class="hexagon"><i class="fas fa-newspaper fa-stack-1x"></i></span></a>                  
-                                                </span>
-                                            </div> <!-- end of rol -->
-                                        </div> <!-- end of button-container -->                
-                                        
-                                    </div>
-                                    <!-- end of card -->
-                                 </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
+                                                <!-- end of card -->
+                                </div> <!-- end of swiper-slide -->
+                                            <!-- end of slide -->
+             
                                 
                             </div> <!-- end of swiper-wrapper -->
         
