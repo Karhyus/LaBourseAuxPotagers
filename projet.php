@@ -88,11 +88,14 @@ $user = $req3->fetch();
             </ul>
             
             <ul class="navbar-nav ml-auto">
-            	<?php if($_SESSION['user_account']['id'] == $participant['user_account_id']){ ?>
+                <?php if(!isset($_SESSION['user_account']['id'])){ ?>
+                    <a class="btn-solid-reg page-scroll" href="connexion.php">Connectez-vous</a>
+            	<?php }else{ if($_SESSION['user_account']['id'] == $participant['user_account_id']){ ?>
             		<a class="btn-solid-reg page-scroll" href="modif_projet.php?id=<?php echo $tmp['id'] ?>">Modifier (P)</a>
-            	<?php }else{ ?>
+            	<?php }else { ?>
             		<a class="btn-solid-reg page-scroll" href="<?php if($tmp['lydia']!=''){ echo $tmp['lydia'];} ?>">Investir (I)</a>
-            	<?php } ?>	
+            	<?php }?>
+                <?php } ?>	
             </ul>  
     
             <ul class="navbar-nav ml-auto">
